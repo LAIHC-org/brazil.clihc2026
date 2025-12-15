@@ -211,7 +211,7 @@ export default {
                                             Dra. Napoliana Souza
                                         </template>
                                         <template #institution>
-                                            Universidade Federal do Amapá (UFAP), BR
+                                            Universidade do Estado do Amapá (UEAP), BR
                                         </template>
                                         <template #email>
                                         </template>
@@ -918,7 +918,6 @@ export default {
                                     </OrganizerItem>
                                 </div>
 
-                                <!--
                                 <div class="col-md-4 ms-auto mt-md-0 mt-4">
                                     <OrganizerItem>
                                         <template #image>
@@ -940,7 +939,6 @@ export default {
                                         </template>
                                     </OrganizerItem>
                                 </div>
-                                -->
                             </div>                            
                         </div>
                     </div>
