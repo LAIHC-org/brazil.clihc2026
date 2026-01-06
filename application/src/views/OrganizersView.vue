@@ -140,11 +140,11 @@ export default {
                                     <OrganizerItem>
                                         <template #image>
                                             <div class="d-block blur-shadow-image">
-                                                <img src="/assets/img/nophoto.png" alt=""
+                                                <img src="/assets/img/people/Adriana_Damian.png" alt=""
                                                     class="img-fluid shadow rounded-3">
                                             </div>
                                             <div class="colored-shadow"
-                                                style="background-image: url(&quot;./assets/img/nophoto.png&quot;);">
+                                                style="background-image: url(&quot;./assets/img/people/Adriana_Damian.png&quot;);">
                                             </div>
                                         </template>
                                         <template #name>
@@ -162,17 +162,17 @@ export default {
                                     <OrganizerItem>
                                         <template #image>
                                             <div class="d-block blur-shadow-image">
-                                                <img src="/assets/img/nophoto.png" alt=""
+                                                <img src="/assets/img/./assets/img/people/LizEscobedo.jpg" alt=""
                                                     class="img-fluid shadow rounded-3">
                                             </div>
                                             <div class="colored-shadow"
-                                                style="background-image: url(&quot;./assets/img/nophoto.png&quot;);"></div>
+                                                style="background-image: url(&quot;./assets/img/./assets/img/people/LizEscobedo.jpg&quot;);"></div>
                                         </template>
                                         <template #name>
                                             Dra. Lizbeth Escobedo
                                         </template>
                                         <template #institution>
-                                            Universidade de Dalhousie, CA
+                                            Dalhousie University, CA
                                         </template>
                                         <template #email>
                                         </template>
