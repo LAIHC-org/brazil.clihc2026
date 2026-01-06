@@ -7,6 +7,36 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2026.1.0.7] - 2026-01-05
+
+### Added
+
+- Adds Call por Papers (Full Papers only)
+
+## [2026.1.0.6] - 2025-12-14
+
+### Added
+
+- Support for displaying the CLIHC 2026 logo according to the active language (ES, EN, PT)
+
+### Changed
+
+- Reincorporated Dr. Pedro Reynolds-Cuellar to the CLIHC Steering Committee
+- Corrected the institutional affiliation of Dr. Napoliana Souza to:
+  Universidade do Estado do Amapá (UEAP), BR
+
+## [2026.1.0.5] - 2025-11-04
+
+### Changed
+
+- update Organizers list
+
+## [2026.1.0.4] - 2025-11-03
+
+### Changed
+
+- update Organizers list and add some photos
+
 ## [2026.1.0.3] - 2025-11-03
 
 ### Fixed
