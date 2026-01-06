@@ -208,14 +208,14 @@ export default {
                 <template #image>
                     <div class="d-block blur-shadow-image">
                         <img
-                            src="/assets/img/people/Adriana_Damian.jpg"
+                            src="/assets/img/people/adrianaDamian.png"
                             alt=""
                             class="img-fluid shadow rounded-3"
                         />
                     </div>
                     <div
                         class="colored-shadow"
-                        style="background-image: url('./assets/img/people/people/Adriana_Damian.jpg')"
+                        style="background-image: url('./assets/img/people/people/adrianaDamian.png')"
                     ></div>
                 </template>
                 <template #name> Dra. Adriana Lopes Damian </template>
@@ -229,14 +229,14 @@ export default {
                 <template #image>
                     <div class="d-block blur-shadow-image">
                         <img
-                            src="/assets/img/people/LizEscobedo.jpg"
+                            src="/assets/img/people/lizEscobedo.jpg"
                             alt=""
                             class="img-fluid shadow rounded-3"
                         />
                     </div>
                     <div
                         class="colored-shadow"
-                        style="background-image: url('./assets/img/people/LizEscobedo.jpg')"
+                        style="background-image: url('./assets/img/people/lizEscobedo.jpg')"
                     ></div>
                 </template>
                 <template #name> Dra. Lizbeth Escobedo </template>

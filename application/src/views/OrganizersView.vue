@@ -140,11 +140,11 @@ export default {
                                     <OrganizerItem>
                                         <template #image>
                                             <div class="d-block blur-shadow-image">
-                                                <img src="/assets/img/people/Adriana_Damian.png" alt=""
+                                                <img src="/assets/img/people/adrianaDamian.png" alt=""
                                                     class="img-fluid shadow rounded-3">
                                             </div>
                                             <div class="colored-shadow"
-                                                style="background-image: url(&quot;./assets/img/people/Adriana_Damian.png&quot;);">
+                                                style="background-image: url(&quot;./assets/img/people/adrianaDamian.png&quot;);">
                                             </div>
                                         </template>
                                         <template #name>
@@ -162,11 +162,11 @@ export default {
                                     <OrganizerItem>
                                         <template #image>
                                             <div class="d-block blur-shadow-image">
-                                                <img src="/assets/img/./assets/img/people/LizEscobedo.jpg" alt=""
+                                                <img src="/assets/img/people/lizEscobedo.jpg" alt=""
                                                     class="img-fluid shadow rounded-3">
                                             </div>
                                             <div class="colored-shadow"
-                                                style="background-image: url(&quot;./assets/img/./assets/img/people/LizEscobedo.jpg&quot;);"></div>
+                                                style="background-image: url(&quot;./assets/img/people/lizEscobedo.jpg&quot;);"></div>
                                         </template>
                                         <template #name>
                                             Dra. Lizbeth Escobedo
@@ -200,11 +200,11 @@ export default {
                                     <OrganizerItem>
                                         <template #image>
                                             <div class="d-block blur-shadow-image">
-                                                <img src="/assets/img/nophoto.png" alt=""
+                                                <img src="/assets/img/people/napoliana.jpg" alt=""
                                                     class="img-fluid shadow rounded-3">
                                             </div>
                                             <div class="colored-shadow"
-                                                style="background-image: url(&quot;./assets/img/nophoto.png&quot;);">
+                                                style="background-image: url(&quot;./assets/img/people/napoliana.jpg&quot;);">
                                             </div>
                                         </template>
                                         <template #name>
@@ -261,11 +261,11 @@ export default {
                                     <OrganizerItem>
                                         <template #image>
                                             <div class="d-block blur-shadow-image">
-                                                <img src="/assets/img/nophoto.png" alt=""
+                                                <img src="/assets/img/people/danielDomingos.jpg" alt=""
                                                     class="img-fluid shadow rounded-3">
                                             </div>
                                             <div class="colored-shadow"
-                                                style="background-image: url(&quot;./assets/img/nophoto.png&quot;);">
+                                                style="background-image: url(&quot;./assets/img/people/danielDomingos.jpg&quot;);">
                                             </div>
                                         </template>
                                         <template #name>
@@ -283,11 +283,11 @@ export default {
                                     <OrganizerItem>
                                         <template #image>
                                             <div class="d-block blur-shadow-image">
-                                                <img src="/assets/img/nophoto.png" alt=""
+                                                <img src="/assets/img/people/jpOurcade.jpg" alt=""
                                                     class="img-fluid shadow rounded-3">
                                             </div>
                                             <div class="colored-shadow"
-                                                style="background-image: url(&quot;./assets/img/nophoto.png&quot;);">
+                                                style="background-image: url(&quot;./assets/img/people/jpOurcade.jpg&quot;);">
                                             </div>
                                         </template>
                                         <template #name>
@@ -383,11 +383,11 @@ export default {
                                     <OrganizerItem>
                                         <template #image>
                                             <div class="d-block blur-shadow-image">
-                                                <img src="/assets/img/nophoto.png" alt=""
+                                                <img src="/assets/img/people/rodrigoFreese.jpg" alt=""
                                                     class="img-fluid shadow rounded-3">
                                             </div>
                                             <div class="colored-shadow"
-                                                style="background-image: url(&quot;./assets/img/nophoto.png&quot;);">
+                                                style="background-image: url(&quot;./assets/img/people/rodrigoFreese.jpg&quot;);">
                                             </div>
                                         </template>
                                         <template #name>
@@ -466,11 +466,11 @@ export default {
                                     <OrganizerItem>
                                         <template #image>
                                             <div class="d-block blur-shadow-image">
-                                                <img src="/assets/img/nophoto.png" alt=""
+                                                <img src="/assets/img/people/claudiaLopez.png" alt=""
                                                     class="img-fluid shadow rounded-3">
                                             </div>
                                             <div class="colored-shadow"
-                                                style="background-image: url(&quot;./assets/img/nophoto.png&quot;);">
+                                                style="background-image: url(&quot;./assets/img/people/claudiaLopez.png&quot;);">
                                             </div>
                                         </template>
                                         <template #name>
@@ -566,11 +566,11 @@ export default {
                                     <OrganizerItem>
                                         <template #image>
                                             <div class="d-block blur-shadow-image">
-                                                <img src="/assets/img/nophoto.png" alt=""
+                                                <img src="/assets/img/people/sergioSantana.jpg" alt=""
                                                     class="img-fluid shadow rounded-3">
                                             </div>
                                             <div class="colored-shadow"
-                                                style="background-image: url(&quot;./assets/img/nophoto.png&quot;);">
+                                                style="background-image: url(&quot;./assets/img/people/sergioSantana.jpg&quot;);">
                                             </div>
                                         </template>
                                         <template #name>
