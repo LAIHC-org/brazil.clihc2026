@@ -77,6 +77,20 @@ export default {
                             <template #name>
                                 <a class="uline" href="https://fapitec.se.gov.br/">FAPITEC/SE</a>
                             </template>
+                        </SponsorItem>
+
+                        <SponsorItem>
+                            <template #image>
+                                <img src="/assets/img/sponsors/sbc_br.png" alt="Sociedade Brasileira de Computação" class="img-fluid shadow rounded-3">
+                            </template>
+                            <template #image-shadow>
+                                <div class="colored-shadow"
+                                    style="background-image: url(&quot;./assets/img/sponsors/sbc_br.png&quot;);">
+                                </div>
+                            </template>                                
+                            <template #name>
+                                <a class="uline" href="https://www.sbc.org.br/">Sociedade Brasileira de Computação</a>
+                            </template>
                         </SponsorItem> 
 
                     </div>

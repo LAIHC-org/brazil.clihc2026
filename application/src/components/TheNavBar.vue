@@ -64,7 +64,7 @@
 															{{ $t("nav.cfp") }}
 														</span>
 														<i18n path="nav.cfp_message" tag="span" class="text-sm text-dark">
-															{{ $t("about.upcoming") }}
+															{{ $t("nav.cfp_message") }}
 														</i18n>
 													</div>
 												</div>
