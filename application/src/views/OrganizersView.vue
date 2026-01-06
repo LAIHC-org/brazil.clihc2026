@@ -322,11 +322,11 @@ export default {
                                     <OrganizerItem>
                                         <template #image>
                                             <div class="d-block blur-shadow-image">
-                                                <img src="/assets/img/nophoto.png" alt=""
+                                                <img src="/assets/img/people/valeria.jpg" alt=""
                                                     class="img-fluid shadow rounded-3">
                                             </div>
                                             <div class="colored-shadow"
-                                                style="background-image: url(&quot;./assets/img/nophoto.png&quot;);">
+                                                style="background-image: url(&quot;./assets/img/people/valeria.jpg&quot;);">
                                             </div>
                                         </template>
                                         <template #name>
@@ -895,7 +895,7 @@ export default {
                         <div class="col-xl-9">
                             <div class="row p-0">
 
-                                <div class="col-md-4 mx-auto mt-md-0 mt-4">
+                                <div class="col-md-4 ms-auto mt-md-0 mt-4">
                                     <OrganizerItem>
                                         <template #image>
                                             <div class="d-block blur-shadow-image">
