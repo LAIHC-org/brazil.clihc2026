@@ -17,7 +17,8 @@
                     Chamada de trabalhos (CFP)
                 </RouterLink>
             </div>
-            <strong class="text-primary text-gradient">Prazo de envio:</strong>  Em breve<br>
+            <strong class="text-primary text-gradient">Submissão de resumos:</strong> 23 de fevereiro<br>
+            <strong class="text-primary text-gradient">Submissão de artigos:</strong> 1 de março<br>
         </div>
         </li>
         <li class="list-group-item d-flex justify-content-between align-items-start">
