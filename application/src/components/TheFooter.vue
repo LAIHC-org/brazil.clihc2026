@@ -26,8 +26,8 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link pe-1" href="https://twitter.com/clihc2026" target="_blank">
-                                    <i class="fab fa-twitter text-lg opacity-8"></i>
+                                <a class="nav-link pe-1" href="https://x.com/clihc2026" target="_blank">
+                                    <i class="fab fa-x-twitter text-lg opacity-8"></i>
                                     <span class="sr-only">{{ $t("nav.twitter") }}</span>
                                 </a>
                             </li>
