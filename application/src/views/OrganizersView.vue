@@ -162,11 +162,11 @@ export default {
                                     <OrganizerItem>
                                         <template #image>
                                             <div class="d-block blur-shadow-image">
-                                                <img src="/assets/img/people/lizEscobedo.jpg" alt=""
+                                                <img src="/assets/img/people/liz.jpg" alt=""
                                                     class="img-fluid shadow rounded-3">
                                             </div>
                                             <div class="colored-shadow"
-                                                style="background-image: url(&quot;./assets/img/people/lizEscobedo.jpg&quot;);"></div>
+                                                style="background-image: url(&quot;./assets/img/people/liz.jpg&quot;);"></div>
                                         </template>
                                         <template #name>
                                             Dra. Lizbeth Escobedo

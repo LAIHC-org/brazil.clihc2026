@@ -229,14 +229,14 @@ export default {
                 <template #image>
                     <div class="d-block blur-shadow-image">
                         <img
-                            src="/assets/img/people/lizEscobedo.jpg"
+                            src="/assets/img/people/liz.jpg"
                             alt=""
                             class="img-fluid shadow rounded-3"
                         />
                     </div>
                     <div
                         class="colored-shadow"
-                        style="background-image: url('./assets/img/people/lizEscobedo.jpg')"
+                        style="background-image: url('./assets/img/people/liz.jpg')"
                     ></div>
                 </template>
                 <template #name> Dra. Lizbeth Escobedo </template>
