@@ -33,7 +33,7 @@ export default {
                                     <div class="card shadow-lg">
                                         <div class="card-header p-0 mx-3 mt-3 position-relative z-index-1">
                                             <div class="d-block blur-shadow-image">
-                                                <img src="/assets/img/sigchi.jpg" alt=""
+                                                <img src="/assets/img/sigchi.jpg" alt="SIGCHI logo"
                                                     class="img-fluid shadow rounded-3">
                                             </div>
                                             <div class="colored-shadow"
@@ -71,28 +71,14 @@ export default {
                             </template>
                             <template #image-shadow>
                                 <div class="colored-shadow"
-                                    style="background-image: url(&quot;./assets/img/sponsors/fapitec_se.png&quot;);">
+                                    style="background-image: url(&quot;/assets/img/sponsors/fapitec_se.png&quot;);">
                                 </div>
                             </template>                                
                             <template #name>
                                 <a class="uline" href="https://fapitec.se.gov.br/">FAPITEC/SE</a>
                             </template>
                         </SponsorItem>
-
-                        <SponsorItem>
-                            <template #image>
-                                <img src="/assets/img/sponsors/sbc_br.png" alt="Sociedade Brasileira de Computação" class="img-fluid shadow rounded-3">
-                            </template>
-                            <template #image-shadow>
-                                <div class="colored-shadow"
-                                    style="background-image: url(&quot;./assets/img/sponsors/sbc_br.png&quot;);">
-                                </div>
-                            </template>                                
-                            <template #name>
-                                <a class="uline" href="https://www.sbc.org.br/">Sociedade Brasileira de Computação</a>
-                            </template>
-                        </SponsorItem> 
-
+                        
                     </div>
                 </div>
             </div>
