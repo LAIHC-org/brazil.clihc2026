@@ -720,7 +720,7 @@ export default {
                                             </div>
                                         </template>
                                         <template #name>
-                                            Ludmilla Fernandes Oliveira Galvão
+                                            Dra. Ludmilla Fernandes Oliveira Galvão
                                         </template>
                                         <template #institution>
                                             Universidade Federal de Mato Grosso, BR
