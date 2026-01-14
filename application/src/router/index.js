@@ -49,7 +49,7 @@ const router = createRouter({
           name: 'call-for-workshops-and-tutorials',
           component: () => import('../views/CallsForWorkshopsAndTutorialsView.vue'), 
           meta: {
-            title: "CLIHC 2026 - Call for poster track",
+            title: "CLIHC 2026 - Call for workshops and tutorials",
           },
         },
         {
@@ -57,7 +57,7 @@ const router = createRouter({
           name: 'student-design-competition',
           component: () => import('../views/CallsForCompetitionView.vue'), 
           meta: {
-            title: "CLIHC 2026 - Call for poster track",
+            title: "CLIHC 2026 - Student design competition",
           },
         },
         {
@@ -65,7 +65,7 @@ const router = createRouter({
           name: 'graduate-colloquium',
           component: () => import('../views/CallsForColloquiumView.vue'), 
           meta: {
-            title: "CLIHC 2026 - Call for poster track",
+            title: "CLIHC 2026 - Graduate colloquium",
           },
         },
         /*End: Nuevos */      
@@ -106,7 +106,7 @@ const router = createRouter({
           name: 'accepted-papers',
           component: () => import('../views/AcceptedPapersView.vue'), 
           meta: {
-            title: "CLIHC 2026 - Schedule",
+            title: "CLIHC 2026 - Accepted papers",
           },
         },    
         {

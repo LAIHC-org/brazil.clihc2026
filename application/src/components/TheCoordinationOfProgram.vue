@@ -33,7 +33,7 @@ export default {
                                     <div class="card shadow-lg">
                                         <div class="card-header p-0 mx-3 mt-3 position-relative z-index-1">
                                             <div class="d-block blur-shadow-image">
-                                                <img src="/assets/img/sigchi.jpg" alt=""
+                                                <img src="/assets/img/sigchi.jpg" alt="SIGCHI logo"
                                                     class="img-fluid shadow rounded-3">
                                             </div>
                                             <div class="colored-shadow"
@@ -71,7 +71,7 @@ export default {
                             </template>
                             <template #image-shadow>
                                 <div class="colored-shadow"
-                                    style="background-image: url(&quot;./assets/img/logos/el_dorado.png&quot;);">
+                                    style="background-image: url(&quot;/assets/img/logos/el_dorado.png&quot;);">
                                 </div>
                             </template>                                
                             <template #name>
@@ -85,7 +85,7 @@ export default {
                             </template>
                             <template #image-shadow>
                                 <div class="colored-shadow"
-                                    style="background-image: url(&quot;./assets/img/logos/dalhousie.png&quot;);">
+                                    style="background-image: url(&quot;/assets/img/logos/dalhousie.png&quot;);">
                                 </div>
                             </template>                                
                             <template #name>

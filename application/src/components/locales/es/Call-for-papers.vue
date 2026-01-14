@@ -113,7 +113,7 @@ export default {
             target="_blank"
             href="https://clihc2023.laihc.org/en/accessibility-recommendations-for-authors"
             class="uline"
-        >
+         rel="noopener noreferrer">
             pautas de accesibilidad (edición CLIHC 2023, se abre en una nueva pestaña) </a
         >.
     </p>
@@ -207,13 +207,13 @@ export default {
                     <div class="d-block blur-shadow-image">
                         <img
                             src="/assets/img/people/adrianaDamian.png"
-                            alt=""
+                            alt="Adriana Damian"
                             class="img-fluid shadow rounded-3"
                         />
                     </div>
                     <div
                         class="colored-shadow"
-                        style="background-image: url('./assets/img/people/adrianaDamian.png')"
+                        style="background-image: url('/assets/img/people/adrianaDamian.png')"
                     ></div>
                 </template>
                 <template #name> Dra. Adriana Lopes Damian </template>
@@ -228,13 +228,13 @@ export default {
                     <div class="d-block blur-shadow-image">
                         <img
                             src="/assets/img/people/liz.jpg"
-                            alt=""
+                            alt="Liz"
                             class="img-fluid shadow rounded-3"
                         />
                     </div>
                     <div
                         class="colored-shadow"
-                        style="background-image: url('./assets/img/people/liz.jpg')"
+                        style="background-image: url('/assets/img/people/liz.jpg')"
                     ></div>
                 </template>
                 <template #name> Dra. Lizbeth Escobedo </template>

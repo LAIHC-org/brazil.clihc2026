@@ -101,7 +101,7 @@ export default {
     <p>
         All manuscripts must be submitted fully anonymized. Please consider an
         international audience: e.g., avoid local terms, and use the international system
-        of units. In addition, consider following <a target="_blank" href="https://clihc2023.laihc.org/en/accessibility-recommendations-for-authors" class="uline">accessibility guidelines (CLIHC 2023 edition, opens in a new tab)</a>.
+        of units. In addition, consider following <a target="_blank" href="https://clihc2023.laihc.org/en/accessibility-recommendations-for-authors" class="uline" rel="noopener noreferrer">accessibility guidelines (CLIHC 2023 edition, opens in a new tab)</a>.
     </p>
 
     <h4 id="cpf-dates">Important Dates (Full Papers)</h4>
@@ -174,13 +174,13 @@ export default {
                     <div class="d-block blur-shadow-image">
                         <img
                             src="/assets/img/people/adrianaDamian.png"
-                            alt=""
+                            alt="Adriana Damian"
                             class="img-fluid shadow rounded-3"
                         />
                     </div>
                     <div
                         class="colored-shadow"
-                        style="background-image: url('./assets/img/people/adrianaDamian.png')"
+                        style="background-image: url('/assets/img/people/adrianaDamian.png')"
                     ></div>
                 </template>
                 <template #name> Dra. Adriana Lopes Damian </template>
@@ -195,13 +195,13 @@ export default {
                     <div class="d-block blur-shadow-image">
                         <img
                             src="/assets/img/people/liz.jpg"
-                            alt=""
+                            alt="Liz"
                             class="img-fluid shadow rounded-3"
                         />
                     </div>
                     <div
                         class="colored-shadow"
-                        style="background-image: url('./assets/img/people/liz.jpg')"
+                        style="background-image: url('/assets/img/people/liz.jpg')"
                     ></div>
                 </template>
                 <template #name> Dra. Lizbeth Escobedo </template>

@@ -1,4 +1,5 @@
 <script>
+	import { onBeforeUnmount, onMounted } from 'vue'
 	import LanguageSwitcher from '@/components/LanguageSwitcher.vue'
 	import Tr from '@/i18n/translation'
 	import { RouterLink } from 'vue-router';
@@ -6,6 +7,32 @@
 	export default {
 		components: { LanguageSwitcher, RouterLink },
 		setup() {
+			let onScroll = null
+
+			onMounted(() => {
+				const nav = document.querySelector('.navbar-color-on-scroll')
+				const icon = document.querySelector('.icon-language')
+
+				onScroll = () => {
+					if (!nav) return
+					const scrollTop = document.documentElement.scrollTop || document.body.scrollTop
+					const isScrolled = scrollTop >= 200
+					nav.classList.toggle('scrolled', isScrolled)
+					if (icon) {
+						icon.classList.toggle('text-white', isScrolled)
+					}
+				}
+
+				window.addEventListener('scroll', onScroll, { passive: true })
+				onScroll()
+			})
+
+			onBeforeUnmount(() => {
+				if (onScroll) {
+					window.removeEventListener('scroll', onScroll)
+				}
+			})
+
 			return { Tr }
 		}
 	}
@@ -19,7 +46,7 @@
 				<nav class="navbar navbar-expand-lg  blur blur-rounded top-0 z-index-fixed shadow position-absolute my-3 py-2 start-0 end-0 mx-4 navbar-color-on-scroll justify-content-between">
 					<div class="container-fluid">
 						<a class="navbar-brand font-weight-bolder ms-sm-3" href="./" rel="tooltip"
-							title="Ninth Mexican International Conference on Human-Computer Interaction" data-placement="bottom"
+							title="XII Latin American Conference on Human-Computer Interaction" data-placement="bottom"
 							tabindex="0">
 							<img src="/assets/img/logos/clihc2023.svg" height="25" alt="CLIHC Logo">
 							CLIHC 2026
@@ -46,10 +73,10 @@
 									<RouterLink :to="Tr.i18nRoute({ name: 'call-for-participation' })"
 										class="nav-link ps-2 d-flex cursor-pointer align-items-center"
 										id="navbarDropdown1" role="button" data-bs-toggle="dropdown"
-										aria-expanded="false"
+										aria-expanded="false" aria-haspopup="true"
 									>
 										{{ $t("nav.for_authors") }}
-										&nbsp;<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path fill="currentColor" d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"/></svg>
+										&nbsp;<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512" aria-hidden="true" focusable="false"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path fill="currentColor" d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"/></svg>
 									</RouterLink>
 									<ul class="dropdown-menu dropdown-menu-animation dropdown-lg mt-0 mt-lg-3 p-3 border-radius-lg"
 										aria-labelledby="navbarDropdown1">
@@ -159,12 +186,13 @@
 									</ul>
 								</li>
 								<li class="nav-item dropdown dropdown-hover mx-2">
-									<a class="nav-link ps-2 d-flex cursor-pointer align-items-center" href="#"
+									<RouterLink :to="Tr.i18nRoute({ name: 'getting-started' })"
+										class="nav-link ps-2 d-flex cursor-pointer align-items-center"
 										id="navbarDropdown2" role="button" data-bs-toggle="dropdown"
-										aria-expanded="false">
+										aria-expanded="false" aria-haspopup="true">
 										{{ $t("nav.for_attendees") }} 
-										&nbsp;<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path fill="currentColor" d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"/></svg>
-									</a>
+										&nbsp;<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512" aria-hidden="true" focusable="false"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path fill="currentColor" d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"/></svg>
+									</RouterLink>
 									<ul class="dropdown-menu dropdown-menu-animation dropdown-lg mt-0 mt-lg-3 p-3 border-radius-lg"
 										aria-labelledby="navbarDropdown2">
 										<li>
@@ -299,8 +327,7 @@
 											id="navbarDropdown4" role="button" data-bs-toggle="dropdown"
 											aria-expanded="false">
 											Accesibility
-											<img src="/assets/img/down-arrow-dark.svg" alt="down-arrow"
-												class="arrow ms-1" alt="">
+											<img src="/assets/img/down-arrow-dark.svg" alt="Expand menu" class="arrow ms-1">
 										</a>
 										<ul class="dropdown-menu dropdown-menu-animation dropdown-lg mt-0 mt-lg-3 p-3 border-radius-lg"
 											aria-labelledby="navbarDropdown4">

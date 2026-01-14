@@ -36,7 +36,7 @@ export default {
                         <div
                             class="colored-shadow"
                             style="
-                                background-image: url('./assets/img/sponsors/sbc_br.png');
+                                background-image: url('/assets/img/sponsors/sbc_br.png');
                             "
                         ></div>
                     </template>

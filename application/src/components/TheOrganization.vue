@@ -32,7 +32,7 @@ export default {
                             </template>
                             <template #image-shadow>
                                 <div class="colored-shadow"
-                                    style="background-image: url(&quot;./assets/img/logos/uninassau.png&quot;);">
+                                    style="background-image: url(&quot;/assets/img/logos/uninassau.png&quot;);">
                                 </div>
                             </template>                                
                             <template #name>
@@ -46,7 +46,7 @@ export default {
                             </template>
                             <template #image-shadow>
                                 <div class="colored-shadow"
-                                    style="background-image: url(&quot;./assets/img/logos/ufs.png&quot;);">
+                                    style="background-image: url(&quot;/assets/img/logos/ufs.png&quot;);">
                                 </div>
                             </template>                                
                             <template #name>
