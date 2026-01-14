@@ -73,10 +73,10 @@
 									<RouterLink :to="Tr.i18nRoute({ name: 'call-for-participation' })"
 										class="nav-link ps-2 d-flex cursor-pointer align-items-center"
 										id="navbarDropdown1" role="button" data-bs-toggle="dropdown"
-										aria-expanded="false"
+										aria-expanded="false" aria-haspopup="true"
 									>
 										{{ $t("nav.for_authors") }}
-										&nbsp;<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path fill="currentColor" d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"/></svg>
+										&nbsp;<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512" aria-hidden="true" focusable="false"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path fill="currentColor" d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"/></svg>
 									</RouterLink>
 									<ul class="dropdown-menu dropdown-menu-animation dropdown-lg mt-0 mt-lg-3 p-3 border-radius-lg"
 										aria-labelledby="navbarDropdown1">
@@ -186,12 +186,13 @@
 									</ul>
 								</li>
 								<li class="nav-item dropdown dropdown-hover mx-2">
-									<a class="nav-link ps-2 d-flex cursor-pointer align-items-center" href="#"
+									<RouterLink :to="Tr.i18nRoute({ name: 'getting-started' })"
+										class="nav-link ps-2 d-flex cursor-pointer align-items-center"
 										id="navbarDropdown2" role="button" data-bs-toggle="dropdown"
-										aria-expanded="false">
+										aria-expanded="false" aria-haspopup="true">
 										{{ $t("nav.for_attendees") }} 
-										&nbsp;<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path fill="currentColor" d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"/></svg>
-									</a>
+										&nbsp;<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512" aria-hidden="true" focusable="false"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path fill="currentColor" d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"/></svg>
+									</RouterLink>
 									<ul class="dropdown-menu dropdown-menu-animation dropdown-lg mt-0 mt-lg-3 p-3 border-radius-lg"
 										aria-labelledby="navbarDropdown2">
 										<li>

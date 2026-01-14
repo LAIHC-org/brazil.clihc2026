@@ -22,13 +22,13 @@
                             <li class="nav-item">
                                 <a class="nav-link pe-1" href="https://www.facebook.com/clihc" target="_blank" rel="noopener noreferrer">
                                     <i class="fab fa-facebook text-lg opacity-8"></i>
-                                    <span class="sr-only">{{ $t("nav.facebook") }}</span>
+                                    <span class="visually-hidden">{{ $t("nav.facebook") }}</span>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link pe-1" href="https://x.com/clihc2026" target="_blank" rel="noopener noreferrer">
                                     <i class="fab fa-x-twitter text-lg opacity-8"></i>
-                                    <span class="sr-only">{{ $t("nav.twitter") }}</span>
+                                    <span class="visually-hidden">{{ $t("nav.twitter") }}</span>
                                 </a>
                             </li>
                         </ul>
