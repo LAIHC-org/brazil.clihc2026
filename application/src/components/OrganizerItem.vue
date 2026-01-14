@@ -12,7 +12,7 @@
                 <slot name="institution"></slot>
                 <br>
                 <slot name="email"></slot>
-                <!--<a class="uline" href="mailto:web.2022@mexihc.org">interactivity.2022@mexihc.org</a>-->
+                <!--<a class="uline" href="mailto:web.2022@clihc.org">interactivity.2022@clihc.org</a>-->
             </p>
         </div>
     </div>

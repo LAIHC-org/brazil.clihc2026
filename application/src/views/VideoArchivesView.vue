@@ -184,7 +184,7 @@ import TheHeader from '@/components/Header.vue'
                         <li class="list-group-item d-flex justify-content-between align-items-start">
                             <div class="ms-2 me-auto">
                                 <a class="uline" href="https://fb.watch/g_mtXxaKjw/">
-                                    <strong>MEXIHC 2022</strong> 
+                                    <strong>CLIHC 2022</strong> 
                                     Opening Ceremony 
                                     (facebook video, T 00:00:00)
                                 </a>
