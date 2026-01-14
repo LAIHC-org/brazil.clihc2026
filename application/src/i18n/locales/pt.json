@@ -132,7 +132,9 @@
         "organization": "Organização",
         "organization_message": "Esta edição é organizada pelas seguintes instituições.",
         "coordination": "Coordenação do Programa",
-        "coordination_message": "O programa acadêmico é coordenado por representantes das seguintes instituições."
+        "coordination_message": "O programa acadêmico é coordenado por representantes das seguintes instituições.",
+        "supporters": "Com o apoio de",
+        "supporters_message": "Esta conferência se realiza graças ao apoio das seguintes instituições."
     },
     "accepted_papers": {
         "title": "Artigos Aceitos",

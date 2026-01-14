@@ -35,7 +35,18 @@
 							<tbody>
 								<tr>
 									<th scope="row">{{ $t("about.call") }}</th>
-									<td>{{ $t("nav.pending") }}</td>
+									<td>
+										<RouterLink
+											:to="
+												Tr.i18nRoute({
+													name: 'call-for-participation',
+												})
+											"
+											class="ulink"
+										>
+											<strong>{{ $t("about.open") }}</strong>
+										</RouterLink>
+									</td>
 								</tr>
 								<tr>
 									<th scope="row">{{ $t("about.registration") }}</th>

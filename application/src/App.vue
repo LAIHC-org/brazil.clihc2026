@@ -12,7 +12,7 @@ import TheFooter from '@/components/TheFooter.vue'
       <RouterView />
     </div>
   </main>
-  <theFooter />
+  <TheFooter />
 </template>
 
 <style>

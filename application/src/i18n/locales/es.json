@@ -44,7 +44,7 @@
         "accepted_papers_message": "",        
         "pending": "Pendiente",
         "copyright": "© 2026 Conferencia Latinoamericana de Interacción Humano-Computadora, una conferencia de LAIHC.",
-        "back_to_top": "Volver arriba"
+        "back_to_top": "Volver arriba" 
     },
     "jumbotron":{
         "conference": "XII Conferencia Latinoamericana de Interacción Humano-Computadora.",
@@ -131,7 +131,9 @@
         "organization": "Organización",
         "organization_message": "Esta edición es organizada por las siguientes instituciones.",
         "coordination": "Coordinación del Programa",
-        "coordination_message": "El programa académico es coordinado por representantes de las siguientes instituciones."
+        "coordination_message": "El programa académico es coordinado por representantes de las siguientes instituciones.",
+        "supporters": "Con el apoyo de",
+        "supporters_message": "Esta conferencia se realiza gracias al apoyo de las siguientes instituciones."
     },
     "accepted_papers": {
         "title": "Artículos aceptados",
