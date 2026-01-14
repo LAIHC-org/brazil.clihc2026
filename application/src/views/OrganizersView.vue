@@ -707,38 +707,16 @@ export default {
 
                         <div class="col-xl-9">
                             <div class="row">
-                                <div class="col-md-4 ms-auto mt-md-0 mt-4">
-                                    <OrganizerItem>
-                                        <template #image>
-                                            <div class="d-block blur-shadow-image">
-                                                <img src="/assets/img/nophoto.png" alt="Placeholder portrait"
-                                                    class="img-fluid shadow rounded-3">
-                                            </div>
-                                            <div class="colored-shadow"
-                                                style="background-image: url(&quot;/assets/img/nophoto.png&quot;);">
-                                            </div>
-                                        </template>
-                                        <template #name>
-                                            Dr. Rubens Matos
-                                        </template>
-                                        <template #institution>
-                                            Instituto Federal de Sergipe (IFS), BR
-                                        </template>
-                                        <template #email>
-                                            
-                                        </template>
-                                    </OrganizerItem>
-                                </div>
 
-                                <div class="col-md-4 ms-auto mt-md-0 mt-4">
+                                <div class="col-md-4 mx-auto mt-md-0 mt-4">
                                     <OrganizerItem>
                                         <template #image>
                                             <div class="d-block blur-shadow-image">
-                                                <img src="/assets/img/nophoto.png" alt="Placeholder portrait"
+                                                <img src="/assets/img/people/ludmilla.png" alt="Placeholder portrait"
                                                     class="img-fluid shadow rounded-3">
                                             </div>
                                             <div class="colored-shadow"
-                                                style="background-image: url(&quot;/assets/img/nophoto.png&quot;);">
+                                                style="background-image: url(&quot;/assets/img/people/ludmilla.png&quot;);">
                                             </div>
                                         </template>
                                         <template #name>
