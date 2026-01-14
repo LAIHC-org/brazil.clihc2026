@@ -1,4 +1,5 @@
 <script>
+	import { onBeforeUnmount, onMounted } from 'vue'
 	import LanguageSwitcher from '@/components/LanguageSwitcher.vue'
 	import Tr from '@/i18n/translation'
 	import { RouterLink } from 'vue-router';
@@ -6,6 +7,32 @@
 	export default {
 		components: { LanguageSwitcher, RouterLink },
 		setup() {
+			let onScroll = null
+
+			onMounted(() => {
+				const nav = document.querySelector('.navbar-color-on-scroll')
+				const icon = document.querySelector('.icon-language')
+
+				onScroll = () => {
+					if (!nav) return
+					const scrollTop = document.documentElement.scrollTop || document.body.scrollTop
+					const isScrolled = scrollTop >= 200
+					nav.classList.toggle('scrolled', isScrolled)
+					if (icon) {
+						icon.classList.toggle('text-white', isScrolled)
+					}
+				}
+
+				window.addEventListener('scroll', onScroll, { passive: true })
+				onScroll()
+			})
+
+			onBeforeUnmount(() => {
+				if (onScroll) {
+					window.removeEventListener('scroll', onScroll)
+				}
+			})
+
 			return { Tr }
 		}
 	}
@@ -19,7 +46,7 @@
 				<nav class="navbar navbar-expand-lg  blur blur-rounded top-0 z-index-fixed shadow position-absolute my-3 py-2 start-0 end-0 mx-4 navbar-color-on-scroll justify-content-between">
 					<div class="container-fluid">
 						<a class="navbar-brand font-weight-bolder ms-sm-3" href="./" rel="tooltip"
-							title="Ninth Mexican International Conference on Human-Computer Interaction" data-placement="bottom"
+							title="XII Latin American Conference on Human-Computer Interaction" data-placement="bottom"
 							tabindex="0">
 							<img src="/assets/img/logos/clihc2023.svg" height="25" alt="CLIHC Logo">
 							CLIHC 2026
@@ -299,8 +326,7 @@
 											id="navbarDropdown4" role="button" data-bs-toggle="dropdown"
 											aria-expanded="false">
 											Accesibility
-											<img src="/assets/img/down-arrow-dark.svg" alt="down-arrow"
-												class="arrow ms-1" alt="">
+											<img src="/assets/img/down-arrow-dark.svg" alt="Expand menu" class="arrow ms-1">
 										</a>
 										<ul class="dropdown-menu dropdown-menu-animation dropdown-lg mt-0 mt-lg-3 p-3 border-radius-lg"
 											aria-labelledby="navbarDropdown4">

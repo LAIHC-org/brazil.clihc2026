@@ -60,7 +60,7 @@ export default {
     <header class="header-2">
         <div
             class="page-header section-height-100 relative"
-            style="background-image: url('./assets/img/banner-2.png')"
+            style="background-image: url('/assets/img/banner-2.png')"
         >
             <div class="container">
                 <div class="row">
@@ -73,7 +73,7 @@ export default {
                                     <img
                                         :src="logoSrc"
                                         height="250"
-                                        alt="CLIHIC 2026 logo"
+                                        alt="CLIHC 2026 logo"
                                         style="position: relative; top: -2px"
                                     /><br />
                                 </h1>

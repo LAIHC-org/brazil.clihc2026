@@ -20,13 +20,13 @@
                     <div>
                         <ul class="d-flex flex-row ms-n3 nav">
                             <li class="nav-item">
-                                <a class="nav-link pe-1" href="https://www.facebook.com/clihc" target="_blank">
+                                <a class="nav-link pe-1" href="https://www.facebook.com/clihc" target="_blank" rel="noopener noreferrer">
                                     <i class="fab fa-facebook text-lg opacity-8"></i>
                                     <span class="sr-only">{{ $t("nav.facebook") }}</span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link pe-1" href="https://x.com/clihc2026" target="_blank">
+                                <a class="nav-link pe-1" href="https://x.com/clihc2026" target="_blank" rel="noopener noreferrer">
                                     <i class="fab fa-x-twitter text-lg opacity-8"></i>
                                     <span class="sr-only">{{ $t("nav.twitter") }}</span>
                                 </a>
@@ -153,7 +153,7 @@
                             {{ $t("nav.copyright") }}
                         </p>
                         <p class="my-0  text-sm">
-                            <a class="uline" href="CHANGELOG.md">v2026.1.0.8</a>
+                            <span class="uline">v2026.1.0.8</span>
                         </p>
                     </div>
                 </div>

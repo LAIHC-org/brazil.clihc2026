@@ -52,23 +52,6 @@
   <div id="app"></div>
   <script type="module" src="/src/main.js"></script>
   <script>
-    var myNav = document.getElementsByClassName('navbar-color-on-scroll');
-    var myIcon = document.getElementsByClassName('icon-language');
-
-    window.onscroll = function () {
-      var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-      var scrollThreshold = 200;
-
-      if (scrollTop >= scrollThreshold) {
-        myNav[0].classList.add("scrolled");
-        myIcon[0].classList.add("text-white");
-      } else {
-        myNav[0].classList.remove("scrolled");
-        myIcon[0].classList.remove("text-white");
-      }
-    };
-  </script>
-  <script>
     if (sessionStorage.redirect) {
       const redirect = sessionStorage.redirect;
       delete sessionStorage.redirect;
