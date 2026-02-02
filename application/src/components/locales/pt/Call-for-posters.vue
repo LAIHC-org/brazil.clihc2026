@@ -1,102 +1,164 @@
 <script>
-import OrganizerItem from '@/components/OrganizerItem.vue';
+import OrganizerItem from "@/components/OrganizerItem.vue";
 
-import Tr from '@/i18n/translation'
+import Tr from "@/i18n/translation";
 
 export default {
     components: {
-        OrganizerItem
+        OrganizerItem,
     },
     setup() {
         return {
-            Tr
-        }
-    }
-}
+            Tr,
+        };
+    },
+};
 </script>
 
 <template>
-    <!--
     <ol class="list-group list-group-numbered my-3">
         <li class="list-group-item d-flex justify-content-between align-items-start">
-        <div class="ms-2 me-auto">
-            <strong class="text-primary text-gradient">Prazo de envio:</strong> <del>31 de julho</del> <del>11 de agosto PRORROGADA</del> <strong class="text-danger"> {{ $t("about.closed") }}</strong><br>
-            <RouterLink :to="Tr.i18nRoute({ name: 'call-for-posters', hash: '#cpt-dates'})" class="uline">
-                Veja todas as datas importantes
-            </RouterLink>            
-        </div>
+            <div class="ms-2 me-auto">
+                <strong class="text-primary text-gradient">Prazo para submissão:</strong>
+                <strong class="text-danger"> 05 de abril de 2026</strong><br />
+                <RouterLink
+                    :to="Tr.i18nRoute({ name: 'call-for-posters', hash: '#cpt-dates' })"
+                    class="uline"
+                >
+                    Ver todas as datas importantes
+                </RouterLink>
+            </div>
         </li>
     </ol>
 
     <p>
-        Convidamos praticantes, pesquisadores e estudantes a submeter seus trabalhos para a trilha de pôsteres no CLIHC
-        2023. Os pôsteres proporcionam uma ótima oportunidade para acadêmicos e praticantes obterem um feedback valioso
-        sobre trabalhos em estágio inicial e discutir possíveis colaborações. Os pôsteres devem apresentar trabalhos em
-        andamento, resultados preliminares, estudos em pequena escala, novidades científicas e profissionais de última hora
-        que mostrem promessa, demonstração de ferramentas técnicas, etc. As contribuições serão exibidas em uma sessão de
-        pôsteres durante a conferência CLIHC. Os trabalhos submetidos à trilha de pôsteres podem ser escritos em inglês,
-        espanhol ou português e devem ser redigidos na forma de breves artigos de pesquisa autocontidos.
+        Prezados colegas, cordiais saudações: convidamos docentes, pesquisadores,
+        estudantes, profissionais e pessoas da indústria a submeterem seus trabalhos à
+        trilha de pôsteres da
+        <a href="https://clihc2026.laihc.org/" class="uline"
+            >XII Conferência Latino-Americana de Interação Humano-Computador (CLIHC
+            2026)</a
+        >.
     </p>
 
-    <h3 id="cpt-dates">Datas Importantes (Pôsteres)</h3>
+    <p>
+        Os pôsteres devem apresentar trabalhos em andamento ou em estágio inicial, com
+        resultados preliminares. As submissões podem ser escritas em inglês, espanhol ou
+        português, devem ser anônimas e ter no máximo 2 páginas, incluindo referências.
+    </p>
+
+    <p>
+        A conferência acontecerá em Aracaju, Brasil, de 06 a 08 de maio de 2026.
+    </p>
+
+    <p>
+        Os temas podem abranger todos os aspectos de IHC, incluindo, mas não se
+        limitando a:
+    </p>
+
+    <ol>
+        <li>Computação afetiva</li>
+        <li>Interação cérebro-computador (BCI)</li>
+        <li>CSCW e computação social</li>
+        <li>Métodos de design</li>
+        <li>Educação e IHC</li>
+        <li>Interação incorporada</li>
+        <li>IHC para o desenvolvimento (HCI4D)</li>
+        <li>Saúde e IHC</li>
+        <li>
+            IHC e Inteligência Artificial (por exemplo, IA centrada no ser humano e
+            design de interação; interação humano-IA; IHC em sistemas com IA; experiência
+            do usuário e design para sistemas de IA; IHC responsável e ética para
+            aplicações de IA; inteligência artificial explicável - XAI)
+        </li>
+        <li>IHC na sociedade</li>
+        <li>Inclusão e acessibilidade</li>
+        <li>Interfaces de usuário inovadoras</li>
+        <li>Avaliação de interação</li>
+        <li>Interfaces e interação em jogos</li>
+        <li>Computação móvel</li>
+        <li>Percepção e visualização</li>
+        <li>Interação humano-robô e telepresença</li>
+        <li>Experiência do usuário (UX) e usabilidade</li>
+        <li>Propriedade intelectual e IHC</li>
+    </ol>
+
+    <h3>Submissão e datas importantes</h3>
+    <p>
+        Todos os manuscritos devem ser submetidos totalmente anonimizados. Por favor,
+        considere um público internacional: por exemplo, evite termos locais e use o
+        sistema internacional de unidades. Além disso, considere seguir as
+        <a
+            target="_blank"
+            href="https://clihc2023.laihc.org/en/accessibility-recommendations-for-authors"
+            class="uline"
+            rel="noopener noreferrer"
+            >diretrizes de acessibilidade (edição CLIHC 2023, abre em uma nova guia)</a
+        >.
+    </p>
+
+    <h4 id="cpt-dates">Datas importantes (Pôsteres)</h4>
     <ul>
-        <li>Submissão dos artigos de pôster: <del>31 de julho</del> 11 de agosto PRORROGADA</li>
-        <li>Notificação: 28 de agosto</li>
-        <li>Versão final: 14 de setembro</li>
-        <li>Evento: 30 a 31 de outubro, 1 de novembro</li>
+        <li>Submissão de pôsteres: <strong class="text-danger">05 de abril de 2026</strong></li>
+        <li>Notificação: 15 de abril de 2026</li>
+        <li>Versão final: 20 de abril de 2026</li>
+        <li>Evento: 06 – 08 de maio de 2026</li>
     </ul>
 
-    <h3>Detalhes da Submissão</h3>
+    <h3>Código de Ética</h3>
+    <p>
+        Seguimos o
+        <a href="https://www.acm.org/code-of-ethics" class="uline">Código de Ética da ACM</a>.
+        Esperamos que todas as submissões, a pesquisa subjacente e o comportamento
+        durante o processo de revisão e a conferência cumpram os princípios e
+        responsabilidades estabelecidos pelo código.
+    </p>
 
-    <P>
-        Os autores que desejarem enviar um artigo devem:
-    </P>
+    <h3>Trilha de Pôsteres (2 páginas)</h3>
+    <p>
+        A trilha de pôsteres é destinada a apresentações e discussões de trabalhos em
+        andamento ou em estágio inicial, com resultados preliminares. O limite máximo
+        para pôsteres é de 2 páginas, incluindo referências, e os trabalhos devem ser
+        escritos em inglês, português ou espanhol.
+    </p>
+
+    <h3>Processo de submissão</h3>
+    <p>
+        As submissões de pôsteres devem ser feitas por meio do sistema JEMS3 (Journal
+        and Event Management System):
+        <a href="https://jems3.sbc.org.br/events/" class="uline"
+            >https://jems3.sbc.org.br/events/</a
+        >
+    </p>
+
+    <p>
+        O formato de submissão para cada categoria seguirá o template da Sociedade
+        Brasileira de Computação. Os autores podem escolher trabalhar em um dos
+        seguintes formatos:
+    </p>
+
     <ul>
         <li>
-            Submeter um artigo de 4 páginas utilizando o <a href="https://www.acm.org/publications/proceedings-template"
-                class="uline">novo formato de artigo mestre da ACM</a>. Os autores podem optar por trabalhar em um dos
-            seguintes formatos:
-            <ul>
-                <li>Microsoft Word</li>
-                <li>LaTeX (recomendado)</li>
-            </ul>
+            <a
+                href="https://www.sbc.org.br/wp-content/uploads/2024/07/modelosparapublicaodeartigos.zip"
+                class="uline"
+                >Microsoft Word e LaTeX (recomendado)</a
+            >
         </li>
         <li>
-            Todos os materiais devem ser enviados eletronicamente para o <a
-                href="https://easychair.org/conferences/?conf=clihc2023" class="uline">Sistema de Conferências
-                EasyChair</a>, para a trilha de Oficinas e Tutoriais, até a data limite.
+            <a
+                href="https://www.overleaf.com/latex/templates/sbc-conferences-template-updated-sbc-template-dot-sty-v2017/pyhttxftxjqn"
+                class="uline"
+                >Overleaf</a
+            >
         </li>
     </ul>
-    <p>
-        Sua submissão deve ser um trabalho original. Não pode estar sob revisão simultânea para publicação por outra
-        conferência ou periódico, nem ter sido publicada em outro lugar. Por favor, envie referências precisas e completas.
-    </p>
-    <p>
-        Pôsteres aceitos podem escolher uma das seguintes mídias de publicação:
-    </p>
-    <ul>
-        <li>Anais da Conferência publicados no ACM DL. Somente submissões em inglês podem ser publicadas nessa mídia. Se sua
-            submissão foi aceita em espanhol ou português e deseja publicar aqui, será necessário traduzir sua submissão
-            original para o inglês.</li>
-        <li>Avances en Interacción Humano-Computadora. Somente submissões em espanhol ou inglês podem ser publicadas nessa
-            mídia. Se sua submissão foi aceita em português e deseja publicar aqui, será necessário traduzir sua submissão
-            original para o espanhol ou inglês.</li>
-    </ul>
 
-    <h3>Processo de Revisão</h3>
     <p>
-        Os artigos serão revisados em sistema de avaliação por pares, com revisão cega, por membros do Subcomitê do Programa
-        da Trilha de Pôsteres do CLIHC 2023 (a ser determinado). As submissões serão avaliadas com base em sua
-        originalidade, importância da contribuição para o campo, correção técnica e apresentação.
-    </p>
-    <p>
-        Os responsáveis pelos pôsteres enviarão instruções de exposição aos autores dos artigos aceitos.
-    </p>
-
-    <h3>Participação</h3>
-    <p>
-        Um autor de cada submissão aceita deve se inscrever na conferência e apresentar o pôster, com preferência para
-        apresentação presencial. No entanto, opções de apresentação virtual podem
+        Mais informações:
+        <a href="https://clihc2026.laihc.org/en/call-for-posters" class="uline"
+            >https://clihc2026.laihc.org/en/call-for-posters</a
+        >
     </p>
 
     <h3 class="my-4">{{ $t("organizers.posters_chairs_title") }}</h3>
@@ -105,20 +167,20 @@ export default {
             <OrganizerItem>
                 <template #image>
                     <div class="d-block blur-shadow-image">
-                        <img src="/assets/img/people/jaime.png" alt="Jaime" class="img-fluid shadow rounded-3">
+                        <img
+                            src="/assets/img/people/sanely.jpg"
+                            alt="Laura Sanely Gaytán Lugo"
+                            class="img-fluid shadow rounded-3"
+                        />
                     </div>
-                    <div class="colored-shadow" style="background-image: url(&quot;/assets/img/people/jaime.png&quot;);">
-                    </div>
+                    <div
+                        class="colored-shadow"
+                        style="background-image: url('/assets/img/people/sanely.jpg');"
+                    ></div>
                 </template>
-                <template #name>
-                    Jaime Muñoz Arteaga
-                </template>
-                <template #institution>
-                    Universidad Autónoma de Aguascalientes, MX
-                </template>
-                <template #email>
-                    posters@laihc.org
-                </template>
+                <template #name> Dra. Laura Sanely Gaytán Lugo </template>
+                <template #institution> Universidad de Colima (UCOL), MX </template>
+                <template #email> </template>
             </OrganizerItem>
         </div>
 
@@ -126,23 +188,21 @@ export default {
             <OrganizerItem>
                 <template #image>
                     <div class="d-block blur-shadow-image">
-                        <img src="/assets/img/people/adriana.png" alt="Adriana" class="img-fluid shadow rounded-3">
+                        <img
+                            src="/assets/img/people/napoliana.jpg"
+                            alt="Napoliana Souza"
+                            class="img-fluid shadow rounded-3"
+                        />
                     </div>
-                    <div class="colored-shadow" style="background-image: url(&quot;/assets/img/people/adriana.png&quot;);">
-                    </div>
+                    <div
+                        class="colored-shadow"
+                        style="background-image: url('/assets/img/people/napoliana.jpg')"
+                    ></div>
                 </template>
-                <template #name>
-                    Adriana Iñiguez
-                </template>
-                <template #institution>
-                    Universidad de Guadalajara, MX
-                </template>
-                <template #email>
-                    posters@laihc.org
-                </template>
+                <template #name> Dra. Napoliana Souza </template>
+                <template #institution> Universidade do Estado do Amapá (UEAP), BR </template>
+                <template #email> </template>
             </OrganizerItem>
         </div>
     </div>
-    -->
-    <p class="mt-6 text-center">A chamada para pôsteres será anunciada em breve.</p>
 </template>

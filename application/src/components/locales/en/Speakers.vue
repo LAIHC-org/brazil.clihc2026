@@ -1,67 +1,74 @@
 <script setup>
-import SpeakerLargeItem from '@/components/SpeakerLargeItem.vue'
+import SpeakerLargeItem from "@/components/SpeakerLargeItem.vue";
 </script>
 
 <template>
+    <SpeakerLargeItem>
+        <template #image>
+            <img
+                id="luciana-zaina"
+                class="img border-radius-lg w-100 position-relative z-index-2"
+                src="/assets/img/people/lucianaZaina.png"
+                alt="Luciana Zaina"
+            />
+        </template>
+        <template #image-shadow>
+            <div
+                class="colored-shadow"
+                style="background-image: url('/assets/img/people/lucianaZaina.png')"
+            ></div>
+        </template>
+        <template #name> Dr. Luciana Zaina </template>
+
+        <p>
+            She is a Full Professor at the Department of Computing of the Federal
+            University of São Carlos, Brazil. Her expertise lies in UX design and
+            empirical studies in both Human–Computer Interaction and Software Engineering.
+            She has served as principal investigator on Research, Development, and
+            Innovation projects funded by Brazilian agencies (FAPESP, CNPq, and FUNDEP) as
+            well as by Brazilian software companies. She was featured in an interview on
+            the future of Agile UX in industry, published in Interaction Design: Beyond
+            Human–Computer Interaction (2023), one of the most widely adopted HCI books in
+            academia and professional practice. Her current research interests include
+            user experience design and evaluation, user experience in complex systems, and
+            long-term user experience, developed in close collaboration with industry
+            partners in Brazil. Since 2020, she has been recognized as a CNPq Fellow
+            (DT-2), an award granted to Brazilian researchers acknowledged as outstanding
+            leaders in applied, industry-oriented research.
+        </p>
+    </SpeakerLargeItem>
+
+    <SpeakerLargeItem>
+        <template #image>
+            <img
+                id="pedro-reynolds"
+                class="img border-radius-lg w-100 position-relative z-index-2"
+                src="/assets/img/people/pedroReynolds.png"
+                alt="Pedro Reynolds-Cuéllar"
+            />
+        </template>
+        <template #image-shadow>
+            <div
+                class="colored-shadow"
+                style="background-image: url('/assets/img/people/pedroReynolds.png')"
+            ></div>
+        </template>
+        <template #name> Dr. Pedro Reynolds-Cuéllar </template>
+
+        <p>
+            He is a Research Scientist at the Robotics and AI Institute (RAI), conducting
+            research that provides data to support evidence-based societal decisions on
+            the design, integration, and regulation of robotics and artificial
+            intelligence. He holds a Bachelor of Science in Linguistics from the National
+            University of Colombia and a Master of Science from the Personal Robots group
+            at the MIT Media Lab. He completed his Ph.D. jointly in the Arts, Culture, &
+            Technology and Media Arts and Sciences departments at the MIT Media Lab. He is
+            also a co-founder of Diversa, a design collective and organization focused on
+            supporting rural technology initiatives across Colombia.
+        </p>
+    </SpeakerLargeItem>
+
     <!--
-    <SpeakerLargeItem>
-        <template #image>
-            <img id="roberto-martinez" class="img border-radius-lg w-100 position-relative z-index-2"
-                src="/assets/img/people/roberto.png" alt="Roberto" />
-        </template>
-        <template #image-shadow>
-            <div class="colored-shadow" style="background-image: url(&quot;/assets/img/people/roberto.png&quot;);">
-            </div>
-        </template>
-        <template #name>
-            Dr. Roberto Martinez-Maldonado
-        </template>
-
-        <p>
-            Dr. Roberto Martinez-Maldonado received the Ph.D. degree in Information Technologies from the University of
-            Sydney in 2014. He is currently a Senior Lecturer of Learning Analytics and Human-Computer Interaction with the
-            Faculty of Information Technology and Coordinator of the Centre for Learning Analytics with Monash University,
-            Melbourne, VIC, Australia. He is a co-author of numerous research papers. He is the first Australian/Mexican to
-            win the Swiss-based Jacobs Foundation Research Fellowship (2021–23) for his pioneering research in Human-Centred
-            AI in Education. His research focuses on advancing the understanding of socio-technical issues around the use of
-            artificial intelligence in education, promoting the use of human-centred methodologies to create learning
-            analytics interfaces with integrity and enhancing authentic learning spaces with multimodal data-intensive
-            computing capabilities. He has been Program Chair of the International Conference on Learning Analytics and
-            Knowledge and the International Conference of Artificial Intelligence in Education, and he is a regular
-            Associate Chair of the Learning and Education subcommittee of the SIGCHI Conference on Human Factors in
-            Computing Systems. He is Associate Editor of the International Journal of Artificial Intelligence in Education.
-        </p>
-    </SpeakerLargeItem>
-
-    <SpeakerLargeItem>
-        <template #image>
-            <img id="marisol-wong" class="img border-radius-lg w-100 position-relative z-index-2"
-                src="/assets/img/people/marisol2.png" alt="Marisol 2" />
-        </template>
-        <template #image-shadow>
-            <div class="colored-shadow" style="background-image: url(&quot;/assets/img/people/marisol2.png&quot;);">
-            </div>
-        </template>
-        <template #name>
-            Dr. Marisol Wong-Villacres
-        </template>
-
-        <p>
-            Dr. Marisol Wong-Villacres is an Associate Professor at the Computer Science Program at the Escuela Superior
-            Politécnica del Litoral in Guayaquil, Ecuador. In 2021, she earned her PhD degree in Human-Centered Computing
-            from the Georgia Institute of Technology in Atlanta, United States, and in 2011, she earned a master's degree in
-            Human-Computer Interaction at Indiana University, Bloomington. Marisol investigates how theories from the
-            social, cultural, and learning sciences can inform strengths-based co-design of technologies with vulnerable
-            groups such as immigrant families. Contrary to the traditional approach of designing for needs, which tries to
-            correct the deficits of vulnerable populations, the strengths-based design that Marisol explores seeks to
-            recognize, take advantage of, and enhance their knowledge and capabilities. Marisol has been a Fulbright scholar
-            and a Schlumberger Faculty for the Future scholarship recipient. She is also a member of the Latin American
-            Committee of the ACM SIGCHI, is a regular Associate Chair of the Critical Computing subcommittee for CHI, an
-            associate editor for the ACM Journal on Computing and Sustainable Societies, Conference Chair of CLIHC 2023, and
-            Paper Chair of CSCW 2024.
-        </p>
-    </SpeakerLargeItem>
-
     <SpeakerLargeItem>
         <template #image>
             <img id="claudia-lopez" class="img border-radius-lg w-100 position-relative z-index-2"

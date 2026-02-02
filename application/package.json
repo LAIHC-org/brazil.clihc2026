@@ -4,6 +4,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "postbuild": "node scripts/generate-social-pages.js",
     "preview": "vite preview --port 4173",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
