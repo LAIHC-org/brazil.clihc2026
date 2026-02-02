@@ -1,170 +1,190 @@
 <script>
-import OrganizerItem from '@/components/OrganizerItem.vue';
+import OrganizerItem from "@/components/OrganizerItem.vue";
 
-import Tr from '@/i18n/translation'
+import Tr from "@/i18n/translation";
 
 export default {
     components: {
-        OrganizerItem
+        OrganizerItem,
     },
     setup() {
         return {
-            Tr
-        }
-    }
-}
+            Tr,
+        };
+    },
+};
 </script>
 
 <template>
-    <!--
     <ol class="list-group list-group-numbered my-3">
         <li class="list-group-item d-flex justify-content-between align-items-start">
-        <div class="ms-2 me-auto">
-            <strong class="text-primary text-gradient">Fecha límite de envío:</strong> <del>31 de julio</del> <del>11 de agosto EXTENDIDA</del> <strong class="text-danger"> {{ $t("about.closed") }}</strong><br>
-            <RouterLink :to="Tr.i18nRoute({ name: 'graduate-colloquium', hash: '#cgc-dates'})" class="uline">
-                Ver todas las fechas importantes
-            </RouterLink>            
-        </div>
+            <div class="ms-2 me-auto">
+                <strong class="text-primary text-gradient">Fecha límite de envío:</strong>
+                <strong class="text-danger"> 14 de marzo de 2026</strong><br />
+                <RouterLink
+                    :to="Tr.i18nRoute({ name: 'graduate-colloquium', hash: '#cgc-dates' })"
+                    class="uline"
+                >
+                    Ver todas las fechas importantes
+                </RouterLink>
+            </div>
         </li>
-    </ol> 
+    </ol>
 
     <p>
-        El CLIHC 2023 es la conferencia bienal que tiene como objetivo reunir a la comunidad latinoamericana de HCI. El
-        Coloquio de Graduados del CLIHC 2023 brinda la oportunidad a estudiantes latinoamericanos de posgrado que trabajan
-        en HCI y campos relacionados de explorar y desarrollar sus intereses de investigación en un taller
-        interdisciplinario, bajo la guía de un panel de destacados investigadores.
+        CLIHC 2026 es la conferencia bienal que busca reunir a la comunidad
+        latinoamericana de IHC. El Coloquio de Posgrado brinda una oportunidad para que
+        estudiantes de posgrado de América Latina que trabajan en IHC y áreas afines
+        exploren y desarrollen sus intereses de investigación mediante un taller
+        interdisciplinario bajo la guía de un panel de investigadores destacados.
     </p>
 
     <p>
-        Invitamos a los estudiantes que consideren que se beneficiarían de este tipo de retroalimentación sobre su
-        tesis/proyecto final a solicitar esta oportunidad única de compartir su investigación con otros estudiantes en una
-        situación similar, así como con investigadores senior en el campo. Los solicitantes exitosos serán aquellos que
-        muestren un tema claro y enfoque de investigación, y hayan progresado en su trabajo, pero que aún estén en un punto
-        en el que puedan realizar cambios en su plan. Se espera la asistencia en persona para esta actividad.
+        Invitamos a estudiantes de posgrado que consideren que se beneficiarían de este
+        tipo de retroalimentación sobre su trabajo de tesis a postularse a esta
+        oportunidad única para compartir su investigación con otros estudiantes y
+        investigadores senior en el área. Los postulantes seleccionados serán quienes
+        muestren un tema y un enfoque de investigación claros y hayan avanzado, pero no
+        tan lejos como para que ya no puedan hacer cambios en su plan.
     </p>
 
     <p>
-        Además de indicar cómo se beneficiará de la participación, tanto usted como su asesor deben tener claro lo que
-        pueden aportar al Coloquio de Graduados. Ser aceptado en el Coloquio implica un compromiso de brindar y recibir
-        comentarios reflexivos con miras a dar forma a la HCI en América Latina y a los participantes en sus respectivos
-        campos.
+        Además de indicar cómo te beneficiarás de la participación, tanto tú como tu
+        director(a) deben tener claro qué puedes aportar al Coloquio de Posgrado. Ser
+        aceptado en el Coloquio implica un compromiso para dar y recibir comentarios
+        reflexivos con miras a fortalecer la IHC en América Latina y a los demás
+        participantes en sus respectivos campos.
     </p>
 
     <h3>Objetivos</h3>
     <ul>
-        <li>Ofrecer a los estudiantes de posgrado de HCI de América Latina la oportunidad de compartir y discutir su trabajo
-            ante investigadores experimentados.</li>
-        <li>Proporcionar comentarios sobre la investigación actual de los estudiantes y orientación sobre futuras
-            direcciones de investigación.</li>
-        <li>Ofrecer a cada estudiante comentarios y perspectivas frescas sobre su trabajo por parte de investigadores y
-            estudiantes de fuera de su propia institución.</li>
-        <li>Promover el desarrollo de una comunidad de académicos de apoyo y un espíritu de investigación colaborativa entre
-            estudiantes de posgrado de diferentes universidades de América Latina.</li>
-        <li>Permitir que la comunidad conozca los proyectos de investigación desarrollados por estudiantes de posgrado.</li>
+        <li>
+            Ofrecer a estudiantes de posgrado en IHC de América Latina la oportunidad de
+            compartir y discutir su trabajo con investigadores experimentados.
+        </li>
+        <li>
+            Brindar retroalimentación sobre la investigación actual de los estudiantes y
+            orientación sobre futuras líneas de investigación.
+        </li>
+        <li>
+            Ofrecer a cada estudiante comentarios y nuevas perspectivas sobre su trabajo
+            por parte de investigadores y estudiantes de otras instituciones.
+        </li>
+        <li>
+            Promover el desarrollo de una comunidad de apoyo entre académicos y un
+            espíritu de investigación colaborativa entre estudiantes de posgrado de
+            universidades latinoamericanas.
+        </li>
+        <li>
+            Permitir que la comunidad conozca proyectos de investigación desarrollados
+            por estudiantes de posgrado.
+        </li>
     </ul>
 
-    <h3>Durante el Coloquio de Graduados</h3>
-
+    <h3>Durante el Coloquio de Posgrado</h3>
     <p>
-        Los estudiantes aceptados presentarán su trabajo al grupo, con un tiempo sustancial dedicado a la discusión y
-        preguntas por parte de investigadores participantes y otros estudiantes. Se proporcionarán instrucciones detalladas
-        una vez aceptados.
+        Los estudiantes aceptados presentarán su trabajo al grupo, con tiempo suficiente
+        para discusión y preguntas de investigadores participantes y otros asistentes.
+        Las instrucciones detalladas se proporcionarán al momento de la aceptación. Se
+        espera asistencia presencial para esta pista.
     </p>
 
+    <h3>Envíos</h3>
     <p>
-        Cada participante también deberá traer una versión pequeña de un póster que presente su trabajo (por ejemplo,
-        utilizando papel tamaño carta o A4) para compartirlo con mentores y otros estudiantes durante las sesiones del
-        Coloquio. Se espera la asistencia en persona para esta actividad.
+        La propuesta debe tener los siguientes cuatro componentes, todos escritos en
+        inglés, portugués o español.
     </p>
 
-    <h3>Envío de propuestas</h3>
-
-    <P>
-        La propuesta debe incluir los siguientes cuatro componentes, todos escritos en inglés, portugués o español.
-    </P>
     <ul>
         <li>
-            Resumen extendido:
-            una descripción de investigación de 4 páginas (incluyendo referencias) que cubra los aspectos centrales de su
-            trabajo de posgrado. Este documento debe seguir la última versión del <a
-                href="https://www.acm.org/publications/proceedings-template" class="uline">formato de plantilla de artículo
-                principal de ACM</a>. Los puntos clave de este documento incluyen:
+            Resumen extendido: una descripción de investigación de 4 páginas (incluidas
+            las referencias) que cubra aspectos centrales de tu trabajo de posgrado. Este
+            documento debe seguir la última versión de la plantilla de la Sociedad
+            Brasileña de Computación: los autores pueden elegir trabajar en uno de los
+            siguientes formatos: Microsoft Word / LaTeX (recomendado) u Overleaf. Los
+            puntos clave de este documento incluyen:
             <ul>
-                <li>Su situación, es decir, el contexto del programa de posgrado en el que se realiza su trabajo
-                    (institución de origen, país, programa, año de estudio, etc.).</li>
-                <li>Contexto y motivación que impulsan su investigación.</li>
-                <li>Objetivos/preguntas de investigación.</li>
-                <li>Antecedentes/revisión de literatura de trabajos clave que enmarcan su investigación.</li>
-                <li>Hipótesis/tesis y/o declaración del problema.</li>
-                <li>Enfoque y métodos de investigación seguidos, incluyendo justificación relevante.</li>
-                <li>Resultados hasta la fecha y su validez.</li>
-                <li>Estado de la disertación y próximos pasos (es decir, lo que ha hecho y lo que le falta hacer).</li>
+                <li>
+                    Tu situación, es decir, el contexto del programa de posgrado en el
+                    que se desarrolla tu trabajo (institución de origen, país, programa,
+                    año de estudio, etc.).
+                </li>
+                <li>Contexto y motivación que impulsan tu investigación.</li>
+                <li>Objetivos / metas / preguntas de investigación.</li>
+                <li>
+                    Antecedentes/revisión de literatura de trabajos clave que enmarcan tu
+                    investigación.
+                </li>
+                <li>
+                    Hipótesis/tesis, pregunta de investigación y/o planteamiento del
+                    problema.
+                </li>
+                <li>
+                    Enfoque y métodos de investigación seguidos, incluyendo la
+                    justificación relevante.
+                </li>
+                <li>Resultados a la fecha y su validez.</li>
+                <li>
+                    Estado de la tesis y próximos pasos (es decir, lo que has hecho y lo
+                    que falta por hacer).
+                </li>
                 <li>Contribuciones actuales y esperadas.</li>
             </ul>
         </li>
-
         <li>
-            Una declaración de un párrafo sobre los beneficios esperados de la participación tanto para usted como para los
-            demás participantes del coloquio (es decir, qué contribuirá y qué obtendrá) (máximo 1 página).
+            Un párrafo con los beneficios esperados de la participación tanto para ti
+            como para los demás participantes del coloquio (es decir, lo que aportarás y
+            lo que obtendrás) (máx. 1 página).
         </li>
-
         <li>
-            Una carta de nominación de su asesor principal de tesis/proyecto final, que aborde el valor que tendría el
-            Coloquio de Graduados para usted, qué contribución es probable que haga al evento y por qué este es un buen
-            momento para que participe (máximo 1 página).
+            Una carta de nominación de tu director(a) principal de tesis/proyecto final
+            que aborde el valor que tendría el Coloquio de Posgrado para ti, la
+            contribución que probablemente harás al evento y por qué este es un buen
+            momento para participar (máx. 1 página).
         </li>
-
         <li>
-            Una versión concisa de su currículum vitae actual, enfatizando la formación académica, experiencia de
-            investigación y publicaciones relevantes (si las hubiera) (1-2 páginas).
+            Una versión concisa de tu Currículum Vitae actual, enfatizando formación
+            académica, trayectoria de investigación y publicaciones relevantes (si las
+            hay) (1-2 páginas).
         </li>
-
         <li>
-            Envíe su propuesta como un archivo PDF único a través del <a
-                href="https://easychair.org/conferences/?conf=clihc2023" class="uline">Sistema de Conferencias EasyChair
-            </a>, en la categoría del Coloquio de Graduados, antes de la fecha límite.
+            Envía tu propuesta como un único archivo PDF a través de la plataforma JEMS,
+            en la pista del Coloquio de Posgrado antes de la fecha límite:
+            <a href="https://jems3.sbc.org.br/events/" class="uline"
+                >https://jems3.sbc.org.br/events/</a
+            >
         </li>
-
     </ul>
+
     <p>
-        Su propuesta debe ser un trabajo original. No puede estar bajo revisión concurrente para su publicación en otra
-        conferencia o revista, ni haber sido publicada en otro lugar. Por favor, envíe referencias precisas y completas.
+        Las propuestas aceptadas se publicarán en la biblioteca digital SBC-OpenLib
+        (SOL): <a href="https://sol.sbc.org.br/" class="uline">https://sol.sbc.org.br/</a>
     </p>
-    <p>
-        Las propuestas aceptadas pueden elegir uno de los siguientes medios de publicación:
-    </p>
-    <ul>
-        <li>Actas de la conferencia publicadas en ACM DL. Solo se pueden publicar en este medio las propuestas en inglés. Si
-            su propuesta fue aceptada en español o portugués y desea publicar aquí, deberá traducir su propuesta original al
-            inglés.</li>
-        <li>Avances en Interacción Humano-Computadora. Solo se pueden publicar en este medio las propuestas en español o
-            inglés. Si su propuesta fue aceptada en portugués y desea publicar aquí, deberá traducir su propuesta original
-            al español o inglés.</li>
-    </ul>
 
     <h3>Proceso de selección</h3>
     <p>
-        La revisión y decisión de aceptación equilibrarán muchos factores. Esto incluye la calidad de su propuesta y en qué
-        etapa se encuentra en su programa de posgrado. Los candidatos que tengan una idea claramente desarrollada, que sean
-        considerados formalmente por su institución como trabajando en su tesis o proyecto final, y que aún tengan tiempo
-        para ser influenciados por su participación en el Coloquio, recibirán la consideración más fuerte.
+        La revisión y decisión de aceptación equilibrarán muchos factores. Esto incluye
+        la calidad de tu propuesta y tu situación actual en el programa de posgrado. Los
+        candidatos con una idea claramente desarrollada, que sean considerados
+        formalmente por su institución como trabajando en su tesis o proyecto final y
+        que aún tengan tiempo para ser influenciados por la participación en el
+        Coloquio, recibirán la consideración más fuerte.
     </p>
     <p>
-        Además de la evaluación de la calidad de la investigación, el proceso de selección también considerará factores
-        adicionales. El objetivo es identificar un grupo de estudiantes que se beneficiarán significativamente del Coloquio
-        y se apoyarán mutuamente en su crecimiento. Como grupo, los candidatos aceptados exhibirán una diversidad de
-        antecedentes y temas. Se tomará en cuenta su institución, y es poco probable que aceptemos más de dos estudiantes de
-        la misma institución y casi con certeza no aceptaremos más de un estudiante con el mismo asesor.
+        Además de evaluar la calidad de la investigación, el proceso de selección
+        también considerará otros factores. El objetivo es identificar un grupo de
+        estudiantes que se beneficiarán significativamente del Coloquio y se apoyarán
+        entre sí en su crecimiento. Como grupo, los candidatos aceptados exhibirán una
+        diversidad de antecedentes y temas.
     </p>
 
     <h3 id="cgc-dates">Fechas importantes (CG)</h3>
     <ul>
-        <li>Envío de propuestas para el CG: <del>31 de julio</del> 11 de agosto EXTENDIDA</li>
-        <li>Notificación: 28 de agosto</li>
-        <li>Versión final: 11 de septiembre</li>
-        <li>Coloquio de Graduados: Por determinar</li>
+        <li>Envío de propuestas del CG: <strong class="text-danger">14 de marzo de 2026</strong></li>
+        <li>Notificación: 30 de marzo de 2026</li>
+        <li>Envío de versión final: 12 de abril de 2026</li>
+        <li>Coloquio de Posgrado: Por determinar, en mayo de 2026</li>
     </ul>
-
 
     <h3 class="my-4">{{ $t("organizers.graduate_colloquium_chairs_title") }}</h3>
     <div class="row">
@@ -172,20 +192,20 @@ export default {
             <OrganizerItem>
                 <template #image>
                     <div class="d-block blur-shadow-image">
-                        <img src="/assets/img/people/huizilopoztli.png" alt="Huizilopoztli" class="img-fluid shadow rounded-3">
+                        <img
+                            src="/assets/img/people/robertoPereira.png"
+                            alt="Roberto Pereira"
+                            class="img-fluid shadow rounded-3"
+                        />
                     </div>
-                    <div class="colored-shadow"
-                        style="background-image: url(&quot;/assets/img/people/huizilopoztli.png&quot;);">
-                    </div>
+                    <div
+                        class="colored-shadow"
+                        style="background-image: url('/assets/img/people/robertoPereira.png');"
+                    ></div>
                 </template>
-                <template #name>
-                    Huizilopoztli Luna Garcia
-                </template>
-                <template #institution>
-                    UAZ, MX
-                </template>
-                <template #email>
-                </template>
+                <template #name> Dr. Roberto Pereira </template>
+                <template #institution> UFPR, BR </template>
+                <template #email> </template>
             </OrganizerItem>
         </div>
 
@@ -193,23 +213,23 @@ export default {
             <OrganizerItem>
                 <template #image>
                     <div class="d-block blur-shadow-image">
-                        <img src="/assets/img/people/carolina.png" alt="Carolina" class="img-fluid shadow rounded-3">
+                        <img
+                            src="/assets/img/people/claudiaLopez.png"
+                            alt="Claudia López Moncada"
+                            class="img-fluid shadow rounded-3"
+                        />
                     </div>
-                    <div class="colored-shadow"
-                        style="background-image: url(&quot;/assets/img/people/carolina.png&quot;);">
-                    </div>
+                    <div
+                        class="colored-shadow"
+                        style="background-image: url('/assets/img/people/claudiaLopez.png')"
+                    ></div>
                 </template>
-                <template #name>
-                    Carolina Fuentes
-                </template>
+                <template #name> Dra. Claudia López Moncada </template>
                 <template #institution>
-                    Cardiff University, UK
+                    Universidad Técnica Federico Santa María (UTFSM), CL
                 </template>
-                <template #email>
-                </template>
+                <template #email> </template>
             </OrganizerItem>
         </div>
     </div>
-    -->
-    <p class="mt-6 text-center">La convocatoria para el Coloquio de Posgrado será anunciada próximamente.</p>
 </template>
