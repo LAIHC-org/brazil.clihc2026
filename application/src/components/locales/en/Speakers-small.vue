@@ -1,57 +1,85 @@
 <script>
-import SpeakerItem from '../../SpeakerItem.vue'
-import Tr from '@/i18n/translation'
+import SpeakerItem from "../../SpeakerItem.vue";
+import Tr from "@/i18n/translation";
 
 export default {
     components: {
-        SpeakerItem
+        SpeakerItem,
     },
     setup() {
         return {
-            Tr
-        }
-    }
-}
+            Tr,
+        };
+    },
+};
 </script>
 
 <template>
     <div class="row mb-4">
-        <!--
         <SpeakerItem>
             <template #image>
-                <img src="/assets/img/people/roberto.png" alt="Roberto" class="img-fluid shadow rounded-3">
+                <img
+                    src="/assets/img/people/lucianaZaina.png"
+                    alt="Luciana Zaina"
+                    class="img-fluid shadow rounded-3"
+                />
             </template>
             <template #image-shadow>
-                <div class="colored-shadow" style="background-image: url(&quot;/assets/img/people/roberto.png&quot;);">
-                </div>
+                <div
+                    class="colored-shadow"
+                    style="background-image: url('/assets/img/people/lucianaZaina.png')"
+                ></div>
             </template>
-            <template #name>
-                Dr. Roberto Martinez-Maldonado
-            </template>
+            <template #name> Dr. Luciana Zaina </template>
 
-            holds a Ph.D. in Information Technologies and serves as a Senior Lecturer in Learning Analytics and
-            Human-Computer Interaction at Monash University, Australia. He's known for pioneering research in Human-Centred
-            AI in Education, has chaired international conferences, and is an Associate Editor for the International Journal
-            of Artificial Intelligence in Education.
+            She holds a Full Professorship at the Department of Computing of the Federal
+            University of São Carlos, Brazil, specializing in UX design and empirical
+            research in HCI and Software Engineering.
+
+            <p class="mt-2">
+                <RouterLink
+                    :to="
+                        Tr.i18nRoute({ name: 'keynote-speakers', hash: '#luciana-zaina'})
+                    "
+                    class="uline"
+                >
+                    Read more about Dr. Zaina
+                </RouterLink>
+            </p>
         </SpeakerItem>
 
         <SpeakerItem>
             <template #image>
-                <img src="/assets/img/people/marisol2.png" alt="Marisol 2" class="img-fluid shadow rounded-3">
+                <img
+                    src="/assets/img/people/pedroReynolds.png"
+                    alt="Pedro Reynolds-Cuéllar"
+                    class="img-fluid shadow rounded-3"
+                />
             </template>
             <template #image-shadow>
-                <div class="colored-shadow" style="background-image: url(&quot;/assets/img/people/marisol2.png&quot;);"></div>
+                <div
+                    class="colored-shadow"
+                    style="background-image: url('/assets/img/people/pedroReynolds.png')"
+                ></div>
             </template>
-            <template #name>
-                Dr. Marisol Wong-Villacres
-            </template>
+            <template #name> Dr. Pedro Reynolds-Cuéllar </template>
 
-            An Associate Professor at the Computer Science Program of Escuela Superior Politécnica del Litoral, Guayaquil,
-            Ecuador, earned her Ph.D. in Human-Centered Computing from the Georgia Institute of Technology in 2021. Her
-            research focuses on strengths-based co-design of technologies for vulnerable groups, departing from the
-            traditional needs-based approach.
+            He is a Research Scientist at the Robotics and AI Institute (RAI) with an
+            interdisciplinary background spanning linguistics, robotics, and
+            human-centered AI.
+            <p class="mt-2">
+                <RouterLink
+                    :to="
+                        Tr.i18nRoute({ name: 'keynote-speakers', hash: '#pedro-reynolds'})
+                    "
+                    class="uline"
+                >
+                    Read more about Dr. Reynolds-Cuéllar
+                </RouterLink>
+            </p>
         </SpeakerItem>
     </div>
+    <!--
     <div class="row">
         <SpeakerItem>
             <template #image>
@@ -85,6 +113,6 @@ export default {
             including drones, multimodal military interfaces, and aviation safety. With extensive research contributions,
             he's an ACM SIGCHI CHI Academy member and chairs the IFIP Technical Assembly.
         </SpeakerItem>
-        -->
     </div>
+     -->
 </template>

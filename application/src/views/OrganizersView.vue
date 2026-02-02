@@ -344,11 +344,11 @@ export default {
                                     <OrganizerItem>
                                         <template #image>
                                             <div class="d-block blur-shadow-image">
-                                                <img src="/assets/img/nophoto.png" alt="Placeholder portrait"
+                                                <img src="/assets/img/people/marioMoreno.png" alt="Placeholder portrait"
                                                     class="img-fluid shadow rounded-3">
                                             </div>
                                             <div class="colored-shadow"
-                                                style="background-image: url(&quot;/assets/img/nophoto.png&quot;);">
+                                                style="background-image: url(&quot;/assets/img/people/marioMoreno.png&quot;);">
                                             </div>
                                         </template>
                                         <template #name>
@@ -383,18 +383,18 @@ export default {
                                     <OrganizerItem>
                                         <template #image>
                                             <div class="d-block blur-shadow-image">
-                                                <img src="/assets/img/people/rodrigoFreese.jpg" alt="Rodrigo Freese"
+                                                <img src="/assets/img/people/lidianyCerqueira.png" alt="Lidiany Cerqueira Santos"
                                                     class="img-fluid shadow rounded-3">
                                             </div>
                                             <div class="colored-shadow"
-                                                style="background-image: url(&quot;/assets/img/people/rodrigoFreese.jpg&quot;);">
+                                                style="background-image: url(&quot;/assets/img/people/lidianyCerqueira.png&quot;);">
                                             </div>
                                         </template>
                                         <template #name>
-                                            Dr. Rodrigo Gonzatto
+                                            Dr. Lidiany Cerqueira Santos 
                                         </template>
                                         <template #institution>
-                                            Pontifícia Universidade Católica do Paraná (PUCPR), BR
+                                            Universidade Federal de Sergipe (UFS), BR
                                         </template>
                                         <template #email>
                                         </template>
@@ -405,15 +405,15 @@ export default {
                                     <OrganizerItem>
                                         <template #image>
                                             <div class="d-block blur-shadow-image">
-                                                <img src="/assets/img/nophoto.png" alt="Placeholder portrait"
+                                                <img src="/assets/img/people/cams.png" alt="Placeholder portrait"
                                                     class="img-fluid shadow rounded-3">
                                             </div>
                                             <div class="colored-shadow"
-                                                style="background-image: url(&quot;/assets/img/nophoto.png&quot;);">
+                                                style="background-image: url(&quot;/assets/img/people/cams.png&quot;);">
                                             </div>
                                         </template>
                                         <template #name>
-                                            Dr. Carlos Alberto Martínez-Sandoval
+                                            Ms. Carlos Alberto Martínez-Sandoval
                                         </template>
                                         <template #institution>
                                             Universidad Tecnológica de la Mixteca (UTM), MX
@@ -444,11 +444,11 @@ export default {
                                     <OrganizerItem>
                                         <template #image>
                                             <div class="d-block blur-shadow-image">
-                                                <img src="/assets/img/nophoto.png" alt="Placeholder portrait"
+                                                <img src="/assets/img/people/robertoPereira.png" alt="Placeholder portrait"
                                                     class="img-fluid shadow rounded-3">
                                             </div>
                                             <div class="colored-shadow"
-                                                style="background-image: url(&quot;/assets/img/nophoto.png&quot;);">
+                                                style="background-image: url(&quot;/assets/img/people/robertoPereira.png&quot;);">
                                             </div>
                                         </template>
                                         <template #name>
@@ -813,11 +813,11 @@ export default {
                                     <OrganizerItem>
                                         <template #image>
                                             <div class="d-block blur-shadow-image">
-                                                <img src="/assets/img/nophoto.png" alt="Placeholder portrait"
+                                                <img src="/assets/img/people/victorAraujo.png" alt="Placeholder portrait"
                                                     class="img-fluid shadow rounded-3">
                                             </div>
                                             <div class="colored-shadow"
-                                                style="background-image: url(&quot;/assets/img/nophoto.png&quot;);">
+                                                style="background-image: url(&quot;/assets/img/people/victorAraujo.png&quot;);">
                                             </div>
                                         </template>
                                         <template #name>
@@ -900,11 +900,11 @@ export default {
                                     <OrganizerItem>
                                         <template #image>
                                             <div class="d-block blur-shadow-image">
-                                                <img src="/assets/img/nophoto.png" alt="Placeholder portrait"
+                                                <img src="/assets/img/people/pedroReynolds.png" alt="Placeholder portrait"
                                                     class="img-fluid shadow rounded-3">
                                             </div>
                                             <div class="colored-shadow"
-                                                style="background-image: url(&quot;/assets/img/nophoto.png&quot;);">
+                                                style="background-image: url(&quot;/assets/img/people/pedroReynolds.png&quot;);">
                                             </div>
                                         </template>
                                         <template #name>
