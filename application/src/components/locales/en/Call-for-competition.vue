@@ -1,62 +1,73 @@
 <script>
-  import OrganizerItem from '@/components/OrganizerItem.vue';
+import OrganizerItem from "@/components/OrganizerItem.vue";
 
-  import Tr from '@/i18n/translation'
+import Tr from "@/i18n/translation";
 
-  export default {
+export default {
     components: {
-        OrganizerItem
+        OrganizerItem,
     },
     setup() {
-      return {
-          Tr
-      }
-    }
-  }
+        return {
+            Tr,
+        };
+    },
+};
 </script>
 
 <template>
-    <!--
     <ol class="list-group list-group-numbered my-3">
         <li class="list-group-item d-flex justify-content-between align-items-start">
-        <div class="ms-2 me-auto">
-            <strong class="text-primary text-gradient">Deadline for submission:</strong> <del>July 31st</del> <del>August 11th EXTENDED</del> <strong class="text-danger"> {{ $t("about.closed") }}</strong><br>
-        </div>
+            <div class="ms-2 me-auto">
+                <strong class="text-primary text-gradient">Deadline for submission:</strong>
+                <strong class="text-danger"> March 5, 2026</strong><br />
+                <RouterLink
+                    :to="Tr.i18nRoute({ name: 'student-design-competition', hash: '#sdc-dates' })"
+                    class="uline"
+                >
+                    See all important dates
+                </RouterLink>
+            </div>
         </li>
     </ol>
 
     <h3 id="sdc-dates">Important Dates</h3>
     <ul>
-        <li>Submission deadline: <del>July 31st</del> August 11th EXTENDED</li>
-        <li>Notification: August 28th</li>
-        <li>Camera ready: September 14th (for English publication in ACM DL or Spanish publication in “Avances en
-            Interacción Humano-Computadora”)</li>
-        <li>Event Oct 30 - 31, Nov 1</li>
+        <li>Submission deadline: Thursday, March 5, 2026</li>
+        <li>Notification of acceptance: Friday, April 3, 2026</li>
+        <li>Camera-ready deadline: Friday, April 17, 2026</li>
+        <li>Event: May 6-9, Brazil; May 27-29, Mexico</li>
     </ul>
+    <p>Deadlines are at midnight AoE (Anywhere on Earth).</p>
+
+    <h3>What is the Student Design Competition (SDC)?</h3>
     <p>
-        Deadlines are at midnight AoE (Anywhere on Earth).
+        The Student Design Competition (SDC) is an international academic activity of
+        CLIHC 2026 aimed at students. Its objectives are to:
     </p>
-
-    <h3>What is the Student Design Competition at CLIHC 2023?</h3>
-
-    <p>The Student Design Competition is aimed at meeting three goals:</p>
     <ul>
-        <li>Provide an opportunity for students from a variety of backgrounds (e.g., computer science, HCI,
-            industrial design, product design, visual design, interaction design, entrepreneurship etc.) to
-            participate and demonstrate their problem solving and design skills in an international competition with
-            their peers.</li>
-        <li>Provide an opportunity for students presenting at the design competition to meet with the CLIHC
-            community.</li>
-        <li>Provide refreshing perspectives on how design teams from different disciplines and different parts of
-            the world approach a common design problem.</li>
+        <li>
+            Provide a space for students from different disciplines related to
+            Human-Computer Interaction, design, and technology to demonstrate their
+            skills in analysis, research, design, and evaluation.
+        </li>
+        <li>
+            Foster academic exchange among students, researchers, and professionals
+            within the CLIHC community.
+        </li>
+        <li>
+            Offer diverse perspectives on how multidisciplinary teams address relevant
+            social and technological problems in Latin American and international
+            contexts.
+        </li>
     </ul>
+    <p>The SDC is an integral part of the conference's academic program.</p>
 
-    <h3>The Design Brief: Appropriate Solutions for All</h3>
+    <h3>The Design Challenge: Appropriate Solutions for All</h3>
     <p>
-        We ask you to contribute to one (or several) of the 17 Sustainable Development Goals identified by the
-        United Nations:
+        Teams are invited to develop design proposals linked to one or more of the 17
+        Sustainable Development Goals (SDGs) defined by the United Nations:
     </p>
-
     <ul>
         <li>No Poverty</li>
         <li>Zero Hunger</li>
@@ -66,170 +77,472 @@
         <li>Clean Water and Sanitation</li>
         <li>Affordable and Clean Energy</li>
         <li>Decent Work and Economic Growth</li>
-        <li>Industry, Innovation and Infrastructure</li>
-        <li>Reduced Inequality</li>
+        <li>Industry, Innovation, and Infrastructure</li>
+        <li>Reduced Inequalities</li>
         <li>Sustainable Cities and Communities</li>
         <li>Responsible Consumption and Production</li>
         <li>Climate Action</li>
         <li>Life Below Water</li>
         <li>Life on Land</li>
-        <li>Peace, Justice and Strong Institutions</li>
+        <li>Peace, Justice, and Strong Institutions</li>
         <li>Partnerships for the Goals</li>
     </ul>
-
     <p>
-        Your problem and your solution needs to be clearly linked to one (or several) of the goals. Engage with and
-        involve prospective users. Show that the problem is relevant and the solution actually solves the problem in
-        a sustainable way. Look at how others might have tried to solve the problem in the past and come up with a
-        new and innovative approach. Assure meeting ethical criteria.
+        The scope of this call is deliberately broad in order to provide participation
+        opportunities for as many students across Latin America as possible. Each
+        proposed solution must be clearly linked to one (or more) of the 17 Sustainable
+        Development Goals.
     </p>
+    <p>
+        Teams may adopt design strategies such as participatory design, co-creation and
+        co-design, service design, design for social innovation, inclusive design, and
+        open innovation. Teams may use participatory and co-creation approaches with
+        existing technologies or explore opportunities in contemporary technological
+        developments such as 3D printing, digital fabrication, citizen sensing, the
+        maker movement, the sharing economy, big data, social networks, IoT,
+        gamification, new sensors and actuators, and augmented/virtual reality, among
+        others.
+    </p>
+    <p>
+        Teams are expected to adopt user-centered design approaches, grounding their
+        proposals in an understanding of users' needs, contexts, and experiences. The
+        use of user research methods, participatory design, co-creation, and iterative
+        evaluation is strongly encouraged.
+    </p>
+    <p>
+        However, it is important to note that sometimes the best design solution or
+        approach may emerge from simple yet sharp insights uncovered through research
+        and may require only minimal technology. What matters most is that the solution
+        is appropriate for the specific goal being addressed.
+    </p>
+
+    <h3>Design Evaluation Guidelines</h3>
+    <p>
+        For this year's design challenge, teams are especially encouraged to consider
+        the following criteria as guiding principles:
+    </p>
+    <ul>
+        <li>Is the design clearly linked to one of the Sustainable Development Goals?</li>
+        <li>Does the design specify and address a relevant and "burning" problem?</li>
+        <li>Does the design use technology in an appropriate and novel way?</li>
+        <li>Is the design well-crafted and effectively presented?</li>
+        <li>
+            Was the design validated in an appropriate and sound way to demonstrate
+            fulfillment of its design goals?
+        </li>
+        <li>Was relevant prior work properly identified and cited?</li>
+        <li>Were analysis, synthesis, design, and evaluation systematic and sufficient?</li>
+        <li>Was the design developed far enough to demonstrate the key ideas?</li>
+        <li>
+            Were genuine stakeholders involved in the research, development, and
+            evaluation processes?
+        </li>
+        <li>
+            Were the research process and stakeholder involvement ethically appropriate
+            (e.g., institutional guidelines were followed)?
+        </li>
+        <li>
+            Did the team explore the broader ecosystem of stakeholders, conditions, and
+            contexts?
+        </li>
+        <li>
+            Does the design demonstrate the application of user-centered design methods
+            and an understanding of users' needs, contexts, and experiences?
+        </li>
+    </ul>
 
     <h3>Student Team Requirements</h3>
-    <p>
-        Teams must consist of at least two and no more than four students. There is no limit to the number of teams
-        that may compete from any given university or organization. However, one student cannot be part of multiple
-        teams.
-    </p>
-    <p>
-        Submissions are invited from students at all stages of their university careers, from undergraduate to
-        postgraduate level. While not a mandatory requirement, it is strongly encouraged that the teams put forward
-        a multidisciplinary and/or multi-national team.
-    </p>
-    <p>
-        The Student Design Competition is for students. Submit proof of student status by sending a note signed by
-        your academic supervisor verifying the following information:
-    </p>
     <ul>
-        <li>Your university</li>
-        <li>Whether you were a graduate (i.e., Masters or Doctoral level) or undergraduate (i.e., Bachelor level)
-            when the work was done, or confirm that you are either currently registered in an academic program
-            full-time, or will return to be a student in the upcoming semester.</li>
-    </ul>
-
-    <h3>Supervising Team Requirements</h3>
-
-    <ul>
-        <li>Groups of up to four students with one supervisor.</li>
-        <li>Each team must have at least two students and one supervisor.</li>
-        <li>Each supervisor can have only one team.</li>
-        <li>The supervisor may be a professor or industry professional.</li>
-    </ul>
-
-    <p>
-        Academic supervisors, mentors, trainers or people providing additional support must not be co-chairs,
-        reviewers or judges for the competition at the same time. <span class="text-danger">Mentors cannot be
-            authors of the article</span>.
-    </p>
-
-    <h3>Preparing the Submission and Structure of the Competition</h3>
-    <p>The submissions can be in English, Spanish or Portuguese.</p>
-
-    <ol>
+        <li>Teams must consist of at least two (2) and no more than five (5) students.</li>
+        <li>There is no limit to the number of teams per institution.</li>
+        <li>Each student may participate in only one team.</li>
         <li>
-            Submission to enter the competition, by July 31st
-            <ul>
-                <li>
-                    <strong>Slide-deck</strong>: the pdf of a presentation with a maximum of 15 slides (first slide with
-                    name of the students and name of the project). The presentation may include relevant information from
-                    the paper (description of the problem and the solution, research and design methods, why your solution
-                    will be used by prospective users).
-                </li>
-                <li>
-                    <strong>Paper</strong>: a non-anonymized written report of up to 6 pages including references (format:
-                    ACM Master Article Submission Templates), the paper needs to include:
-                    <ul>
-                        <li>A clear description of the problem and the solution</li>
-                        <li>An overview of the research and design methods</li>
-                        <li>The reasons why your solution will be used by prospective users</li>
-                        <li>Acknowledgement of partial or incomplete solutions</li>
-                        <li>Acknowledgement of any assistance drawn from outside the student team (e.g., advisors, domain
-                            experts, existing solutions, users)</li>
-                    </ul>
-                </li>
-            </ul>
+            Submissions are welcome from students at all stages of their academic
+            training, including undergraduate, Master's, and Doctoral levels.
         </li>
         <li>
-            Submission upon acceptance to the competition, by August 25th
-            <ul>
-                <li>
-                    <strong>Paper</strong>: camera-ready version to be published (instructions will be given together with
-                    the acceptance email).
-                </li>
-                <li>
-                    <strong>Video</strong>: illustrating how your solution fits the lives of the users with the help of
-                    scenarios, or addresses human aspects of the chosen sustainable development goals. It may also
-                    illustrate some details of the interface and the information presented (maximum 5 minutes). The Video
-                    may include:
-                    <ul>
-                        <li>Examples of significant contextual data and its analysis (primary, secondary research, or both)
-                        </li>
-                        <li>
-                            Key creative sources of design inspiration (existing designs and systems)
-                            <ul>
-                                <li>Sketches of the evolving solution</li>
-                            </ul>
-                        </li>
-                        <li>Scenarios depicting how the solution fits in the life of users and solves problems / engages or
-                            entertains users</li>
-                        <li>Details of the interface and information design where relevant</li>
-                        <li>Highlights of significant evaluation results</li>
-                    </ul>
-                </li>
-            </ul>
+            Mixed-level teams are explicitly allowed, meaning that a single team may
+            include students from undergraduate, Master's, and/or Doctoral programs,
+            and students from any of these levels may participate.
         </li>
-    </ol>
-
+        <li>
+            Although not mandatory, the formation of multidisciplinary, multinational,
+            and gender-diverse teams is strongly encouraged, in alignment with
+            principles of equity, inclusion, and collaborative design.
+        </li>
+    </ul>
     <p>
-        Selected submissions will be invited to show their work at the conference in a final presentation
-        (face-to-face or virtual). Likewise, all students (authors of the article) must register for the conference,
-        either face-to-face or virtual. The presentations will be evaluated by a panel of judges and must include:
+        The Student Design Competition is exclusively for students. To verify student
+        status, teams must submit a signed statement from their academic supervisor
+        confirming:
+    </p>
+    <ul>
+        <li>The student's institutional affiliation.</li>
+        <li>
+            Whether the student was enrolled at the undergraduate or graduate level at
+            the time the work was conducted, or confirmation that the student is
+            currently enrolled full-time, or will return as a student in the next
+            academic term.
+        </li>
+    </ul>
+
+    <h3>Supervision Requirements</h3>
+    <ul>
+        <li>Each team must have one (1) supervisor.</li>
+        <li>Each supervisor may advise one or multiple teams.</li>
+        <li>Supervisors may be academics or industry professionals.</li>
+        <li>
+            Supervisors, mentors, or advisors may not simultaneously serve as chairs,
+            reviewers, or judges of the Student Design Competition.
+        </li>
+        <li>
+            The supervisor may be included as the last author of the paper, clearly
+            identified as the team advisor. The primary authorship and main contribution
+            of the work must remain with the student team.
+        </li>
+    </ul>
+
+    <h3>Diversity, Equity, and Inclusion</h3>
+    <p>
+        The CLIHC Student Design Competition strongly encourages participation by teams
+        that reflect principles of diversity, equity, and inclusion, in line with the
+        conference and the Human-Computer Interaction community's values.
+    </p>
+    <p>
+        Teams are particularly encouraged to include gender diversity, participants from
+        different social and cultural backgrounds, and disciplinary and academic
+        diversity.
+    </p>
+    <p>
+        These aspects are not part of the evaluation criteria, but serve as guiding
+        principles to promote a more inclusive, representative, and plural academic
+        environment.
     </p>
 
+    <h3>Ethical Aspects</h3>
+    <p>
+        In applicable cases, authors must follow established ethical guidelines for
+        research involving human participants. This includes, but is not limited to,
+        informed consent, data privacy, and respectful treatment of participants.
+    </p>
+    <p>
+        Teams are expected to comply with the relevant institutional, national, and
+        international regulations on research ethics. Submissions that do not adequately
+        address ethical considerations when applicable may be rejected.
+    </p>
+
+    <h3>Preparing Submissions</h3>
+    <p>Submissions may be written in English, Spanish, or Portuguese.</p>
+
+    <h4>Initial Submission (to enter the competition)</h4>
+    <p><strong>Submission Platform</strong></p>
+    <p>
+        All submissions must be made through the JEMS platform (Brazilian Computer
+        Society - SBC).
+    </p>
+    <p><strong>Deadline:</strong> Thursday, March 5, 2026</p>
+
+    <p>The initial submission must include all of the following materials:</p>
+
+    <h4>Paper</h4>
     <ul>
-        <li>The design process that was followed</li>
+        <li>Anonymous document, with no author names, affiliations, or acknowledgments.</li>
+        <li>Maximum length: 5 pages, including references.</li>
+        <li>
+            The submission format for each category will follow the Brazilian Computer
+            Society template. Authors may choose to work in one of the following
+            formats: Microsoft Word and LaTeX (recommended), or Overleaf.
+        </li>
+    </ul>
+
+    <h4>Expected Paper Content</h4>
+    <ul>
+        <li>Description of the problem and its relationship to the selected SDG.</li>
+        <li>Clear description of the proposed solution.</li>
+        <li>Research and design methods used.</li>
+        <li>Justification of the impact and relevance of the proposal.</li>
+        <li>Evidence of validation or evaluation.</li>
+        <li>References to HCI theory and relevant prior work.</li>
+        <li>Acknowledgment of partial or incomplete solutions.</li>
+    </ul>
+
+    <h4>Presentation (Slides)</h4>
+    <ul>
+        <li>PDF file with a maximum of 15 slides.</li>
+        <li>No information identifying the authors or institution.</li>
+    </ul>
+
+    <h4>Expected Presentation Content</h4>
+    <ul>
+        <li>Problem context and justification.</li>
+        <li>SDGs addressed.</li>
+        <li>Summary of the design process.</li>
+        <li>Proposed solution.</li>
+        <li>Users and usage scenarios.</li>
+        <li>Key evaluation evidence.</li>
+        <li>Expected impact.</li>
+    </ul>
+
+    <h4>Video</h4>
+    <ul>
+        <li>Maximum duration: 5 minutes.</li>
+        <li>No identifying information about the team or institution.</li>
+        <li>Maximum file size: 200 MB.</li>
+    </ul>
+
+    <h4>Expected Video Content</h4>
+    <ul>
+        <li>Scenarios showing how the solution fits into users' lives.</li>
+        <li>Context of use and relevant data.</li>
+        <li>Sources of inspiration.</li>
+        <li>Sketches and evolution of the design.</li>
+        <li>Interface or interaction details.</li>
+        <li>Significant evaluation results.</li>
+    </ul>
+
+    <h3>Originality of Submissions</h3>
+    <p>
+        Submissions to the CLIHC 2026 Student Design Competition (SDC) must be original.
+        Proposals must not have been previously published or submitted to other
+        academic competitions or design contests, either nationally or internationally.
+        Failure to comply with this requirement may result in disqualification at any
+        stage of the process.
+    </p>
+
+    <h3>Policy on the Use of Large Language Models (LLMs)</h3>
+    <p>
+        The use of large-scale language models (LLMs), such as ChatGPT or other similar
+        Artificial Intelligence tools, is permitted only if their use is clearly
+        disclosed by the authors.
+    </p>
+    <p>
+        Any content generated with the assistance of an LLM must be explicitly
+        acknowledged whenever such tools are used for purposes beyond basic editing or
+        proofreading of the authors' own text. Authors are responsible for reviewing
+        and complying with the ACM Policy on Authorship and with principles of
+        academic transparency.
+    </p>
+    <p>
+        As part of the submission process, teams must include an explicit declaration
+        regarding the use (or non-use) of Artificial Intelligence tools, according to
+        the following cases:
+    </p>
+    <p><strong>Use of AI: NO</strong></p>
+    <p>
+        If no Artificial Intelligence tools were used in the preparation of the
+        submission, authors must include the following statement:
+    </p>
+    <p>
+        We declare that no Artificial Intelligence tools were used to generate, write,
+        design, or organize any part of this submission. All content was produced
+        exclusively by the members of the student team.
+    </p>
+
+    <p><strong>Use of AI: YES</strong></p>
+    <p>
+        If Artificial Intelligence tools (for example, LLMs such as ChatGPT) were used
+        to support any part of the work, authors must include a clear and visible
+        declaration, for example:
+    </p>
+    <p>
+        Parts of the content, document organization, and/or ideation support of this
+        submission were generated with the assistance of an Artificial Intelligence tool
+        (e.g., ChatGPT - OpenAI). All final editing, source verification, interpretation
+        of results, and intellectual responsibility remain solely with the authors.
+    </p>
+    <p>
+        The corresponding declaration must be included in the paper, and where
+        applicable, also in the presentation and the video.
+    </p>
+    <p>
+        Failure to clearly disclose the use of Artificial Intelligence tools when they
+        have been used will be considered a violation of authorship and academic
+        transparency policies and may result in disqualification at any stage of the
+        review process.
+    </p>
+
+    <h3>Accessibility</h3>
+    <p>
+        Teams are strongly encouraged to consider accessibility in all submitted
+        materials, including:
+    </p>
+    <ul>
+        <li>Appropriate contrast and readable typography.</li>
+        <li>Subtitles in videos.</li>
+        <li>Visual and structural clarity.</li>
+    </ul>
+
+    <h3>Venue Selection</h3>
+    <p>
+        At the time of submission, each team must indicate the conference venue at
+        which they wish to participate in the Student Design Competition.
+    </p>
+    <p>The available venues for CLIHC 2026 are:</p>
+    <ul>
+        <li>Aracaju, Brazil - May 6-8, 2026</li>
+        <li>Oaxaca, Mexico - May 27-29, 2026</li>
+    </ul>
+    <p>
+        Each team may apply to only one venue. Submissions to multiple venues are not
+        permitted. The selected venue will determine the on-site activities of the
+        competition, including the poster session, final presentation, and local
+        selection process. Once the submission has been received, changes of venue will
+        not be allowed.
+    </p>
+
+    <h3>After Acceptance of the Submission</h3>
+    <p>
+        After conditional acceptance of a submission, the corresponding author of the
+        accepted Student Design Competition entry must follow the instructions provided
+        for preparing and submitting the final, publication-ready version of all
+        required materials before the indicated deadline.
+    </p>
+    <p>
+        Failure to comply with the publication-ready requirements by the specified
+        deadline may result in notification to the Student Design Competition Chairs,
+        and the submission may be removed from the conference program.
+    </p>
+    <p>
+        The camera-ready version of the paper must strictly follow the official SBC
+        Microsoft Word, LaTeX (recommended), or Overleaf, as indicated in the submission
+        instructions. Detailed guidelines for preparing the final version will be
+        provided together with the acceptance notification.
+    </p>
+    <p>
+        In addition, corresponding authors will receive information regarding
+        conference registration and attendance requirements, including presentation
+        modality (on-site or virtual), as applicable.
+    </p>
+    <p>
+        Further details about publication procedures, formatting requirements, and
+        presentation logistics will be communicated directly to accepted teams after
+        notification of acceptance.
+    </p>
+
+    <h3>Structure of the Competition</h3>
+    <p>
+        The CLIHC 2026 Student Design Competition follows a three-round academic
+        process. Throughout this process, each team's work will be evaluated by experts
+        in design, usability, and Human-Computer Interaction from both academic and
+        professional backgrounds.
+    </p>
+    <p>
+        Each round focuses on communicating the team's ideas through a different medium,
+        enabling progressive evaluation of the problem, the design process, and the
+        proposed solution.
+    </p>
+
+    <h4>Round One: Paper, Presentation, and Video Submission</h4>
+    <p>
+        In the first round, expert reviewers will evaluate the initial submissions,
+        including:
+    </p>
+    <ul>
+        <li>Paper</li>
+        <li>Presentation (slides)</li>
+        <li>Video</li>
+    </ul>
+    <p>
+        Evaluations will consider problem clarity, the relevance of the solution to the
+        selected SDG, the quality of the design process, and the overall coherence of
+        the proposal.
+    </p>
+    <p>
+        Based on this review, up to eight (8) teams per venue will be selected to
+        participate in the on-site Student Design Competition activities at CLIHC 2026.
+        Teams will be notified of acceptance or rejection by email, along with
+        instructions for the next stages of the competition.
+    </p>
+
+    <h4>Round Two: Poster Presentation</h4>
+    <p>
+        Proposals selected in the first round will be evaluated during a poster session
+        held as part of the CLIHC 2026 conference program.
+    </p>
+    <p>
+        During this session, teams will present their work to the academic community and
+        a panel of judges, explaining:
+    </p>
+    <ul>
+        <li>The problem addressed</li>
+        <li>The design process followed</li>
+        <li>The proposed solution and its expected impact</li>
+    </ul>
+    <p>
+        At least one member of each selected team is expected to participate in this
+        session, either in person or virtually, in accordance with the conference
+        modalities.
+    </p>
+    <p>
+        Based on the poster session evaluation, judges will select four (4) finalist
+        teams per venue to advance to the final round.
+    </p>
+
+    <h4>Round Three: Final Presentation</h4>
+    <p>
+        The four finalist teams at each venue will present their design process and
+        solution in a final Student Design Competition session, open to the conference
+        community and subject to logistical conditions.
+    </p>
+    <p>
+        During this final round, teams will deliver an oral presentation, followed by a
+        question-and-answer session, both evaluated by a panel of judges.
+    </p>
+    <p>Final presentations must include:</p>
+    <ul>
+        <li>The design process followed by the team</li>
         <li>A concise description of the proposed solution</li>
-        <li>Reference to design principles and theory where appropriate</li>
-        <li>Acknowledgement of partial or incomplete solution</li>
+        <li>
+            References to design principles and Human-Computer Interaction theory where
+            appropriate
+        </li>
+        <li>Acknowledgment of partial or incomplete solutions</li>
     </ul>
-
     <p>
-        All submissions must include title and author information, including affiliations. Please ensure that
-        submissions do not contain proprietary or confidential material and do not cite proprietary or confidential
-        publications.
+        At the end of this round, one winning team per venue will be selected.
     </p>
 
+    <h4>Final Stage of the CLIHC Student Design Competition</h4>
     <p>
-        Accepted paper can choose one of the following publication media:
+        As the closing activity of the CLIHC 2026 Student Design Competition, the
+        winning teams from each venue will participate in a joint final session, held
+        either in person or virtually, conceived as a space for academic exchange and
+        celebration of student work.
+    </p>
+    <p>
+        This session will determine the overall winner of the CLIHC 2026 Student Design
+        Competition, within an academic, collaborative, and international framework,
+        and not as a competition between countries.
     </p>
 
-    <ul>
-        <li>Conference Proceedings published in ACM DL. Only English submissions can be published in this medium. If
-            your submission was accepted in Spanish or Portuguese and wish to publish here, you will have to translate
-            your original submission to English.</li>
-        <li>Avances en Interacción Humano-Computadora. Only Spanish or English submissions can be published in this
-            medium. If your submission was accepted in Portuguese and wish to publish here, you will have to translate
-            your original submission to either Spanish or English.</li>
-    </ul>
+    <h3>Awards and Recognition</h3>
+    <p>All finalist teams will receive an official certificate of recognition.</p>
+    <p>
+        The winning team will be recognized as the Winner of the Student Design
+        Competition - CLIHC 2026, and their work will be disseminated through the
+        conference's official channels.
+    </p>
+
     <h3 class="my-4">{{ $t("organizers.student_design_competition_title") }}</h3>
     <div class="row">
         <div class="col-md-4">
             <OrganizerItem>
                 <template #image>
                     <div class="d-block blur-shadow-image">
-                        <img src="/assets/img/people/christian.png" alt="Christian" class="img-fluid shadow rounded-3">
+                        <img
+                            src="/assets/img/people/lidianyCerqueira.png"
+                            alt="Lidiany Cerqueira Santos"
+                            class="img-fluid shadow rounded-3"
+                        />
                     </div>
-                    <div class="colored-shadow"
-                        style="background-image: url(&quot;/assets/img/people/christian.png&quot;);">
-                    </div>
+                    <div
+                        class="colored-shadow"
+                        style="background-image: url('/assets/img/people/lidianyCerqueira.png');"
+                    ></div>
                 </template>
-                <template #name>
-                    Christian Sturm
-                </template>
-                <template #institution>
-                    DE
-                </template>
-                <template #email>
-                </template>
+                <template #name> Dr. Lidiany Cerqueira Santos </template>
+                <template #institution> Universidade Federal de Sergipe (UFS), BR </template>
+                <template #email> </template>
             </OrganizerItem>
         </div>
 
@@ -237,23 +550,23 @@
             <OrganizerItem>
                 <template #image>
                     <div class="d-block blur-shadow-image">
-                        <img src="/assets/img/people/iyubanit.png" alt="Iyubanit" class="img-fluid shadow rounded-3">
+                        <img
+                            src="/assets/img/people/cams.png"
+                            alt="Carlos Alberto Martinez-Sandoval"
+                            class="img-fluid shadow rounded-3"
+                        />
                     </div>
-                    <div class="colored-shadow"
-                        style="background-image: url(&quot;/assets/img/people/iyubanit.png&quot;);">
-                    </div>
+                    <div
+                        class="colored-shadow"
+                        style="background-image: url('/assets/img/people/cams.png')"
+                    ></div>
                 </template>
-                <template #name>
-                    Iyubanit Rodriguez
-                </template>
+                <template #name> Ms. Carlos Alberto Martinez-Sandoval </template>
                 <template #institution>
-                    CR
+                    Universidad Tecnologica de la Mixteca (UTM), MX
                 </template>
-                <template #email>
-                </template>
+                <template #email> </template>
             </OrganizerItem>
         </div>
     </div>
-    -->
-    <p class="mt-6 text-center">The Call for the Student Design Competition will be announced soon.</p>
 </template>

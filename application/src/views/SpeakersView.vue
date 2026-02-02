@@ -54,13 +54,13 @@ export default {
       <div class="row">
         <div class="row justify-content-center my-3">
           <div class="col-lg-8">
-            <!--
+            
             <ol class="list-group list-group-numbered">
               <li class="list-group-item d-flex justify-content-between align-items-start">
                 <div class="ms-2 me-auto">
                   <div class="fw-bold">
-                    <RouterLink :to="Tr.i18nRoute({ name: 'keynote-speakers', hash: '#roberto-martinez'})" class="uline">
-                      Dr. Roberto Martinez-Maldonado
+                    <RouterLink :to="Tr.i18nRoute({ name: 'keynote-speakers', hash: '#luciana-zaina'})" class="uline">
+                      Dr. Luciana Zaina
                     </RouterLink>
                   </div>
                 </div>
@@ -69,13 +69,13 @@ export default {
               <li class="list-group-item d-flex justify-content-between align-items-start">
                 <div class="ms-2 me-auto">
                   <div class="fw-bold">
-                    <RouterLink :to="Tr.i18nRoute({ name: 'keynote-speakers', hash: '#marisol-wong'})" class="uline">
-                      Dr. Marisol Wong-Villacres
+                    <RouterLink :to="Tr.i18nRoute({ name: 'keynote-speakers', hash: '#pedro-reynolds'})" class="uline">
+                      Dr. Pedro Reynolds-Cuéllar
                     </RouterLink>
                   </div>
                 </div>
               </li>
-
+              <!--
               <li class="list-group-item d-flex justify-content-between align-items-start">
                 <div class="ms-2 me-auto">
                   <div class="fw-bold">
@@ -95,13 +95,12 @@ export default {
                   </div>
                 </div>
               </li>
+              -->
             </ol>
-          
             <template v-if="contentComponent">
                 <component :is="contentComponent" />
             </template>
-            -->
-            <p class="mt-5 text-center">{{ $t("soon.speakers") }} </p>
+
           </div>
         </div>
       </div>

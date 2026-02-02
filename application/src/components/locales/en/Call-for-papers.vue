@@ -34,8 +34,10 @@ export default {
     </ol>
 
     <p>
-        The <a href="https://clihc2026.laihc.org/" class="uline">XII Latin American Conference on Human-Computer Interaction (CLIHC 2026)</a>, aims
-        to provide a premier forum that brings together the Latin American and
+        The
+        <a href="https://clihc2026.laihc.org/" class="uline"
+            >XII Latin American Conference on Human-Computer Interaction (CLIHC 2026)</a
+        >, aims to provide a premier forum that brings together the Latin American and
         international Human-Computer Interaction (HCI) research communities to discuss and
         share ideas, methods, approaches, and techniques for designing, implementing, and
         evaluating interactive user experiences. In accordance with previous editions, we
@@ -101,7 +103,14 @@ export default {
     <p>
         All manuscripts must be submitted fully anonymized. Please consider an
         international audience: e.g., avoid local terms, and use the international system
-        of units. In addition, consider following <a target="_blank" href="https://clihc2023.laihc.org/en/accessibility-recommendations-for-authors" class="uline" rel="noopener noreferrer">accessibility guidelines (CLIHC 2023 edition, opens in a new tab)</a>.
+        of units. In addition, consider following
+        <a
+            target="_blank"
+            href="https://clihc2023.laihc.org/en/accessibility-recommendations-for-authors"
+            class="uline"
+            rel="noopener noreferrer"
+            >accessibility guidelines (CLIHC 2023 edition, opens in a new tab)</a
+        >.
     </p>
 
     <h4 id="cpf-dates">Important Dates (Full Papers)</h4>
@@ -125,8 +134,12 @@ export default {
 
     <h3>Submission Process</h3>
     <p>
-        Full paper submissions are to be made through <a href="https://jems3.sbc.org.br/events/510" class="uline">JEMS3 System</a> (Journal and Event
-        Management System): <a href="https://jems3.sbc.org.br/events/510" class="uline">https://jems3.sbc.org.br/events/510</a>
+        Full paper submissions are to be made through
+        <a href="https://jems3.sbc.org.br/events/510" class="uline">JEMS3 System</a>
+        (Journal and Event Management System):
+        <a href="https://jems3.sbc.org.br/events/510" class="uline"
+            >https://jems3.sbc.org.br/events/510</a
+        >
     </p>
 
     <p>
@@ -135,8 +148,20 @@ export default {
     </p>
 
     <ul>
-        <li><a href="https://www.sbc.org.br/wp-content/uploads/2024/07/modelosparapublicaodeartigos.zip" class="uline">Microsoft Word e LaTeX (recommended)</a></li>
-        <li><a href="https://www.overleaf.com/latex/templates/sbc-conferences-template-updated-sbc-template-dot-sty-v2017/pyhttxftxjqn" class="uline">Overleaf</a></li>
+        <li>
+            <a
+                href="https://www.sbc.org.br/wp-content/uploads/2024/07/modelosparapublicaodeartigos.zip"
+                class="uline"
+                >Microsoft Word e LaTeX (recommended)</a
+            >
+        </li>
+        <li>
+            <a
+                href="https://www.overleaf.com/latex/templates/sbc-conferences-template-updated-sbc-template-dot-sty-v2017/pyhttxftxjqn"
+                class="uline"
+                >Overleaf</a
+            >
+        </li>
     </ul>
 
     <h3>Submission Categories</h3>
@@ -166,6 +191,25 @@ export default {
         or Computer Science journal.
     </p>
 
+    <h3>Best Papers</h3>
+
+    <p>
+        The authors of four full papers awarded as <strong>Best Papers</strong> at CLIHC 2026 will be
+        invited to submit an extended version in English, with at least <strong>30% original</strong>
+        content, to be included in a special issue of the Journal of the Brazilian
+        Computer Society (JBCS).
+    </p>
+    <ul>
+    <li>
+        The full call for this special issue can be accessed at:<br>
+        <a href="https://journals-sol.sbc.org.br/index.php/jbcs/clihc-2026" class="uline">https://journals-sol.sbc.org.br/index.php/jbcs/clihc-2026</a>
+    </li>
+    <li>
+        Other currently open calls from the JBCS journal can be found at:<br>
+        <a href="https://journals-sol.sbc.org.br/index.php/jbcs/open-calls" class="uline">https://journals-sol.sbc.org.br/index.php/jbcs/open-calls</a>
+    </li>
+    </ul>
+
     <h3 class="my-4">{{ $t("organizers.program_chairs_title") }}</h3>
     <div class="row">
         <div class="col-md-4">
@@ -180,7 +224,9 @@ export default {
                     </div>
                     <div
                         class="colored-shadow"
-                        style="background-image: url('/assets/img/people/adrianaDamian.png')"
+                        style="
+                            background-image: url('/assets/img/people/adrianaDamian.png');
+                        "
                     ></div>
                 </template>
                 <template #name> Dra. Adriana Lopes Damian </template>

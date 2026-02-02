@@ -1,236 +1,556 @@
 <script>
-import OrganizerItem from '@/components/OrganizerItem.vue';
+import OrganizerItem from "@/components/OrganizerItem.vue";
 
-import Tr from '@/i18n/translation'
+import Tr from "@/i18n/translation";
 
 export default {
     components: {
-        OrganizerItem
+        OrganizerItem,
     },
     setup() {
         return {
-            Tr
-        }
-    }
-}
+            Tr,
+        };
+    },
+};
 </script>
 
 <template>
-    <!--
     <ol class="list-group list-group-numbered my-3">
         <li class="list-group-item d-flex justify-content-between align-items-start">
-        <div class="ms-2 me-auto">
-            <strong class="text-primary text-gradient">Fecha límite de envío:</strong> <del>31 de julio</del> <del>11 de agosto EXTENDIDA</del> <strong class="text-danger"> {{ $t("about.closed") }}</strong><br>
-        </div>
+            <div class="ms-2 me-auto">
+                <strong class="text-primary text-gradient">Fecha límite de envío:</strong>
+                <strong class="text-danger"> 5 de marzo de 2026</strong><br />
+                <RouterLink
+                    :to="Tr.i18nRoute({ name: 'student-design-competition', hash: '#sdc-dates' })"
+                    class="uline"
+                >
+                    Ver todas las fechas importantes
+                </RouterLink>
+            </div>
         </li>
     </ol>
 
-    <h3 id="sdc-dates">Fechas Importantes</h3>
+    <h3 id="sdc-dates">Fechas importantes</h3>
     <ul>
-        <li>Fecha límite de envío: <del>31 de julio</del> 11 de agosto EXTENDIDA</li>
-        <li>Notificación: 28 de agosto</li>
-        <li>Versión final: 14 de septiembre (para publicación en inglés en ACM DL o en español en "Avances en Interacción
-            Humano-Computadora")</li>
-        <li>Evento: 30 y 31 de octubre, 1 de noviembre</li>
+        <li>Fecha límite de envío: Jueves 5 de marzo de 2026</li>
+        <li>Notificación de aceptación: Viernes 3 de abril de 2026</li>
+        <li>Fecha límite de versión final (camera-ready): Viernes 17 de abril de 2026</li>
+        <li>Evento: 6-9 de mayo de 2026, Brasil; 27-29 de mayo de 2026, México</li>
     </ul>
-    <p>
-        Las fechas límite son a medianoche AoE (en cualquier parte del mundo).
-    </p>
+    <p>Todas las fechas límite son a medianoche AoE (Anywhere on Earth).</p>
 
-    <h3>¿Qué es la competencia de diseño para estudiantes en CLIHC 2023?</h3>
-
-    <p>La Competencia de Diseño para Estudiantes tiene tres objetivos:</p>
-    <ul>
-        <li>Brindar una oportunidad para que los estudiantes de diversas áreas (por ejemplo, ciencias de la computación,
-            HCI, diseño industrial, diseño de productos, diseño visual, diseño de interacción, emprendimiento, etc.)
-            participen y demuestren sus habilidades de resolución de problemas y diseño en una competencia internacional con
-            sus pares.</li>
-        <li>Proporcionar una oportunidad para que los estudiantes que presenten en la competencia de diseño se encuentren
-            con la comunidad de CLIHC.</li>
-        <li>Proporcionar perspectivas refrescantes sobre cómo los equipos de diseño de diferentes disciplinas y diferentes
-            partes del mundo abordan un problema de diseño común.</li>
-    </ul>
-
-    <h3>El desafío de diseño: soluciones apropiadas para todos</h3>
+    <h3>¿Qué es la Competencia de Diseño Estudiantil (SDC)?</h3>
     <p>
-        Les pedimos que contribuyan a uno (o varios) de los 17 Objetivos de Desarrollo Sostenible identificados por las
-        Naciones Unidas:
-    </p>
-
-    <ul>
-        <li>Fin de la Pobreza</li>
-        <li>Hambre Cero</li>
-        <li>Salud y Bienestar</li>
-        <li>Educación de Calidad</li>
-        <li>Igualdad de Género</li>
-        <li>Agua Limpia y Saneamiento</li>
-        <li>Energía Asequible y No Contaminante</li>
-        <li>Trabajo Decente y Crecimiento Económico</li>
-        <li>Industria, Innovación e Infraestructura</li>
-        <li>Reducción de las Desigualdades</li>
-        <li>Ciudades y Comunidades Sostenibles</li>
-        <li>Producción y Consumo Responsables</li>
-        <li>Acción por el Clima</li>
-        <li>Vida Submarina</li>
-        <li>Vida de Ecosistemas Terrestres</li>
-        <li>Paz, Justicia e Instituciones Sólidas</li>
-        <li>Alianzas para Lograr los Objetivos</li>
-    </ul>
-
-    <p>
-        Su problema y su solución deben estar claramente vinculados a uno (o varios) de los objetivos. Involúcrense con los
-        usuarios potenciales e involúcrenlos en el proceso. Demuestren que el problema es relevante y que la solución
-        realmente resuelve el problema de manera sostenible. Observen cómo otros han intentado resolver el problema en el
-        pasado y propongan un enfoque nuevo e innovador. Asegúrense de cumplir con los criterios éticos.
-    </p>
-
-    <h3>Requisitos del equipo de estudiantes</h3>
-    <p>
-        Los equipos deben estar compuestos por al menos dos y no más de cuatro estudiantes. No hay límite en la cantidad de
-        equipos que pueden competir de una misma universidad u organización. Sin embargo, un estudiante no puede ser parte
-        de múltiples equipos.
-    </p>
-    <p>
-        Se invita a estudiantes de todas las etapas de su carrera universitaria, desde pregrado hasta posgrado, a
-        participar. Si bien no es un requisito obligatorio, se recomienda encarecidamente que los equipos sean
-        multidisciplinarios y/o multinacionales.
-    </p>
-    <p>
-        La Competencia de Diseño para Estudiantes es para estudiantes. Envíen una prueba de su condición de estudiante
-        enviando una nota firmada por su supervisor académico que verifique la siguiente información:
+        La Competencia de Diseño Estudiantil (Student Design Competition, SDC) es una
+        actividad académica internacional de CLIHC 2026 dirigida a estudiantes. Sus
+        objetivos son:
     </p>
     <ul>
-        <li>Su universidad</li>
-        <li>Si era estudiante de posgrado (es decir, a nivel de maestría o doctorado) o de pregrado (es decir, a nivel de
-            licenciatura) cuando se realizó el trabajo, o confirme que está actualmente inscrito/a en un programa académico
-            a tiempo completo o que volverá a ser estudiante en el próximo semestre.</li>
-    </ul>
-
-    <h3>Requisitos del equipo de supervisión</h3>
-
-    <ul>
-        <li>Grupos de hasta cuatro estudiantes con un supervisor.</li>
-        <li>Cada equipo debe tener al menos dos estudiantes y un supervisor.</li>
-        <li>Cada supervisor solo puede tener un equipo.</li>
-        <li>El supervisor puede ser un profesor o un profesional de la industria.</li>
-    </ul>
-
-    <p>
-        Los supervisores académicos, mentores, entrenadores o personas que brinden apoyo adicional no pueden ser
-        copresidentes, revisores o jueces de la competencia al mismo tiempo. <span class="text-danger">Los mentores no
-            pueden ser autores del artículo</span>.
-    </p>
-
-    <h3>Preparación de la Presentación y Estructura de la Competencia</h3>
-    <p>Las presentaciones pueden ser en inglés, español o portugués.</p>
-
-    <ol>
         <li>
-            Envío para participar en la competencia, antes del 31 de julio
-            <ul>
-                <li>
-                    <strong>Presentación en diapositivas</strong>: PDF de una presentación con un máximo de 15 diapositivas
-                    (la primera diapositiva debe incluir el nombre de los estudiantes y el nombre del proyecto). La
-                    presentación puede incluir información relevante del artículo (descripción del problema y la solución,
-                    métodos de investigación y diseño, por qué su solución será utilizada por los usuarios potenciales).
-                </li>
-                <li>
-                    <strong>Artículo</strong>: un informe escrito de hasta 6 páginas, incluyendo referencias (formato:
-                    Plantillas de Envío de Artículos Maestros de ACM), el artículo debe incluir:
-                    <ul>
-                        <li>Una descripción clara del problema y la solución</li>
-                        <li>Una visión general de los métodos de investigación y diseño</li>
-                        <li>Las razones por las que su solución será utilizada por los usuarios potenciales</li>
-                        <li>Reconocimiento de soluciones parciales o incompletas</li>
-                        <li>Reconocimiento de cualquier ayuda externa recibida por parte del equipo de estudiantes (por
-                            ejemplo, asesores, expertos en el campo, soluciones existentes, usuarios)</li>
-                    </ul>
-                </li>
-            </ul>
+            Proveer un espacio para que estudiantes de distintas disciplinas relacionadas
+            con la Interacción Humano-Computadora, el diseño y la tecnología demuestren
+            sus habilidades en análisis, investigación, diseño y evaluación.
         </li>
         <li>
-            Envío tras la aceptación en la competencia, antes del 25 de agosto
-            <ul>
-                <li>
-                    <strong>Artículo</strong>: versión lista para su publicación (se proporcionarán instrucciones junto con
-                    el correo electrónico de aceptación).
-                </li>
-                <li>
-                    <strong>Video</strong>: ilustrando cómo su solución se adapta a la vida de los usuarios con ayuda de
-                    escenarios, o aborda aspectos humanos de los objetivos de desarrollo sostenible elegidos. También puede
-                    mostrar algunos detalles de la interfaz y la información presentada (máximo 5 minutos). El video puede
-                    incluir:
-                    <ul>
-                        <li>Ejemplos de datos contextuales significativos y su análisis (investigación primaria, secundaria
-                            o ambas)</li>
-                        <li>
-                            Fuentes clave de inspiración creativa (diseños y sistemas existentes)
-                            <ul>
-                                <li>Bosquejos de la solución en evolución</li>
-                            </ul>
-                        </li>
-                        <li>Escenarios que representen cómo la solución se adapta a la vida de los usuarios y resuelve
-                            problemas / involucra o entretiene a los usuarios</li>
-                        <li>Detalles de la interfaz y el diseño de la información, cuando corresponda</li>
-                        <li>Aspectos destacados de los resultados significativos de evaluación</li>
-                    </ul>
-                </li>
-            </ul>
+            Fomentar el intercambio académico entre estudiantes, investigadores y
+            profesionales de la comunidad CLIHC.
         </li>
-    </ol>
+        <li>
+            Ofrecer perspectivas diversas sobre cómo equipos multidisciplinarios abordan
+            problemas sociales y tecnológicos relevantes en contextos latinoamericanos e
+            internacionales.
+        </li>
+    </ul>
+    <p>La SDC forma parte integral del programa académico del congreso.</p>
 
+    <h3>El reto de diseño: Soluciones apropiadas para todos</h3>
     <p>
-        Las presentaciones seleccionadas serán invitadas a mostrar su trabajo en la conferencia en una presentación final
-        (en persona o virtual). Asimismo, todos los estudiantes (autores del artículo) deben registrarse para la
-        conferencia, ya sea en persona o de manera virtual. Las presentaciones serán evaluadas por un panel de jueces y
-        deben incluir:
+        Se invita a los equipos a desarrollar propuestas de diseño vinculadas a uno o
+        más de los 17 Objetivos de Desarrollo Sostenible (ODS) definidos por la
+        Organización de las Naciones Unidas:
+    </p>
+    <ul>
+        <li>Fin de la pobreza</li>
+        <li>Hambre cero</li>
+        <li>Salud y bienestar</li>
+        <li>Educación de calidad</li>
+        <li>Igualdad de género</li>
+        <li>Agua limpia y saneamiento</li>
+        <li>Energía asequible y no contaminante</li>
+        <li>Trabajo decente y crecimiento económico</li>
+        <li>Industria, innovación e infraestructura</li>
+        <li>Reducción de las desigualdades</li>
+        <li>Ciudades y comunidades sostenibles</li>
+        <li>Producción y consumo responsables</li>
+        <li>Acción por el clima</li>
+        <li>Vida submarina</li>
+        <li>Vida de ecosistemas terrestres</li>
+        <li>Paz, justicia e instituciones sólidas</li>
+        <li>Alianzas para lograr los objetivos</li>
+    </ul>
+    <p>
+        El alcance de esta convocatoria es deliberadamente amplio con el fin de brindar
+        oportunidades de participación al mayor número posible de estudiantes de toda
+        América Latina. Cada solución propuesta debe estar claramente vinculada a uno
+        (o varios) de los 17 Objetivos de Desarrollo Sostenible.
+    </p>
+    <p>
+        Los equipos pueden adoptar estrategias de diseño como diseño participativo,
+        co-creación y co-diseño, diseño de servicios, diseño para la innovación social,
+        diseño inclusivo e innovación abierta. También pueden emplear enfoques
+        participativos y de co-creación utilizando tecnologías existentes o explorar
+        oportunidades en desarrollos tecnológicos contemporáneos como impresión 3D,
+        fabricación digital, sensado ciudadano, el movimiento maker, la economía
+        colaborativa, big data, redes sociales, IoT, gamificación, nuevos sensores y
+        actuadores, y realidad aumentada/virtual, entre otros.
+    </p>
+    <p>
+        Se espera que los equipos adopten enfoques de diseño centrados en el usuario,
+        fundamentando sus propuestas en una comprensión profunda de las necesidades,
+        contextos y experiencias de las personas usuarias. Se fomenta fuertemente el uso
+        de métodos de investigación con usuarios, diseño participativo, co-creación y
+        evaluación iterativa.
+    </p>
+    <p>
+        Sin embargo, es importante señalar que, en ocasiones, la mejor solución o
+        enfoque de diseño puede surgir de ideas simples pero precisas descubiertas a
+        partir de la investigación, y puede requerir únicamente un uso mínimo de
+        tecnología. Lo más importante es que la solución sea adecuada para el objetivo
+        específico que se está abordando.
     </p>
 
+    <h3>Criterios orientadores para la evaluación del diseño</h3>
+    <p>
+        Para el desafío de diseño de este año, se alienta especialmente a los equipos a
+        considerar los siguientes criterios como principios orientadores:
+    </p>
     <ul>
-        <li>El proceso de diseño que se siguió</li>
+        <li>¿El diseño está claramente vinculado a uno de los Objetivos de Desarrollo Sostenible?</li>
+        <li>¿El diseño especifica y aborda un problema relevante y "urgente"?</li>
+        <li>¿El diseño utiliza la tecnología de una manera apropiada y novedosa?</li>
+        <li>¿El diseño está bien elaborado y presentado de manera efectiva?</li>
+        <li>
+            ¿El diseño fue validado de forma adecuada y sólida para demostrar el
+            cumplimiento de sus objetivos?
+        </li>
+        <li>¿Se identificó y citó correctamente el trabajo previo relevante?</li>
+        <li>¿El análisis, la síntesis, el diseño y la evaluación fueron sistemáticos y suficientes?</li>
+        <li>¿El diseño se desarrolló lo suficiente como para demostrar las ideas clave?</li>
+        <li>
+            ¿Hubo participación de actores reales en los procesos de investigación,
+            desarrollo y evaluación?
+        </li>
+        <li>
+            ¿El proceso de investigación y la participación de los actores fueron
+            éticamente apropiados (por ejemplo, siguiendo lineamientos institucionales)?
+        </li>
+        <li>¿El equipo exploró el ecosistema más amplio de actores, condiciones y contextos?</li>
+        <li>
+            ¿El diseño demuestra la aplicación de métodos de diseño centrado en el
+            usuario y una comprensión de las necesidades, contextos y experiencias de
+            las personas usuarias?
+        </li>
+    </ul>
+
+    <h3>Requisitos de los equipos estudiantiles</h3>
+    <ul>
+        <li>Los equipos deben estar conformados por al menos dos (2) y no más de cinco (5) estudiantes.</li>
+        <li>No existe límite en el número de equipos por institución.</li>
+        <li>Cada estudiante solo puede participar en un (1) equipo.</li>
+        <li>
+            Se aceptan propuestas de estudiantes en todas las etapas de su formación
+            académica, incluyendo licenciatura, maestría y doctorado.
+        </li>
+        <li>
+            Se permiten explícitamente equipos de niveles mixtos, lo que significa que un
+            mismo equipo puede incluir estudiantes de licenciatura, maestría y/o doctorado,
+            y pueden participar estudiantes de cualquiera de estos niveles.
+        </li>
+        <li>
+            Aunque no es obligatorio, se fomenta fuertemente la conformación de equipos
+            multidisciplinarios, multinacionales y con diversidad de género, en
+            coherencia con los principios de equidad, inclusión y diseño colaborativo.
+        </li>
+    </ul>
+    <p>
+        La Competencia de Diseño Estudiantil está dirigida exclusivamente a estudiantes.
+        Para comprobar esta condición, los equipos deberán presentar una constancia
+        firmada por su supervisor académico que confirme:
+    </p>
+    <ul>
+        <li>La afiliación institucional del estudiante.</li>
+        <li>
+            Si el estudiante cursaba licenciatura o posgrado al momento de desarrollar
+            el trabajo, o bien, que se encuentra actualmente inscrito de tiempo completo
+            o regresará como estudiante en el siguiente periodo académico.
+        </li>
+    </ul>
+
+    <h3>Requisitos de supervisión</h3>
+    <ul>
+        <li>Cada equipo debe contar con un (1) supervisor.</li>
+        <li>Cada supervisor puede asesorar a uno o varios equipos.</li>
+        <li>Los supervisores pueden ser académicos o profesionales de la industria.</li>
+        <li>
+            Supervisores, mentores o asesores no pueden fungir simultáneamente como
+            chairs, revisores o jurados de la Competencia de Diseño Estudiantil.
+        </li>
+        <li>
+            El supervisor puede ser incluido como último autor del artículo, claramente
+            identificado como asesor del equipo. La autoría principal y la contribución
+            central del trabajo deben permanecer en el equipo estudiantil.
+        </li>
+    </ul>
+
+    <h3>Diversidad, equidad e inclusión</h3>
+    <p>
+        La Competencia de Diseño Estudiantil de CLIHC fomenta fuertemente la participación
+        de equipos que reflejen principios de diversidad, equidad e inclusión, en
+        concordancia con los valores del congreso y de la comunidad de Interacción
+        Humano-Computadora.
+    </p>
+    <p>
+        Se alienta especialmente la conformación de equipos con diversidad de género,
+        integrantes de distintos contextos sociales y culturales, así como diversidad
+        disciplinaria y académica.
+    </p>
+    <p>
+        Estos aspectos no forman parte de los criterios de evaluación, pero constituyen
+        principios orientadores para promover un entorno académico más inclusivo,
+        representativo y plural.
+    </p>
+
+    <h3>Aspectos éticos</h3>
+    <p>
+        En los casos aplicables, los autores deben seguir las directrices éticas
+        establecidas para la investigación que involucra participantes humanos. Esto
+        incluye, entre otros aspectos, el consentimiento informado, la privacidad de
+        los datos y el trato respetuoso hacia las personas participantes.
+    </p>
+    <p>
+        Se espera que los equipos cumplan con las regulaciones institucionales,
+        nacionales e internacionales pertinentes en materia de ética de la investigación.
+        Los trabajos que no aborden adecuadamente las consideraciones éticas, cuando
+        aplique, podrán ser rechazados.
+    </p>
+
+    <h3>Preparación de los envíos</h3>
+    <p>Los trabajos pueden presentarse en inglés, español o portugués.</p>
+
+    <h4>Envío inicial (para participar en la competencia)</h4>
+    <p><strong>Plataforma de envío</strong></p>
+    <p>
+        Todos los envíos deberán realizarse a través de la plataforma JEMS (Sociedad
+        Brasileña de Computación - SBC).
+    </p>
+    <p><strong>Fecha límite:</strong> Jueves 5 de marzo de 2026</p>
+
+    <p>El envío inicial deberá incluir obligatoriamente los siguientes materiales:</p>
+
+    <h4>Artículo (Paper)</h4>
+    <ul>
+        <li>Documento anónimo, sin nombres de autores, afiliaciones ni agradecimientos.</li>
+        <li>Extensión máxima: 5 páginas, incluyendo referencias.</li>
+        <li>
+            El formato de envío seguirá la plantilla de la Sociedad Brasileña de
+            Computación. Los autores pueden trabajar en Microsoft Word, LaTeX
+            (recomendado) u Overleaf.
+        </li>
+    </ul>
+
+    <h4>Contenido esperado del artículo</h4>
+    <ul>
+        <li>Descripción del problema y su relación con el ODS seleccionado.</li>
+        <li>Descripción clara de la solución propuesta.</li>
+        <li>Métodos de investigación y diseño utilizados.</li>
+        <li>Justificación del impacto y relevancia de la propuesta.</li>
+        <li>Evidencias de validación o evaluación.</li>
+        <li>Referencias a teoría de IHC y trabajos previos relevantes.</li>
+        <li>Reconocimiento de soluciones parciales o incompletas.</li>
+    </ul>
+
+    <h4>Presentación (Diapositivas)</h4>
+    <ul>
+        <li>Archivo PDF con un máximo de 15 diapositivas.</li>
+        <li>Sin información que identifique a los autores o a la institución.</li>
+    </ul>
+
+    <h4>Contenido esperado de la presentación</h4>
+    <ul>
+        <li>Contexto del problema y justificación.</li>
+        <li>ODS abordados.</li>
+        <li>Síntesis del proceso de diseño.</li>
+        <li>Solución propuesta.</li>
+        <li>Usuarios y escenarios de uso.</li>
+        <li>Evidencias clave de evaluación.</li>
+        <li>Impacto esperado.</li>
+    </ul>
+
+    <h4>Video</h4>
+    <ul>
+        <li>Duración máxima: 5 minutos.</li>
+        <li>Sin información identificable del equipo o institución.</li>
+        <li>Tamaño máximo del archivo: 200 MB.</li>
+    </ul>
+
+    <h4>Contenido esperado del video</h4>
+    <ul>
+        <li>Escenarios que muestren cómo la solución se integra en la vida de los usuarios.</li>
+        <li>Contexto de uso y datos relevantes.</li>
+        <li>Fuentes de inspiración.</li>
+        <li>Bocetos y evolución del diseño.</li>
+        <li>Detalles de interfaz o interacción.</li>
+        <li>Resultados significativos de evaluación.</li>
+    </ul>
+
+    <h3>Originalidad de los trabajos</h3>
+    <p>
+        Los trabajos enviados a la Competencia de Diseño Estudiantil (SDC) de CLIHC 2026
+        deben ser originales. Las propuestas no deben haber sido publicadas previamente
+        ni enviadas a otras competencias académicas o concursos de diseño, ya sea a
+        nivel nacional o internacional. El incumplimiento de este requisito podrá
+        resultar en la descalificación en cualquier etapa del proceso.
+    </p>
+
+    <h3>Política sobre el uso de Modelos de Lenguaje de Gran Escala (LLM)</h3>
+    <p>
+        El uso de modelos de lenguaje de gran escala (LLM), como ChatGPT u otras
+        herramientas similares de Inteligencia Artificial, está permitido únicamente si
+        su uso es claramente declarado por los autores.
+    </p>
+    <p>
+        Cualquier contenido generado con la asistencia de un LLM debe ser explícitamente
+        reconocido cuando estas herramientas se utilicen para fines más allá de la
+        edición básica o corrección del texto original de los autores. Los autores son
+        responsables de revisar y cumplir con la Política de Autoría de ACM y con los
+        principios de transparencia académica.
+    </p>
+    <p>
+        Como parte del proceso de envío, los equipos deben incluir una declaración
+        explícita sobre el uso (o no uso) de herramientas de Inteligencia Artificial, de
+        acuerdo con los siguientes casos:
+    </p>
+    <p><strong>Uso de IA: NO</strong></p>
+    <p>
+        Si no se utilizaron herramientas de Inteligencia Artificial en la preparación
+        del trabajo, los autores deberán incluir la siguiente declaración:
+    </p>
+    <p>
+        Declaramos que no se utilizaron herramientas de Inteligencia Artificial para
+        generar, redactar, diseñar u organizar ninguna parte de este trabajo. Todo el
+        contenido fue producido exclusivamente por los integrantes del equipo
+        estudiantil.
+    </p>
+
+    <p><strong>Uso de IA: SÍ</strong></p>
+    <p>
+        Si se utilizaron herramientas de Inteligencia Artificial (por ejemplo, LLM como
+        ChatGPT) para apoyar alguna parte del trabajo, los autores deberán incluir una
+        declaración clara y visible, por ejemplo:
+    </p>
+    <p>
+        Partes del contenido, la organización del documento y/o el apoyo en la ideación
+        de este trabajo se generaron con la asistencia de una herramienta de
+        Inteligencia Artificial (por ejemplo, ChatGPT - OpenAI). Toda la edición final,
+        verificación de fuentes, interpretación de resultados y responsabilidad
+        intelectual recaen exclusivamente en los autores.
+    </p>
+    <p>
+        La declaración correspondiente deberá incluirse en el artículo y, cuando
+        aplique, también en la presentación y el video.
+    </p>
+    <p>
+        La omisión de la declaración del uso de herramientas de Inteligencia Artificial,
+        cuando estas hayan sido utilizadas, se considerará una violación a las políticas
+        de autoría y transparencia académica y podrá resultar en la descalificación en
+        cualquier etapa del proceso de evaluación.
+    </p>
+
+    <h3>Accesibilidad</h3>
+    <p>
+        Se recomienda fuertemente a los equipos considerar la accesibilidad en todos
+        los materiales enviados, incluyendo:
+    </p>
+    <ul>
+        <li>Contraste adecuado y tipografías legibles.</li>
+        <li>Subtítulos en los videos.</li>
+        <li>Claridad visual y estructural.</li>
+    </ul>
+
+    <h3>Selección de sede</h3>
+    <p>
+        Al momento del envío, cada equipo deberá indicar la sede del congreso en la que
+        desea participar en la Competencia de Diseño Estudiantil.
+    </p>
+    <p>Las sedes disponibles para CLIHC 2026 son:</p>
+    <ul>
+        <li>Aracaju, Brasil - 6-8 de mayo de 2026</li>
+        <li>Oaxaca, México - 27-29 de mayo de 2026</li>
+    </ul>
+    <p>
+        Cada equipo solo puede postularse a una sede. No se permiten envíos a múltiples
+        sedes. La sede seleccionada determinará las actividades presenciales de la
+        competencia, incluyendo la sesión de pósteres, la presentación final y el
+        proceso de selección local. Una vez recibido el envío, no se permitirán cambios
+        de sede.
+    </p>
+
+    <h3>Después de la aceptación del trabajo</h3>
+    <p>
+        Tras la aceptación condicional de un trabajo, el autor correspondiente deberá
+        seguir las instrucciones proporcionadas para preparar y enviar la versión final
+        lista para publicación de todos los materiales requeridos antes de la fecha
+        indicada.
+    </p>
+    <p>
+        El incumplimiento de los requisitos de la versión final dentro del plazo
+        establecido podrá dar lugar a la notificación a los Chairs de la Competencia de
+        Diseño Estudiantil y a la posible eliminación del trabajo del programa del
+        congreso.
+    </p>
+    <p>
+        La versión final del artículo deberá seguir estrictamente las plantillas
+        oficiales de la SBC en Microsoft Word, LaTeX (recomendado) u Overleaf, conforme
+        a las instrucciones de envío. Las directrices detalladas para la preparación de
+        la versión final se proporcionarán junto con la notificación de aceptación.
+    </p>
+    <p>
+        Adicionalmente, los autores correspondientes recibirán información sobre el
+        registro y la asistencia al congreso, incluyendo la modalidad de presentación
+        (presencial o virtual), según corresponda.
+    </p>
+    <p>
+        Además, los detalles sobre procedimientos de publicación, requisitos de
+        formato y logística de presentación serán comunicados directamente a los equipos
+        aceptados después de la notificación de aceptación.
+    </p>
+
+    <h3>Estructura de la competencia</h3>
+    <p>
+        La Competencia de Diseño Estudiantil de CLIHC 2026 sigue un proceso académico de
+        tres rondas. A lo largo de este proceso, el trabajo de cada equipo será evaluado
+        por expertos en diseño, usabilidad e Interacción Humano-Computadora, provenientes
+        tanto del ámbito académico como profesional.
+    </p>
+    <p>
+        Cada ronda se centra en comunicar las ideas del equipo a través de un medio
+        distinto, permitiendo una evaluación progresiva del problema, el proceso de
+        diseño y la solución propuesta.
+    </p>
+
+    <h4>Primera ronda: Envío de artículo, presentación y video</h4>
+    <p>
+        Los revisores expertos evaluarán los envíos iniciales, que incluyen:
+    </p>
+    <ul>
+        <li>Artículo</li>
+        <li>Presentación (diapositivas)</li>
+        <li>Video</li>
+    </ul>
+    <p>
+        Las evaluaciones considerarán la claridad del problema, la relevancia de la
+        solución respecto al ODS seleccionado, la calidad del proceso de diseño y la
+        coherencia general de la propuesta.
+    </p>
+    <p>
+        Con base en esta revisión, se seleccionarán hasta ocho (8) equipos por sede para
+        participar en las actividades presenciales de la Competencia de Diseño
+        Estudiantil durante CLIHC 2026. Los equipos serán notificados de la aceptación
+        o rechazo por correo electrónico, junto con las instrucciones correspondientes
+        para las siguientes etapas de la competencia.
+    </p>
+
+    <h4>Segunda ronda: Presentación de póster</h4>
+    <p>
+        Las propuestas seleccionadas en la primera ronda serán evaluadas durante una
+        sesión de pósteres que se llevará a cabo como parte del programa del congreso
+        CLIHC 2026.
+    </p>
+    <p>
+        Durante esta sesión, los equipos presentarán su trabajo a la comunidad académica
+        y a un panel de jueces, explicando:
+    </p>
+    <ul>
+        <li>El problema abordado</li>
+        <li>El proceso de diseño seguido</li>
+        <li>La solución propuesta y su impacto esperado</li>
+    </ul>
+    <p>
+        Se espera que al menos un integrante de cada equipo seleccionado participe en
+        esta sesión, de manera presencial o virtual, de acuerdo con las modalidades del
+        congreso.
+    </p>
+    <p>
+        Con base en la evaluación de la sesión de pósteres, los jueces seleccionarán
+        cuatro (4) equipos finalistas por sede para avanzar a la ronda final.
+    </p>
+
+    <h4>Tercera ronda: Presentación final</h4>
+    <p>
+        Los cuatro equipos finalistas de cada sede presentarán su proceso de diseño y
+        su solución en una sesión final de la Competencia de Diseño Estudiantil, abierta
+        a la comunidad del congreso y sujeta a las condiciones logísticas del evento.
+    </p>
+    <p>
+        Durante esta ronda final, los equipos realizarán una presentación oral seguida
+        de una sesión de preguntas y respuestas, ambas evaluadas por un panel de jueces.
+    </p>
+    <p>Las presentaciones finales deberán incluir:</p>
+    <ul>
+        <li>El proceso de diseño seguido por el equipo</li>
         <li>Una descripción concisa de la solución propuesta</li>
-        <li>Referencia a principios y teorías de diseño, cuando corresponda</li>
-        <li>Reconocimiento de soluciones parciales o incompletas</li>
+        <li>
+            Referencias a principios de diseño y teoría de Interacción Humano-Computadora
+            cuando corresponda
+        </li>
+        <li>El reconocimiento de soluciones parciales o incompletas</li>
     </ul>
-
     <p>
-        Todas las presentaciones deben incluir información de título y autor, incluidas las afiliaciones. Asegúrense de que
-        las presentaciones no contengan material confidencial o protegido y no citen publicaciones confidenciales o
-        protegidas.
+        Al término de esta ronda se seleccionará un equipo ganador por sede.
     </p>
 
+    <h4>Etapa final de la Competencia de Diseño Estudiantil de CLIHC</h4>
     <p>
-        Los artículos aceptados pueden elegir uno de los siguientes medios de publicación:
+        Como actividad de cierre de la Competencia de Diseño Estudiantil de CLIHC 2026,
+        los equipos ganadores de cada sede participarán en una sesión final conjunta,
+        presencial o virtual, concebida como un espacio de intercambio académico y
+        celebración del trabajo estudiantil.
+    </p>
+    <p>
+        Esta sesión definirá al equipo ganador final de la Competencia de Diseño
+        Estudiantil de CLIHC 2026, dentro de un marco académico, colaborativo e
+        internacional, y no como una competencia entre países.
     </p>
 
-    <ul>
-        <li>Actas de la conferencia publicadas en ACM DL. Solo las presentaciones en inglés pueden publicarse en este medio.
-            Si su presentación fue aceptada en español o portugués y desea publicarla aquí, deberá traducir su presentación
-            original al inglés.</li>
-        <li>Avances en Interacción Humano-Computadora. Solo las presentaciones en español o inglés pueden publicarse en este
-            medio. Si su presentación fue aceptada en portugués y desea publicarla aquí, deberá traducir su presentación
-            original al español o inglés.</li>
-    </ul>
+    <h3>Reconocimientos</h3>
+    <p>Todos los equipos finalistas recibirán un certificado oficial de reconocimiento.</p>
+    <p>
+        El equipo ganador será reconocido como Ganador de la Competencia de Diseño
+        Estudiantil - CLIHC 2026, y su trabajo será difundido a través de los canales
+        oficiales del congreso.
+    </p>
+
     <h3 class="my-4">{{ $t("organizers.student_design_competition_title") }}</h3>
     <div class="row">
         <div class="col-md-4">
             <OrganizerItem>
                 <template #image>
                     <div class="d-block blur-shadow-image">
-                        <img src="/assets/img/people/christian.png" alt="Christian" class="img-fluid shadow rounded-3">
+                        <img
+                            src="/assets/img/people/lidianyCerqueira.png"
+                            alt="Lidiany Cerqueira Santos"
+                            class="img-fluid shadow rounded-3"
+                        />
                     </div>
-                    <div class="colored-shadow"
-                        style="background-image: url(&quot;/assets/img/people/christian.png&quot;);">
-                    </div>
+                    <div
+                        class="colored-shadow"
+                        style="background-image: url('/assets/img/people/lidianyCerqueira.png');"
+                    ></div>
                 </template>
-                <template #name>
-                    Christian Sturm
-                </template>
-                <template #institution>
-                    DE
-                </template>
-                <template #email>
-                </template>
+                <template #name> Dr. Lidiany Cerqueira Santos </template>
+                <template #institution> Universidade Federal de Sergipe (UFS), BR </template>
+                <template #email> </template>
             </OrganizerItem>
         </div>
 
@@ -238,23 +558,23 @@ export default {
             <OrganizerItem>
                 <template #image>
                     <div class="d-block blur-shadow-image">
-                        <img src="/assets/img/people/iyubanit.png" alt="Iyubanit" class="img-fluid shadow rounded-3">
+                        <img
+                            src="/assets/img/people/cams.png"
+                            alt="Carlos Alberto Martínez-Sandoval"
+                            class="img-fluid shadow rounded-3"
+                        />
                     </div>
-                    <div class="colored-shadow"
-                        style="background-image: url(&quot;/assets/img/people/iyubanit.png&quot;);">
-                    </div>
+                    <div
+                        class="colored-shadow"
+                        style="background-image: url('/assets/img/people/cams.png')"
+                    ></div>
                 </template>
-                <template #name>
-                    Iyubanit Rodriguez
-                </template>
+                <template #name> Ms. Carlos Alberto Martínez-Sandoval </template>
                 <template #institution>
-                    CR
+                    Universidad Tecnológica de la Mixteca (UTM), MX
                 </template>
-                <template #email>
-                </template>
+                <template #email> </template>
             </OrganizerItem>
         </div>
     </div>
-    -->
-    <p class="mt-6 text-center">La convocatoria para la Competencia de Diseño Estudiantil será anunciada próximamente.</p>
 </template>

@@ -113,7 +113,8 @@ export default {
             target="_blank"
             href="https://clihc2023.laihc.org/en/accessibility-recommendations-for-authors"
             class="uline"
-         rel="noopener noreferrer">
+            rel="noopener noreferrer"
+        >
             pautas de accesibilidad (edición CLIHC 2023, se abre en una nueva pestaña) </a
         >.
     </p>
@@ -199,6 +200,36 @@ export default {
         negociando con una revista prestigiosa de HCI o Ciencias de la Computación.
     </p>
 
+    <h3>Best Papers</h3>
+    <p>
+        Las personas autoras de cuatro artículos completos premiados como
+        <strong>Best Papers</strong> en CLIHC 2026 serán invitadas a enviar una versión
+        extendida en inglés, con al menos <strong>30% de contenido original</strong>, para
+        ser incluida en una edición especial de la Journal of the Brazilian Computer
+        Society (JBCS).
+    </p>
+    <ul>
+        <li>
+            La convocatoria completa para esta edición especial puede consultarse en:<br />
+            <a
+                href="https://journals-sol.sbc.org.br/index.php/jbcs/clihc-2026"
+                class="uline"
+            >
+                https://journals-sol.sbc.org.br/index.php/jbcs/clihc-2026
+            </a>
+        </li>
+        <li>
+            Las demás convocatorias actualmente abiertas de la revista JBCS pueden
+            consultarse en:<br />
+            <a
+                href="https://journals-sol.sbc.org.br/index.php/jbcs/open-calls"
+                class="uline"
+            >
+                https://journals-sol.sbc.org.br/index.php/jbcs/open-calls
+            </a>
+        </li>
+    </ul>
+
     <h3 class="my-4">{{ $t("organizers.program_chairs_title") }}</h3>
     <div class="row">
         <div class="col-md-4">
@@ -213,7 +244,9 @@ export default {
                     </div>
                     <div
                         class="colored-shadow"
-                        style="background-image: url('/assets/img/people/adrianaDamian.png')"
+                        style="
+                            background-image: url('/assets/img/people/adrianaDamian.png');
+                        "
                     ></div>
                 </template>
                 <template #name> Dra. Adriana Lopes Damian </template>
