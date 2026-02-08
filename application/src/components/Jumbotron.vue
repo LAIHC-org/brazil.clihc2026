@@ -90,16 +90,12 @@ export default {
                                 </p>
 
                                 <p class="lead pt-2">
-                                    <RouterLink
-                                        :to="
-                                            Tr.i18nRoute({
-                                                name: 'call-for-participation',
-                                            })
-                                        "
+                                    <a
+                                        :href="`https://clihc2026.laihc.org/${Tr.currentLocale}/call-for-participation`"
                                         class="btn btn-lg bg-gradient-yellow btn-round"
                                     >
                                         {{ $t("jumbotron.button") }}
-                                    </RouterLink>
+                                    </a>
 
                                     <!--
 										<template v-if="currentComponent">

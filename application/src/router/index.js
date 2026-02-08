@@ -1,6 +1,7 @@
 import { nextTick } from 'vue';
 import { createRouter, createWebHistory, RouterView } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import PageNotFound from '../views/PageNotFound.vue'
 import Tr from "@/i18n/translation"
 
 const router = createRouter({
@@ -18,7 +19,9 @@ const router = createRouter({
           meta: {
             title: "CLIHC 2026 - A LAIHC conference",
           },
-        },        
+        },
+        /*
+        // Not in navbar/footer (disabled)
         {
           path: 'call-for-participation',
           name: 'call-for-participation',
@@ -27,7 +30,7 @@ const router = createRouter({
             title: "CLIHC 2026 - Call for participation",
           },
         },
-        /*Begin: Nuevos */
+        // Not in navbar/footer (disabled)
         {
           path: 'call-for-papers',
           name: 'call-for-papers',
@@ -36,6 +39,7 @@ const router = createRouter({
             title: "CLIHC 2026 - Call for papers",
           },
         },
+        // Not in navbar/footer (disabled)
         {
           path: 'call-for-posters',
           name: 'call-for-posters',
@@ -44,6 +48,7 @@ const router = createRouter({
             title: "CLIHC 2026 - Call for poster track",
           },
         },
+        // Not in navbar/footer (disabled)
         {
           path: 'call-for-workshops-and-tutorials',
           name: 'call-for-workshops-and-tutorials',
@@ -52,6 +57,7 @@ const router = createRouter({
             title: "CLIHC 2026 - Call for workshops and tutorials",
           },
         },
+        // Not in navbar/footer (disabled)
         {
           path: 'student-design-competition',
           name: 'student-design-competition',
@@ -60,6 +66,7 @@ const router = createRouter({
             title: "CLIHC 2026 - Student design competition",
           },
         },
+        // Not in navbar/footer (disabled)
         {
           path: 'graduate-colloquium',
           name: 'graduate-colloquium',
@@ -68,7 +75,7 @@ const router = createRouter({
             title: "CLIHC 2026 - Graduate colloquium",
           },
         },
-        /*End: Nuevos */      
+        // Not in navbar/footer (disabled)
         {
           path: 'accessibility-recommendations-for-authors',
           name: 'accessibility-recommendations-for-authors',
@@ -77,6 +84,7 @@ const router = createRouter({
             title: "CLIHC 2026 - Accessibility recommendations for authors",
           },
         },
+        */
         {
           path: 'organizers',
           name: 'organizers',
@@ -101,6 +109,8 @@ const router = createRouter({
             title: "CLIHC 2026 - Keynote speakers",
           },
         },
+        /*
+        // Not in navbar/footer (disabled)
         {
           path: 'accepted-papers',
           name: 'accepted-papers',
@@ -108,7 +118,8 @@ const router = createRouter({
           meta: {
             title: "CLIHC 2026 - Accepted papers",
           },
-        },    
+        },
+        */
         {
           path: 'getting-started',
           name: 'getting-started',
@@ -125,6 +136,8 @@ const router = createRouter({
             title: "CLIHC 2026 - Registration",
           },
         },
+        /*
+        // Not in navbar/footer (disabled)
         {
           path: 'accessibility-FAQ',
           name: 'accessibility-FAQ',
@@ -133,6 +146,7 @@ const router = createRouter({
             title: "CLIHC 2026 - Accessibility FAQs",
           },
         },        
+        // Not in navbar/footer (disabled)
         {
           path: 'video-archives',
           name: 'videoArchives',
@@ -140,7 +154,16 @@ const router = createRouter({
           meta: {
             title: "CLIHC 2026 - Video archives",
           },
-        }
+        },
+        */
+        {
+          path: ':pathMatch(.*)*',
+          name: 'not-found-local',
+          component: PageNotFound,
+          meta: {
+            title: "Not found",
+          },
+        },
       ]
     },
     {

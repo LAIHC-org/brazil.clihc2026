@@ -34,16 +34,12 @@
 								<tr>
 									<th scope="row">{{ $t("about.call") }}</th>
 									<td>
-										<RouterLink
-											:to="
-												Tr.i18nRoute({
-													name: 'call-for-participation',
-												})
-											"
+										<a
+											:href="`https://clihc2026.laihc.org/${Tr.currentLocale}/call-for-participation`"
 											class="ulink"
 										>
 											<strong>{{ $t("about.open") }}</strong>
-										</RouterLink>
+										</a>
 									</td>
 								</tr>
 								<tr>
