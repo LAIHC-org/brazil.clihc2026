@@ -69,10 +69,10 @@
         "upcoming": "Em breve"
     },
     "organizers": {
-    "title": "Organizadores locais",
-    "intro": "Esta página apresenta o comitê organizador local da sede de Aracaju, Brasil, da CLIHC 2026. O comitê é responsável pelo planejamento e pela coordenação das atividades locais, da logística e da interação com a comunidade em Aracaju.",
-    "local_committee_title": "Comitê local (Aracaju, Brasil)",
-    "pending_note": "Pendente. O comitê organizador local será anunciado em breve.",
+        "title": "Organizadores locais",
+        "intro": "Esta página apresenta o comitê organizador local da sede de Aracaju, Brasil, da CLIHC 2026. O comitê é responsável pelo planejamento e pela coordenação das atividades locais, da logística e da interação com a comunidade em Aracaju.",
+        "local_committee_title": "Comitê local (Aracaju, Brasil)",
+        "pending_note": "Pendente. O comitê organizador local será anunciado em breve.",
         "general_committee_link": "Comitê geral",
         "general_committee_title": "Comitê geral",
         "program_committee_link": "Comitê de programa",

@@ -70,10 +70,10 @@
         "upcoming": "Upcoming"
     },
     "organizers": {
-    "title": "Local Organizers",
-    "intro": "This page presents the local organizing committee for the Aracaju, Brazil venue of CLIHC 2026. The committee is responsible for planning and coordinating local activities, logistics, and community engagement for the Aracaju site.",
-    "local_committee_title": "Local Committee (Aracaju, Brazil)",
-    "pending_note": "Pending. The local organizing committee will be announced soon.",
+        "title": "Local Organizers",
+        "intro": "This page presents the local organizing committee for the Aracaju, Brazil venue of CLIHC 2026. The committee is responsible for planning and coordinating local activities, logistics, and community engagement for the Aracaju site.",
+        "local_committee_title": "Local Committee (Aracaju, Brazil)",
+        "pending_note": "Pending. The local organizing committee will be announced soon.",
         "general_committee_link": "General committee",
         "general_committee_title": "General Committee",
         "program_committee_link": "Program committee",

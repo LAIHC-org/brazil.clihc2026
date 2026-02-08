@@ -7,6 +7,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2026.1.0.0.b] - 2026-02-8
+
+### Added
+
+- Adapted the site to represent the CLIHC 2026 Brazil venue.
+- Included local venue information and organizing committee.
+
+### Changed
+
+- Updated site content and navigation to reflect the Brazil event context.
+- Reconfigured repository remote and deployment target for the Brazil microsite.
+
 ## [2026.1.0.11] - 2026-02-05
 
 ### Changed
