@@ -14,6 +14,7 @@
   "home_local": "Inicio local",
   "calls": "Convocatorias",
   "calls_general": "Convocatorias generales (CLIHC 2026)",
+  "calls_general_message": "Convocatoria general y fechas oficiales (sitio central)",
   "for_participants": "Para participantes",
   "organization": "Organización",
   "organization_general": "Organización general",
@@ -53,6 +54,14 @@
         "pending": "Pendiente",
         "copyright": "© 2026 Conferencia Latinoamericana de Interacción Humano-Computadora, una conferencia de LAIHC.",
         "back_to_top": "Volver arriba" 
+    },
+    "breadcrumbs": {
+        "central": "CLIHC 2026",
+        "site_brazil": "Brasil",
+        "site_mexico": "México",
+        "site_central": "Central",
+        "video_archives": "Archivos de video",
+        "not_found": "Página no encontrada"
     },
     "jumbotron":{
         "conference": "XII Conferencia Latinoamericana de Interacción Humano-Computadora.",
