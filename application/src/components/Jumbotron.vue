@@ -79,7 +79,8 @@ export default {
                                 </h1>
                             </div>
                             <div class="col-md-8 text-center">
-                                <p class="lead mt-3">
+                                <p class="lead mt-3 mx-0 my-0"><strong>CLIHC 2026 — Brazil Event</strong></p>
+                                <p class="lead mt-0">
                                     {{ $t("jumbotron.conference") }}
                                 </p>
                                 <p class="lead mt-2">
