@@ -1,1 +1,0 @@
-import{_ as e,c as t,o as s,i as r}from"./index-CU6IRBGj.js";const o={setup(){return{Tr:r}}},a={class:"mt-5 text-center"};function n(c,i,p,_,d,m){return s(),t("p",a,"O guia de Primeiros Passos estará disponível em breve.")}const f=e(o,[["render",n]]);export{f as default};
