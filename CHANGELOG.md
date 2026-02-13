@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2026.1.0.1.b] - 2026-02-13
+
+### Changed
+
+- Highlighted "CLIHC 2026 - Brazil Event" in the jumbotron hero section.
+- Updated jumbotron conference copy in English, Spanish, and Portuguese to clarify it is the official in-person event.
+
 ## [2026.1.0.0.b] - 2026-02-8
 
 ### Added
