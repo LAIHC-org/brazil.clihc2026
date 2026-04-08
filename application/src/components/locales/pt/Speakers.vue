@@ -69,4 +69,38 @@ import SpeakerLargeItem from "@/components/SpeakerLargeItem.vue";
             focados no apoio a iniciativas de tecnologia rural na Colômbia.
         </p>
     </SpeakerLargeItem>
+
+    <SpeakerLargeItem>
+        <template #image>
+            <img
+                id="ann-blandford"
+                class="img border-radius-lg w-100 position-relative z-index-2"
+                src="/assets/img/people/annBlandford.png"
+                alt="Ann Blandford"
+            />
+        </template>
+        <template #image-shadow>
+            <div
+                class="colored-shadow"
+                style="background-image: url('/assets/img/people/annBlandford.png')"
+            ></div>
+        </template>
+        <template #name> Dra. Ann Blandford </template>
+
+        <p>
+            É Professora de Tecnologias da Informação Centradas no Humano no University
+            College London (UCL), onde também atuou como Diretora do UCL Interaction Centre
+            (UCLIC) de 2004 a 2021. Sua pesquisa aborda a interação humano-computador,
+            com foco em design centrado no usuário, segurança da informação e interação
+            com museus e coleções culturais. Possui doutorado pela Universidade de
+            Cambridge e é Fellow da Royal Academy of Engineering. Foi Vice-Diretora de
+            Pesquisa da Faculdade de Ciências da Engenharia da UCL e Presidente do
+            Comitê de Subvenções do Engineering and Physical Sciences Research Council
+            (EPSRC). Publicou amplamente sobre interação humano-computador, incluindo o
+            livro <em>Expertise in Context: Human-Computer Interaction</em>. Seus
+            interesses atuais de pesquisa incluem o design de interações seguras e
+            utilizáveis, o acesso a coleções culturais digitais e a compreensão da
+            tomada de decisão em contextos complexos.
+        </p>
+    </SpeakerLargeItem>
 </template>

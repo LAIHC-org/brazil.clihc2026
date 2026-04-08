@@ -83,5 +83,41 @@ export default {
                 </RouterLink>
             </p>
         </SpeakerItem>
+
+        <SpeakerItem>
+            <template #image>
+                <img
+                    src="/assets/img/people/annBlandford.png"
+                    alt="Ann Blandford"
+                    class="img-fluid shadow rounded-3"
+                />
+            </template>
+            <template #image-shadow>
+                <div
+                    class="colored-shadow"
+                    style="background-image: url('/assets/img/people/annBlandford.png')"
+                ></div>
+            </template>
+            <template #name> Dra. Ann Blandford </template>
+
+            Es Profesora de Tecnologías de la Información Centradas en el Humano en el
+            University College London (UCL), con investigación en diseño centrado en el
+            usuario, seguridad de la información e interacción con colecciones culturales
+            digitales.
+
+            <p class="mt-2">
+                <RouterLink
+                    :to="
+                        Tr.i18nRoute({
+                            name: 'keynote-speakers',
+                            hash: '#ann-blandford',
+                        })
+                    "
+                    class="uline"
+                >
+                    Leer más sobre la Dra. Blandford
+                </RouterLink>
+            </p>
+        </SpeakerItem>
     </div>
 </template>

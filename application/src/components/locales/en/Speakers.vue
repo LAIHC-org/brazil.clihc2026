@@ -68,6 +68,40 @@ import SpeakerLargeItem from "@/components/SpeakerLargeItem.vue";
         </p>
     </SpeakerLargeItem>
 
+    <SpeakerLargeItem>
+        <template #image>
+            <img
+                id="ann-blandford"
+                class="img border-radius-lg w-100 position-relative z-index-2"
+                src="/assets/img/people/annBlandford.png"
+                alt="Ann Blandford"
+            />
+        </template>
+        <template #image-shadow>
+            <div
+                class="colored-shadow"
+                style="background-image: url('/assets/img/people/annBlandford.png')"
+            ></div>
+        </template>
+        <template #name> Dr. Ann Blandford </template>
+
+        <p>
+            She is a Professor of Human-Centred Information Technology at University
+            College London (UCL), where she also served as Director of the UCL Interaction
+            Centre (UCLIC) from 2004 to 2021. Her research addresses human-computer
+            interaction, with a focus on user-centred design, information security, and
+            interaction with museums and cultural collections. She holds a Ph.D. from the
+            University of Cambridge and is a Fellow of the Royal Academy of Engineering.
+            She was Vice-Dean for Research in the Faculty of Engineering Sciences at UCL
+            and Chair of the Engineering and Physical Sciences Research Council (EPSRC)
+            Grants Committee. She has published extensively on human-computer interaction,
+            including the book <em>Expertise in Context: Human-Computer Interaction</em>.
+            Her current research interests include the design of secure and usable
+            interactions, access to digital cultural collections, and understanding
+            decision-making in complex contexts.
+        </p>
+    </SpeakerLargeItem>
+
     <!--
     <SpeakerLargeItem>
         <template #image>

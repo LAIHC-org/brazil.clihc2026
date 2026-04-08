@@ -78,6 +78,16 @@ export default {
                   </div>
                 </div>
               </li>
+
+              <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">
+                    <RouterLink :to="Tr.i18nRoute({ name: 'keynote-speakers', hash: '#ann-blandford'})" class="uline">
+                      Dr. Ann Blandford
+                    </RouterLink>
+                  </div>
+                </div>
+              </li>
               <!--
               <li class="list-group-item d-flex justify-content-between align-items-start">
                 <div class="ms-2 me-auto">

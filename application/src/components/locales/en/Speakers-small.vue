@@ -78,6 +78,38 @@ export default {
                 </RouterLink>
             </p>
         </SpeakerItem>
+
+        <SpeakerItem>
+            <template #image>
+                <img
+                    src="/assets/img/people/annBlandford.png"
+                    alt="Ann Blandford"
+                    class="img-fluid shadow rounded-3"
+                />
+            </template>
+            <template #image-shadow>
+                <div
+                    class="colored-shadow"
+                    style="background-image: url('/assets/img/people/annBlandford.png')"
+                ></div>
+            </template>
+            <template #name> Dr. Ann Blandford </template>
+
+            She is a Professor of Human-Centred Information Technology at University
+            College London (UCL), researching user-centred design, information security,
+            and interaction with digital cultural collections.
+
+            <p class="mt-2">
+                <RouterLink
+                    :to="
+                        Tr.i18nRoute({ name: 'keynote-speakers', hash: '#ann-blandford'})
+                    "
+                    class="uline"
+                >
+                    Read more about Dr. Blandford
+                </RouterLink>
+            </p>
+        </SpeakerItem>
     </div>
     <!--
     <div class="row">
