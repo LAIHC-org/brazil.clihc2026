@@ -10,42 +10,9 @@
 </script>
 
 <template>
-    <footer class="footer pt-3 mt-5">
-        <div class="container mt-3">
-            <div class=" row">
-                <div class="col-12 col-md-3 mb-4 ms-auto">
-                    <div>
-                        <h2 class="text-gradient text-secondary font-weight-bolder fs-5">{{ $t("nav.sitemap") }}</h2>
-                    </div>
-                    <ul class="flex-column ms-n3 nav">
-                        <li class="nav-item">
-                            <a class="nav-link uline" href="/">{{ $t("nav.home_local") }}</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link uline" :href="`https://clihc2026.laihc.org/${Tr.currentLocale}`">
-                                {{ $t("nav.central_site") }}
-                            </a>
-                        </li>
-                    </ul>
-                    <div>
-                        <ul class="d-flex flex-row ms-n3 nav">
-                            <li class="nav-item">
-                                <a class="nav-link pe-1" href="https://www.facebook.com/clihc" target="_blank" rel="noopener noreferrer">
-                                    <i class="fab fa-facebook text-lg opacity-8"></i>
-                                    <span class="visually-hidden">{{ $t("nav.facebook") }}</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link pe-1" href="https://x.com/clihc2026" target="_blank" rel="noopener noreferrer">
-                                    <i class="fab fa-x-twitter text-lg opacity-8"></i>
-                                    <span class="visually-hidden">{{ $t("nav.twitter") }}</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <a href="https://www.laihc.org/"><img src="/assets/img/logos/laihc-blanco.svg" alt="LaIHC" class="mt-2" height="50" /></a>
-                </div>
-
+    <footer class="footer pt-5 mt-5">
+        <div class="container">
+            <div class="row">
                 <div class="col-6 col-md-2 mb-4">
                     <div>
                         <h3 class="text-gradient text-secondary text-sm">{{ $t("nav.calls") }}</h3>
@@ -101,7 +68,7 @@
                     </div>
                 </div>
 
-                <div class="col-6 col-md-3 mb-1">
+                <div class="col-6 col-md-2 mb-4">
                     <div>
                         <h3 class="text-gradient text-secondary text-sm">{{ $t("nav.organization") }}</h3>
                         <ul class="flex-column ms-n3 nav">
@@ -121,17 +88,93 @@
                     </div>
                 </div>
 
-                <div class="col-12 my-4">
-                    <div class="text-center">
-                        <p class="my-0 text-sm">
-                            {{ $t("nav.copyright") }}
-                        </p>
-                        <p class="my-0  text-sm">
-                            <a class="uline" href="CHANGELOG.md">2026.1.0.1.b</a>
-                        </p>
+                <div class="col-12 col-md-4 mb-4">
+                    <div>
+                        <h2 class="text-gradient text-secondary font-weight-bolder fs-5">{{ $t("nav.sitemap") }}</h2>
                     </div>
+                    <ul class="flex-column ms-n3 nav">
+                        <li class="nav-item">
+                            <a class="nav-link uline" href="/">{{ $t("nav.home_local") }}</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link uline" :href="`https://clihc2026.laihc.org/${Tr.currentLocale}`">
+                                {{ $t("nav.central_site") }}
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="d-flex align-items-center gap-2 mt-3 mb-3">
+                        <a href="https://www.facebook.com/clihc" target="_blank" rel="noopener noreferrer"
+                            class="btn-social-footer d-inline-flex align-items-center justify-content-center rounded-circle">
+                            <i class="fab fa-facebook"></i>
+                            <span class="visually-hidden">{{ $t("nav.facebook") }}</span>
+                        </a>
+                        <a href="https://x.com/clihc2026" target="_blank" rel="noopener noreferrer"
+                            class="btn-social-footer d-inline-flex align-items-center justify-content-center rounded-circle">
+                            <i class="fab fa-x-twitter"></i>
+                            <span class="visually-hidden">{{ $t("nav.twitter") }}</span>
+                        </a>
+                        <a href="https://www.instagram.com/clihc.conf/" target="_blank" rel="noopener noreferrer"
+                            class="btn-social-footer d-inline-flex align-items-center justify-content-center rounded-circle">
+                            <i class="fab fa-instagram"></i>
+                            <span class="visually-hidden">Instagram</span>
+                        </a>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <a href="https://www.laihc.org/">
+                            <img src="/assets/img/logos/laihc-blanco.svg" alt="LaIHC" class="footer-logo" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="footer-divider my-0" />
+
+            <div class="py-4">
+                <div class="text-center">
+                    <p class="my-0 text-sm opacity-6">
+                        {{ $t("nav.copyright") }}
+                    </p>
                 </div>
             </div>
         </div>
     </footer>
 </template>
+
+<style scoped>
+.btn-social-footer {
+    width: 36px;
+    height: 36px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #F6F5F2;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+}
+
+.btn-social-footer:hover {
+    background: rgba(255, 255, 255, 0.25);
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+.footer-logo {
+    height: 45px;
+    opacity: 0.85;
+    transition: opacity 0.2s ease;
+}
+
+.footer-logo:hover {
+    opacity: 1;
+}
+
+.footer-divider {
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.footer .nav-link {
+    transition: opacity 0.2s ease;
+}
+
+.footer .nav-link:hover {
+    opacity: 0.7;
+}
+</style>

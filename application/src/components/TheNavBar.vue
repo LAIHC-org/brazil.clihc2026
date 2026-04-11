@@ -90,6 +90,20 @@
 												</div>
 											</a>
 										</li>
+										<li>
+											<RouterLink :to="Tr.i18nRoute({ name: 'call-for-papers' })"
+												class="dropdown-item border-radius-md"
+											>
+												<div class="d-flex">
+													<div>
+														<span
+															class="fs-6 dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
+															{{ $t("nav.call_for_papers") }}
+														</span>
+													</div>
+												</div>
+											</RouterLink>
+										</li>
 									</ul>
 								</li>
 								<li class="nav-item dropdown dropdown-hover mx-2">
@@ -125,6 +139,20 @@
 														<span
 															class="fs-6 dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
 															{{ $t("nav.rates_and_registration") }}
+														</span>
+													</div>
+												</div>
+											</RouterLink>
+										</li>
+										<li>
+											<RouterLink :to="Tr.i18nRoute({ name: 'student-volunteers' })"
+												class="dropdown-item border-radius-md"
+											>
+												<div class="d-flex">
+													<div>
+														<span
+															class="fs-6 dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center p-0">
+															{{ $t("nav.student_volunteers") }}
 														</span>
 													</div>
 												</div>
@@ -216,6 +244,7 @@
 										</li>
 									</ul>
 								</li>
+	
 								<li class="nav-item mx-2">
 									<a class="nav-link ps-2 d-flex cursor-pointer align-items-center"
 										:href="`https://clihc2026.laihc.org/${Tr.currentLocale}`"
