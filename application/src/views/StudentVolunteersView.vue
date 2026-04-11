@@ -17,19 +17,19 @@ export default {
     const Component = shallowRef(null)
 
     const loadComponents = async (newLocale) => {
-      Component.value = await getCfpForLocale(newLocale)
+      Component.value = await getContentForLocale(newLocale)
     }
 
     watch(locale, loadComponents, { immediate: true })
 
-    async function getCfpForLocale(locale) {
+    async function getContentForLocale(locale) {
       switch (locale) {
         case 'en':
-          return defineAsyncComponent(() => import('@/components/locales/en/Call-for-papers.vue'))
+          return defineAsyncComponent(() => import('@/components/locales/en/Student-volunteers.vue'))
         case 'es':
-          return defineAsyncComponent(() => import('@/components/locales/es/Call-for-papers.vue'))
+          return defineAsyncComponent(() => import('@/components/locales/es/Student-volunteers.vue'))
         case 'pt':
-          return defineAsyncComponent(() => import('@/components/locales/pt/Call-for-papers.vue'))
+          return defineAsyncComponent(() => import('@/components/locales/pt/Student-volunteers.vue'))
         default:
           return null
       }
@@ -46,7 +46,7 @@ export default {
 <template>
   <TheHeader>
     <template #page-name>
-      {{ $t("calls.cfp") }}
+      {{ $t("nav.student_volunteers") }}
     </template>
   </TheHeader>
   <Breadcrumbs />
@@ -56,13 +56,14 @@ export default {
       <div class="row">
         <div class="row justify-content-center my-3">
           <div class="col-lg-10">
+
             <template v-if="Component">
               <component :is="Component" />
             </template>
+
           </div>
         </div>
       </div>
     </div>
   </section>
 </template>
-

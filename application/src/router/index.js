@@ -30,7 +30,7 @@ const router = createRouter({
             title: "CLIHC 2026 - Call for participation",
           },
         },
-        // Not in navbar/footer (disabled)
+        */
         {
           path: 'call-for-papers',
           name: 'call-for-papers',
@@ -39,6 +39,7 @@ const router = createRouter({
             title: "CLIHC 2026 - Call for papers",
           },
         },
+        /*
         // Not in navbar/footer (disabled)
         {
           path: 'call-for-posters',
@@ -129,6 +130,14 @@ const router = createRouter({
           },
         },
         {
+          path: 'student-volunteers',
+          name: 'student-volunteers',
+          component: () => import('../views/StudentVolunteersView.vue'), 
+          meta: {
+            title: "CLIHC 2026 - Student Volunteers",
+          },
+        },
+        {
           path: 'registration',
           name: 'registration',
           component: () => import('../views/RegistrationView.vue'), 
@@ -136,6 +145,7 @@ const router = createRouter({
             title: "CLIHC 2026 - Registration",
           },
         },
+
         /*
         // Not in navbar/footer (disabled)
         {

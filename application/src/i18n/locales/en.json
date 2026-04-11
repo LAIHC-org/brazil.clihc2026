@@ -15,6 +15,7 @@
   "calls": "Calls",
   "calls_general": "General calls (CLIHC 2026)",
   "calls_general_message": "General call and official deadlines (main site)",
+  "call_for_papers": "Full and Short Papers",
   "for_participants": "For participants",
   "organization": "Organization",
   "organization_general": "General organization",
@@ -51,8 +52,10 @@
         "schedule_message": "Check the schedule of the conference",
         "keynotes": "Keynote speakers",
         "keynotes_message": "From de international HCI community",
+        "banner_subtitle": "Meet the international keynote speakers confirmed for CLIHC 2026",
         "accepted_papers": "Accepted papers",
         "accepted_papers_message": "",
+        "student_volunteers": "Student Volunteers",
         "pending": "Pending",
         "copyright": "© 2026 Latin American Conference on Human Computer Interaction, a LAIHC conference.",
         "back_to_top": "Back to top of page"
@@ -72,7 +75,7 @@
     },
     "about":{
         "about_title": "What is the Brazil Event of CLIHC 2026?",
-        "about_text": "<p>The Brazil Event of CLIHC 2026 is an <strong>official in-person venue</strong> of the <strong>12th Latin American Conference on Human–Computer Interaction (CLIHC 2026)</strong>, held as part of the 2026 edition of the conference, which takes place in a <strong>distributed format with two in-person venues in Latin America</strong>.</p><p>The Brazil Event aims to foster engagement within the Latin American Human–Computer Interaction (HCI) community through academic, scientific, and professional activities. This venue features its own <strong>local program and organization</strong>, academically integrated with the overall conference.</p><p>Within the distributed model of CLIHC 2026, <strong>some academic and editorial processes</strong> are coordinated centrally, in articulation with the local teams, while the Brazil Event develops its <strong>in-person agenda</strong>, sessions, and specific activities, organized by its local coordination.</p><p>In this way, the Brazil Event contributes to an integrated, plural, and inclusive experience of CLIHC 2026, strengthening dialogue between research, industry, and society in the Brazilian context.</p>",        
+        "about_text": "<p>The Brazil Event of CLIHC 2026 is an <strong>official in-person venue</strong> of the <strong>12th Latin American Conference on Human–Computer Interaction (CLIHC 2026)</strong>, held as part of the 2026 edition of the conference, which takes place in a <strong>distributed format with two in-person venues in Latin America</strong>.</p><p>In Brazil, CLIHC 2026 will be held at Centro Universitário Maurício de Nassau de Aracaju, located at Av. Augusto Franco, 2340 - Siqueira Campos, Aracaju - SE, CEP.: 49075-470.</p><p>The Brazil Event aims to foster engagement within the Latin American Human–Computer Interaction (HCI) community through academic, scientific, and professional activities. This venue features its own <strong>local program and organization</strong>, academically integrated with the overall conference.</p><p>Within the distributed model of CLIHC 2026, <strong>some academic and editorial processes</strong> are coordinated centrally, in articulation with the local teams, while the Brazil Event develops its <strong>in-person agenda</strong>, sessions, and specific activities, organized by its local coordination.</p><p>In this way, the Brazil Event contributes to an integrated, plural, and inclusive experience of CLIHC 2026, strengthening dialogue between research, industry, and society in the Brazilian context.</p>",        
         "call": "Call for participation",
         "registration": "Registration call",
         "proceedings": "Proceedings",
@@ -167,5 +170,8 @@
     },
     "soon": {
         "speakers": "Upcoming speakers will be announced soon."
+    },
+    "keynote": {
+        "biography": "Biography"
     }
 }

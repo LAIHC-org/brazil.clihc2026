@@ -56,60 +56,39 @@ export default {
     <div class="container">
       <div class="row">
         <div class="row justify-content-center my-3">
-          <div class="col-lg-8">
-            
-            <ol class="list-group list-group-numbered">
-              <li class="list-group-item d-flex justify-content-between align-items-start">
-                <div class="ms-2 me-auto">
-                  <div class="fw-bold">
-                    <RouterLink :to="Tr.i18nRoute({ name: 'keynote-speakers', hash: '#luciana-zaina'})" class="uline">
-                      Dr. Luciana Zaina
-                    </RouterLink>
-                  </div>
-                </div>
-              </li>
+          <div class="col-lg-10">
 
-              <li class="list-group-item d-flex justify-content-between align-items-start">
-                <div class="ms-2 me-auto">
-                  <div class="fw-bold">
-                    <RouterLink :to="Tr.i18nRoute({ name: 'keynote-speakers', hash: '#pedro-reynolds'})" class="uline">
-                      Dr. Pedro Reynolds-Cuéllar
-                    </RouterLink>
-                  </div>
-                </div>
-              </li>
+            <div class="alert alert-gradient-keynote d-flex align-items-center shadow-sm rounded-4 mb-4 p-4 border-0">
+              <span class="me-3 flex-shrink-0">
+                <i class="fa-solid fa-microphone-lines fa-2x text-white"></i>
+              </span>
+              <div>
+                <strong class="text-white fs-5">{{ $t("nav.keynotes") }}</strong>
+                <br />
+                <span class="text-white-50" style="font-size: 0.95rem;">
+                  {{ $t("nav.banner_subtitle") }}
+                </span>
+              </div>
+            </div>
 
-              <li class="list-group-item d-flex justify-content-between align-items-start">
-                <div class="ms-2 me-auto">
-                  <div class="fw-bold">
-                    <RouterLink :to="Tr.i18nRoute({ name: 'keynote-speakers', hash: '#ann-blandford'})" class="uline">
-                      Dr. Ann Blandford
-                    </RouterLink>
-                  </div>
-                </div>
-              </li>
-              <!--
-              <li class="list-group-item d-flex justify-content-between align-items-start">
-                <div class="ms-2 me-auto">
-                  <div class="fw-bold">
-                    <RouterLink :to="Tr.i18nRoute({ name: 'keynote-speakers', hash: '#claudia-lopez'})" class="uline">
-                      Dr. Claudia López Moncada
-                    </RouterLink>
-                  </div>
-                </div>
-              </li>
+            <div class="d-flex flex-wrap gap-2 mb-4">
+              <RouterLink :to="Tr.i18nRoute({ name: 'keynote-speakers', hash: '#luciana-zaina'})" class="text-decoration-none">
+                <span class="badge bg-gradient-primary fs-6 px-3 py-2 rounded-pill shadow-sm">
+                  <i class="fa-solid fa-user me-1"></i> Dr. Luciana Zaina
+                </span>
+              </RouterLink>
+              <RouterLink :to="Tr.i18nRoute({ name: 'keynote-speakers', hash: '#pedro-reynolds'})" class="text-decoration-none">
+                <span class="badge bg-gradient-primary fs-6 px-3 py-2 rounded-pill shadow-sm">
+                  <i class="fa-solid fa-user me-1"></i> Dr. Pedro Reynolds-Cuéllar
+                </span>
+              </RouterLink>
+              <RouterLink :to="Tr.i18nRoute({ name: 'keynote-speakers', hash: '#ann-blandford'})" class="text-decoration-none">
+                <span class="badge bg-gradient-primary fs-6 px-3 py-2 rounded-pill shadow-sm">
+                  <i class="fa-solid fa-user me-1"></i> Dr. Ann Blandford
+                </span>
+              </RouterLink>
+            </div>
 
-              <li class="list-group-item d-flex justify-content-between align-items-start">
-                <div class="ms-2 me-auto">
-                  <div class="fw-bold">
-                    <RouterLink :to="Tr.i18nRoute({ name: 'keynote-speakers', hash: '#philippe-palanque'})" class="uline">
-                      Dr. Philippe Palanque 
-                    </RouterLink>
-                  </div>
-                </div>
-              </li>
-              -->
-            </ol>
             <template v-if="contentComponent">
                 <component :is="contentComponent" />
             </template>
@@ -119,4 +98,11 @@ export default {
       </div>
     </div>
   </section>
+
 </template>
+
+<style scoped>
+.alert-gradient-keynote {
+  background: linear-gradient(135deg, #5C8455 0%, #3d6b38 100%);
+}
+</style>

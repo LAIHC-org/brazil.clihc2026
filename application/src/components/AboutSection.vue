@@ -1,66 +1,44 @@
 <script>
+import { shallowRef, watch, defineAsyncComponent } from 'vue'
+import { useI18n } from 'vue-i18n'
 
-	import Tr from '@/i18n/translation'
+export default {
+	setup() {
+		const { locale } = useI18n()
+		const currentComponent = shallowRef(null)
 
-	export default {
-		setup() {
-			return { Tr }
+		const loadComponent = async (newLocale) => {
+			currentComponent.value = await getComponentForLocale(newLocale)
+		}
+
+		watch(locale, loadComponent, { immediate: true })
+
+		async function getComponentForLocale(locale) {
+			switch (locale) {
+				case 'en':
+					return defineAsyncComponent(() => import('@/components/locales/en/AboutContent.vue'))
+				case 'es':
+					return defineAsyncComponent(() => import('@/components/locales/es/AboutContent.vue'))
+				case 'pt':
+					return defineAsyncComponent(() => import('@/components/locales/pt/AboutContent.vue'))
+				default:
+					return null
+			}
+		}
+
+		return {
+			currentComponent
 		}
 	}
+}
 </script>
 
 <template>
-	<section class="">
+	<section class="py-5">
 		<div class="container">
-			<div class="row">
-				<div class="row justify-content-center my-3">
-					<div class="col-lg-8">
-						<!-- <h2 class="text-dark mb-0">Titulo Negro</h2> -->
-						<h2 id="about_clihc" class="text-primary text-gradient text-center">{{ $t("about.about_title") }}</h2>
-						<div v-html="$t('about.about_text')"></div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="container">
-			<div class="row">
-				<div class="row justify-content-center my-3">
-					<div class="col-lg-6">
-						<!-- <h2 class="text-dark mb-0">Titulo Negro</h2> -->
-
-						<table class="table table-striped">
-							<tbody>
-								<tr>
-									<th scope="row">{{ $t("about.call") }}</th>
-									<td>
-										<a
-											:href="`https://clihc2026.laihc.org/${Tr.currentLocale}/call-for-participation`"
-											class="ulink"
-										>
-											<strong>{{ $t("about.open") }}</strong>
-										</a>
-									</td>
-								</tr>
-								<tr>
-									<th scope="row">{{ $t("about.registration") }}</th>
-									<td>{{ $t("nav.pending") }}</td>
-								</tr>
-								<tr>
-									<th scope="row">{{ $t("about.proceedings") }}</th>
-									<td>{{ $t("nav.pending") }}</td>
-								</tr>
-								<!--
-								<tr>
-									<th scope="row">Video archives</th>
-									<td>Pending</td>
-								</tr>
-								-->
-							</tbody>
-						</table>
-					</div>
-				</div>
-			</div>
+			<template v-if="currentComponent">
+				<component :is="currentComponent" />
+			</template>
 		</div>
 	</section>
 </template>

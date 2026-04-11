@@ -15,6 +15,7 @@
   "calls": "Chamadas",
   "calls_general": "Chamadas gerais (CLIHC 2026)",
   "calls_general_message": "Chamada geral e prazos oficiais (site central)",
+  "call_for_papers": "Artigos Completos e Resumos",
   "for_participants": "Para participantes",
   "organization": "Organização",
   "organization_general": "Organização geral",
@@ -51,8 +52,10 @@
         "schedule_message": "Revise a agenda da conferência",
         "keynotes": "Palestrantes principais",
         "keynotes_message": "Da comunidade internacional de IHC",
+        "banner_subtitle": "Conheça os palestrantes internacionais confirmados para o CLIHC 2026",
         "accepted_papers": "Artigos aceitos",
-        "accepted_papers_message": "",        
+        "accepted_papers_message": "",
+        "student_volunteers": "Estudantes Voluntários",
         "pending": "Pendente",
         "copyright": "© 2026 Conferência Latino-Americana de Interação Humano-Computador, uma conferência da LAIHC.",
         "back_to_top": "Voltar ao topo da página"
@@ -72,7 +75,7 @@
     },
     "about":{
         "about_title": "O que é o Evento Brasil da CLIHC 2026?",
-        "about_text": "<p>O Evento Brasil da CLIHC 2026 é uma <strong>sede presencial oficial</strong> da <strong>XII Conferência Latino-Americana de Interação Humano-Computador (CLIHC 2026)</strong>, realizada como parte da edição 2026 do congresso, que acontece em <strong>formato distribuído, com duas sedes presenciais na América Latina</strong>.</p><p>O Evento Brasil tem como objetivo promover o encontro da comunidade latino-americana de Interação Humano-Computador (IHC) por meio de atividades acadêmicas, científicas e profissionais. Esta sede conta com <strong>programação e organização local próprias</strong>, integradas academicamente ao conjunto da conferência.</p><p>No modelo distribuído da CLIHC 2026, <strong>alguns processos acadêmicos e editoriais</strong> são coordenados de forma central, em articulação com as equipes locais, enquanto o Evento Brasil desenvolve sua <strong>agenda presencial</strong>, sessões e atividades específicas, organizadas por sua coordenação local.</p><p>Dessa forma, o Evento Brasil contribui para uma experiência integrada, plural e inclusiva da CLIHC 2026, fortalecendo o diálogo entre pesquisa, indústria e sociedade no contexto brasileiro.</p>",
+        "about_text": "<p>O Evento Brasil da CLIHC 2026 é uma <strong>sede presencial oficial</strong> da <strong>XII Conferência Latino-Americana de Interação Humano-Computador (CLIHC 2026)</strong>, realizada como parte da edição 2026 do congresso, que acontece em <strong>formato distribuído, com duas sedes presenciais na América Latina</strong>.</p><p>No Brasil, a CLIHC 2026 será realizada no Centro Universitário Maurício de Nassau de Aracaju, na Av. Augusto Franco, 2340 - Siqueira Campos, Aracaju - SE, CEP.: 49075-470.</p><p>O Evento Brasil tem como objetivo promover o encontro da comunidade latino-americana de Interação Humano-Computador (IHC) por meio de atividades acadêmicas, científicas e profissionais. Esta sede conta com <strong>programação e organização local próprias</strong>, integradas academicamente ao conjunto da conferência.</p><p>No modelo distribuído da CLIHC 2026, <strong>alguns processos acadêmicos e editoriais</strong> são coordenados de forma central, em articulação com as equipes locais, enquanto o Evento Brasil desenvolve sua <strong>agenda presencial</strong>, sessões e atividades específicas, organizadas por sua coordenação local.</p><p>Dessa forma, o Evento Brasil contribui para uma experiência integrada, plural e inclusiva da CLIHC 2026, fortalecendo o diálogo entre pesquisa, indústria e sociedade no contexto brasileiro.</p>",
         "registration": "Chamada para registro",
         "proceedings": "Proceedings",
         "open": "Aberta",
@@ -166,5 +169,8 @@
     },
     "soon": {
         "speakers": "Próximos palestrantes serão anunciados em breve."
+    },
+    "keynote": {
+        "biography": "Biografia"
     }
 }

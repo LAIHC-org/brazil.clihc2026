@@ -35,23 +35,11 @@ export default {
 </script>
 
 <template>
-    <section class="">
-        <div class="container mt-4" id="speakers">
-            <div class="row">
-                <div class="col-lg-3">
-                    <div class="position-sticky pb-lg-5 pb-3 ps-2" style="top: 100px">
-                        <h3>{{ $t("home.keynotes") }}</h3>
-                        <p class="text-secondary font-weight-normal pe-3">
-                            {{ $t("home.keynotes_message") }}
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-9">
-                    <template v-if="contentComponent">
-                        <component :is="contentComponent" />
-                    </template>
-                </div>
-            </div>
+    <section class="py-5">
+        <div class="container" id="speakers">
+            <template v-if="contentComponent">
+                <component :is="contentComponent" />
+            </template>
         </div>
     </section>
 </template>

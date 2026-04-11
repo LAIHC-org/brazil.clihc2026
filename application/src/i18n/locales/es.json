@@ -15,6 +15,7 @@
   "calls": "Convocatorias",
   "calls_general": "Convocatorias generales (CLIHC 2026)",
   "calls_general_message": "Convocatoria general y fechas oficiales (sitio central)",
+  "call_for_papers": "Artículos completos y resúmenes",
   "for_participants": "Para participantes",
   "organization": "Organización",
   "organization_general": "Organización general",
@@ -51,8 +52,10 @@
         "schedule_message": "Revisa la agenda de la conferencia",
         "keynotes": "Ponentes principales",
         "keynotes_message": "De la comunidad internacional de IHC",
+        "banner_subtitle": "Conoce a los ponentes internacionales confirmados para CLIHC 2026",
         "accepted_papers": "Artículos aceptados",
-        "accepted_papers_message": "",        
+        "accepted_papers_message": "",
+        "student_volunteers": "Estudiantes Voluntarios",
         "pending": "Pendiente",
         "copyright": "© 2026 Conferencia Latinoamericana de Interacción Humano-Computadora, una conferencia de LAIHC.",
         "back_to_top": "Volver arriba" 
@@ -72,7 +75,7 @@
     },
     "about":{
         "about_title": "¿Qué es el Evento Brasil de CLIHC 2026?",
-        "about_text": "<p>El Evento Brasil de CLIHC 2026 es una <strong>sede presencial oficial</strong> de la <strong>XII Conferencia Latinoamericana de Interacción Humano-Computadora (CLIHC 2026)</strong>, realizada como parte de la edición 2026 del congreso, que se lleva a cabo en un <strong>formato distribuido con dos sedes presenciales en América Latina</strong>.</p><p>El Evento Brasil tiene como objetivo promover el encuentro de la comunidad latinoamericana de Interacción Humano-Computadora (IHC) a través de actividades académicas, científicas y profesionales. Esta sede cuenta con <strong>programación y organización local propias</strong>, integradas académicamente al conjunto de la conferencia.</p><p>En el modelo distribuido de CLIHC 2026, <strong>algunos procesos académicos y editoriales</strong> se coordinan de manera central, en articulación con los equipos locales, mientras que el Evento Brasil desarrolla su <strong>agenda presencial</strong>, sesiones y actividades específicas, organizadas por su coordinación local.</p><p>De este modo, el Evento Brasil contribuye a una experiencia integrada, plural e inclusiva de CLIHC 2026, fortaleciendo el diálogo entre investigación, industria y sociedad en el contexto brasileño.</p>",
+        "about_text": "<p>El Evento Brasil de CLIHC 2026 es una <strong>sede presencial oficial</strong> de la <strong>XII Conferencia Latinoamericana de Interacción Humano-Computadora (CLIHC 2026)</strong>, realizada como parte de la edición 2026 del congreso, que se lleva a cabo en un <strong>formato distribuido con dos sedes presenciales en América Latina</strong>.</p><p>En Brasil, CLIHC 2026 se realizará en el Centro Universitário Maurício de Nassau de Aracaju, en Av. Augusto Franco, 2340 - Siqueira Campos, Aracaju - SE, CEP.: 49075-470.</p><p>El Evento Brasil tiene como objetivo promover el encuentro de la comunidad latinoamericana de Interacción Humano-Computadora (IHC) a través de actividades académicas, científicas y profesionales. Esta sede cuenta con <strong>programación y organización local propias</strong>, integradas académicamente al conjunto de la conferencia.</p><p>En el modelo distribuido de CLIHC 2026, <strong>algunos procesos académicos y editoriales</strong> se coordinan de manera central, en articulación con los equipos locales, mientras que el Evento Brasil desarrolla su <strong>agenda presencial</strong>, sesiones y actividades específicas, organizadas por su coordinación local.</p><p>De este modo, el Evento Brasil contribuye a una experiencia integrada, plural e inclusiva de CLIHC 2026, fortaleciendo el diálogo entre investigación, industria y sociedad en el contexto brasileño.</p>",
         "call": "Convocatoria de participación",
         "registration": "Llamada a registro",
         "proceedings": "Memorias",
@@ -166,5 +169,8 @@
     },
     "soon": {
         "speakers": "Próximos ponentes serán anunciados pronto."
+    },
+    "keynote": {
+        "biography": "Biografía"
     }
 }
