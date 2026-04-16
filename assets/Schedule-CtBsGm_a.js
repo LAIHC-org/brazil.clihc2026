@@ -1,1 +1,0 @@
-import{_ as e,c as s,o as r,h as t}from"./index-6VYLRM2j.js";const o={setup(){return{Tr:t}}},a={class:"mt-5 text-center"};function c(n,p,_,i,m,d){return r(),s("p",a,"As informações sobre o programa estarão disponíveis em breve.")}const u=e(o,[["render",c]]);export{u as default};
