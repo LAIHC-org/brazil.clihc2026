@@ -21,7 +21,7 @@ export default {
             <i class="fa-solid fa-calendar-check fa-2x text-white"></i>
         </span>
         <div>
-            <strong class="text-white fs-5">Prazo para submissão de resumos: 23 de fevereiro</strong>
+            <strong class="text-white fs-5">Prazo para submissão de resumos: 1º de março</strong>
             <br />
             <RouterLink
                 :to="Tr.i18nRoute({ name: 'call-for-papers', hash: '#cpf-dates' })"
@@ -143,7 +143,7 @@ export default {
                     <div class="cfp-timeline-dot bg-warning"></div>
                     <div class="cfp-timeline-content">
                         <strong>Submissão de artigos</strong>
-                        <span class="text-muted ms-2">1º de março</span>
+                        <span class="text-muted ms-2">8 de março</span>
                     </div>
                 </div>
                 <div class="cfp-timeline-item">

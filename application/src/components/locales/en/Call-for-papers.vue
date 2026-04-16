@@ -21,7 +21,7 @@ export default {
             <i class="fa-solid fa-calendar-check fa-2x text-white"></i>
         </span>
         <div>
-            <strong class="text-white fs-5">Abstract submission deadline: February 23</strong>
+            <strong class="text-white fs-5">Abstract submission deadline: March 1</strong>
             <br />
             <RouterLink
                 :to="Tr.i18nRoute({ name: 'call-for-papers', hash: '#cpf-dates' })"
@@ -139,7 +139,7 @@ export default {
                     <div class="cfp-timeline-dot bg-warning"></div>
                     <div class="cfp-timeline-content">
                         <strong>Paper submission</strong>
-                        <span class="text-muted ms-2">March 1</span>
+                        <span class="text-muted ms-2">March 8</span>
                     </div>
                 </div>
                 <div class="cfp-timeline-item">
