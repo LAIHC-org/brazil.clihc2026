@@ -97,7 +97,7 @@ const typeLabels = {
         >
             <div class="d-flex flex-column flex-md-row align-items-start">
                 <div class="schedule-time flex-shrink-0 text-md-end pe-md-3 pt-md-2 mb-2 mb-md-0" style="min-width: 110px;">
-                    <span class="fw-bold text-sm text-muted">
+                    <span class="fw-bold text-sm text-dark">
                         <i class="fa-regular fa-clock me-1 d-md-none" aria-hidden="true"></i>{{ slot.time }}
                     </span>
                 </div>
@@ -117,7 +117,7 @@ const typeLabels = {
                                 >
                                     <i :class="getConfig(slot.sessions[0].type).icon"></i>
                                 </span>
-                                <span class="fw-semibold text-muted">
+                                <span class="fw-semibold text-dark">
                                     {{ getLocalizedText(slot.sessions[0].title) }}
                                 </span>
                             </div>
@@ -146,7 +146,7 @@ const typeLabels = {
                                         <span v-if="session.tag" class="badge rounded-pill text-white px-2 py-1" :class="getConfig(session.type).bgClass" style="font-size: 0.7rem;">
                                             {{ getLocalizedText(session.tag) }}
                                         </span>
-                                        <span v-if="session.continuation" class="badge bg-light text-muted ms-2 rounded-pill" style="font-size: 0.65rem;">
+                                        <span v-if="session.continuation" class="badge bg-light border border-secondary text-dark ms-2 rounded-pill" style="font-size: 0.65rem;">
                                             <i class="fa-solid fa-rotate-right me-1" aria-hidden="true"></i>{{ getLocalizedText({ en: 'continuation', pt: 'continuação', es: 'continuación' }) }}
                                         </span>
                                     </div>
@@ -218,9 +218,9 @@ const typeLabels = {
         </div>
     </div>
 
-    <div class="mt-4 p-3 bg-light rounded-4">
+    <div class="mt-4 p-3 bg-light rounded-4 border">
         <div class="d-flex flex-wrap gap-2 align-items-center">
-            <span class="text-muted fw-semibold me-2" style="font-size: 0.85rem;">
+            <span class="text-dark fw-bold me-2" style="font-size: 0.85rem;">
                 <i class="fa-solid fa-palette me-1" aria-hidden="true"></i>{{ getLocalizedText({ en: 'Legend:', pt: 'Legenda:', es: 'Leyenda:' }) }}
             </span>
             <span v-for="(config, type) in sessionConfig" :key="type" class="badge rounded-pill text-white px-2 py-1" :class="config.bgClass" style="font-size: 0.7rem;">
