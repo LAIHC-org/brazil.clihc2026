@@ -64,7 +64,7 @@ export default {
         <li>Os valores das inscrições são em Reais Brasileiros (BRL).</li>
         <li>Participantes estrangeiros podem efetuar suas inscrições para a sede brasileira por meio do cartão de crédito internacional.</li>
     </ul>
-    <h3 class="mt-5">Regras de desconto SBC</h3>
+    <h2 class="h3 mt-5">Regras de desconto SBC</h2>
     <p>
         Como o CLIHC'2026 é um evento apoiado pela Sociedade Brasileira de Computação
         (SBC), pessoas associadas possuem desconto na inscrição. Para gozar desse desconto é preciso:
@@ -85,12 +85,12 @@ export default {
             Inscrições para sócias sem o envio da carteira válida em até três dias serão canceladas.
         </div>
     </div>
-    <h3 class="mt-5">Não sócias da SBC</h3>
+    <h2 class="h3 mt-5">Não sócias da SBC</h2>
     <div class="row g-4 mt-1">
         <div v-for="(cat, index) in nonSbcCategories" :key="'non-sbc-' + index" class="col-md-6 col-lg-3">
             <div class="card border-0 shadow-sm h-100">
                 <div class="card-body text-center d-flex flex-column">
-                    <h4 class="card-title h6 fw-bold text-dark">{{ cat.name }}</h4>
+                    <h3 class="card-title h6 fw-bold text-dark">{{ cat.name }}</h3>
                     <div class="mt-auto pt-3">
                         <p class="fs-3 fw-bold text-primary text-gradient mb-3">{{ cat.price }}</p>
                         <a :href="cat.link" target="_blank" rel="noopener noreferrer" class="btn bg-gradient-yellow btn-round w-100" :aria-label="'Inscreva-se na categoria ' + cat.name">Inscreva-se</a>
@@ -99,12 +99,12 @@ export default {
             </div>
         </div>
     </div>
-    <h3 class="mt-5">Sócias da SBC</h3>
+    <h2 class="h3 mt-5">Sócias da SBC</h2>
     <div class="row g-4 mt-1 mb-5">
         <div v-for="(cat, index) in sbcCategories" :key="'sbc-' + index" class="col-md-6 col-lg-3">
             <div class="card border-0 shadow-sm h-100">
                 <div class="card-body text-center d-flex flex-column">
-                    <h4 class="card-title h6 fw-bold text-dark">{{ cat.name }}</h4>
+                    <h3 class="card-title h6 fw-bold text-dark">{{ cat.name }}</h3>
                     <div class="mt-auto pt-3">
                         <p class="fs-3 fw-bold text-primary text-gradient mb-3">{{ cat.price }}</p>
                         <a :href="cat.link" target="_blank" rel="noopener noreferrer" class="btn bg-gradient-yellow btn-round w-100" :aria-label="'Inscreva-se na categoria ' + cat.name">Inscreva-se</a>

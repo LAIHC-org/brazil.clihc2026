@@ -25,7 +25,7 @@ export default {
             <br />
             <RouterLink
                 :to="Tr.i18nRoute({ name: 'call-for-papers', hash: '#cpf-dates' })"
-                class="uline text-white-50"
+                class="uline text-light"
             >
                 Ver todas as datas importantes <i class="fa-solid fa-arrow-down ms-1" aria-hidden="true"></i>
             </RouterLink>
@@ -256,7 +256,7 @@ export default {
                         <div class="card border-0 bg-gradient-primary text-white text-center p-3 rounded-4 action-card h-100">
                             <i class="fa-solid fa-cloud-arrow-up fa-2x mb-2" aria-hidden="true"></i>
                             <strong>Sistema JEMS3</strong>
-                            <small class="text-white-50">Submeter artigo</small>
+                            <small class="text-light">Submeter artigo</small>
                         </div>
                     </a>
                 </div>
@@ -265,16 +265,16 @@ export default {
                         <div class="card border-0 bg-dark text-white text-center p-3 rounded-4 action-card h-100">
                             <i class="fa-solid fa-file-word fa-2x mb-2" aria-hidden="true"></i>
                             <strong>Word e LaTeX</strong>
-                            <small class="text-white-50">Modelos (recomendado)</small>
+                            <small class="text-light">Modelos (recomendado)</small>
                         </div>
                     </a>
                 </div>
                 <div class="col-md-4">
                     <a href="https://www.overleaf.com/latex/templates/sbc-conferences-template-updated-sbc-template-dot-sty-v2017/pyhttxftxjqn" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
-                        <div class="card border-0 bg-success text-white text-center p-3 rounded-4 action-card h-100">
+                        <div class="card border-0 text-white text-center p-3 rounded-4 action-card h-100" style="background-color: #0f5132;">
                             <i class="fa-solid fa-leaf fa-2x mb-2" aria-hidden="true"></i>
-                            <strong>Overleaf</strong>
-                            <small class="text-white-50">Template online</small>
+                            <strong class="text-white">Overleaf</strong>
+                            <small class="text-light">Template online</small>
                         </div>
                     </a>
                 </div>
@@ -291,10 +291,10 @@ export default {
                 Categorias de Submissão
             </h2>
             <div class="card bg-light border-0 rounded-4 p-3 mb-0">
-                <h6 class="mb-2">
+                <h3 class="h6 mb-2">
                     <i class="fa-solid fa-file-alt text-primary me-2" aria-hidden="true"></i>
                     Artigos completos (15 páginas)
-                </h6>
+                </h3>
                 <p>
                     Projetos de pesquisa que tenham alcançado um estágio maduro e apresentem uma
                     contribuição original ao estado da arte são bem-vindos na categoria de artigos

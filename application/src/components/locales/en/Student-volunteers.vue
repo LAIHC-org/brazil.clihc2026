@@ -73,7 +73,7 @@ export default {
                         </span>
                         <div>
                             <strong>Registration Waiver</strong>
-                            <p class="text-muted mb-0 small">Free conference registration fee</p>
+                            <p class="text-dark mb-0 small">Free conference registration fee</p>
                         </div>
                     </div>
                 </div>
@@ -84,7 +84,7 @@ export default {
                         </span>
                         <div>
                             <strong>Session Access</strong>
-                            <p class="text-muted mb-0 small">Scientific sessions and workshops when not on shift</p>
+                            <p class="text-dark mb-0 small">Scientific sessions and workshops when not on shift</p>
                         </div>
                     </div>
                 </div>
@@ -95,7 +95,7 @@ export default {
                         </span>
                         <div>
                             <strong>Certificate</strong>
-                            <p class="text-muted mb-0 small">Volunteer participation certificate</p>
+                            <p class="text-dark mb-0 small">Volunteer participation certificate</p>
                         </div>
                     </div>
                 </div>
@@ -106,7 +106,7 @@ export default {
                         </span>
                         <div>
                             <strong>Exclusive T-Shirt</strong>
-                            <p class="text-muted mb-0 small">Exclusive CLIHC 2026 event T-shirt</p>
+                            <p class="text-dark mb-0 small">Exclusive CLIHC 2026 event T-shirt</p>
                         </div>
                     </div>
                 </div>
@@ -194,24 +194,24 @@ export default {
             </h2>
             <div class="row g-3">
                 <div class="col-md-4">
-                    <div class="text-center p-3 border rounded-3">
+                    <div class="text-center p-3 border rounded-3 h-100">
                         <i class="fa-solid fa-door-open text-success fa-2x mb-2" aria-hidden="true"></i>
                         <p class="mb-1"><strong>Applications Open</strong></p>
-                        <span class="badge bg-success rounded-pill">April 8, 2026</span>
+                        <span class="badge rounded-pill text-white" style="background-color: #146c43 !important;">April 8, 2026</span>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="text-center p-3 border rounded-3 border-danger">
+                    <div class="text-center p-3 border rounded-3 border-danger h-100">
                         <i class="fa-solid fa-hourglass-end text-danger fa-2x mb-2" aria-hidden="true"></i>
                         <p class="mb-1"><strong>Submission Deadline</strong></p>
                         <span class="badge bg-danger rounded-pill">April 17, 2026</span>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="text-center p-3 border rounded-3">
+                    <div class="text-center p-3 border rounded-3 h-100">
                         <i class="fa-solid fa-envelope-open-text text-info fa-2x mb-2" aria-hidden="true"></i>
                         <p class="mb-1"><strong>Acceptance Notification</strong></p>
-                        <span class="badge bg-info rounded-pill">April 21, 2026</span>
+                        <span class="badge bg-info text-dark rounded-pill">April 21, 2026</span>
                     </div>
                 </div>
             </div>

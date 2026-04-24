@@ -21,11 +21,11 @@ export default {
             <i class="fa-solid fa-calendar-check fa-2x text-white" aria-hidden="true"></i>
         </span>
         <div>
-            <strong class="text-white fs-5">Fecha límite de envío de resúmenes: 1 de marzo</strong>
+            <h2 class="text-white fs-5 mb-0 fw-bold">Fecha límite de envío de resúmenes: 1 de marzo</h2>
             <br />
             <RouterLink
                 :to="Tr.i18nRoute({ name: 'call-for-papers', hash: '#cpf-dates' })"
-                class="uline text-white-50"
+                class="uline text-light"
             >
                 Ver todas las fechas importantes <i class="fa-solid fa-arrow-down ms-1" aria-hidden="true"></i>
             </RouterLink>
@@ -257,7 +257,7 @@ export default {
                         <div class="card border-0 bg-gradient-primary text-white text-center p-3 rounded-4 action-card h-100">
                             <i class="fa-solid fa-cloud-arrow-up fa-2x mb-2" aria-hidden="true"></i>
                             <strong>Sistema JEMS3</strong>
-                            <small class="text-white-50">Enviar artículo</small>
+                            <small class="text-light">Enviar artículo</small>
                         </div>
                     </a>
                 </div>
@@ -266,16 +266,16 @@ export default {
                         <div class="card border-0 bg-dark text-white text-center p-3 rounded-4 action-card h-100">
                             <i class="fa-solid fa-file-word fa-2x mb-2" aria-hidden="true"></i>
                             <strong>Word y LaTeX</strong>
-                            <small class="text-white-50">Plantillas (recomendado)</small>
+                            <small class="text-light">Plantillas (recomendado)</small>
                         </div>
                     </a>
                 </div>
                 <div class="col-md-4">
                     <a href="https://www.overleaf.com/latex/templates/sbc-conferences-template-updated-sbc-template-dot-sty-v2017/pyhttxftxjqn" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
-                        <div class="card border-0 bg-success text-white text-center p-3 rounded-4 action-card h-100">
+                        <div class="card border-0 text-white text-center p-3 rounded-4 action-card h-100" style="background-color: #0f5132;">
                             <i class="fa-solid fa-leaf fa-2x mb-2" aria-hidden="true"></i>
-                            <strong>Overleaf</strong>
-                            <small class="text-white-50">Plantilla online</small>
+                            <strong class="text-white">Overleaf</strong>
+                            <small class="text-light">Plantilla online</small>
                         </div>
                     </a>
                 </div>
@@ -292,10 +292,10 @@ export default {
                 Categorías de Envío
             </h2>
             <div class="card bg-light border-0 rounded-4 p-3 mb-0">
-                <h6 class="mb-2">
+                <h3 class="h6 mb-2">
                     <i class="fa-solid fa-file-alt text-primary me-2" aria-hidden="true"></i>
                     Artículos completos (15 páginas)
-                </h6>
+                </h3>
                 <p>
                     Los proyectos de investigación que hayan alcanzado una etapa madura y presenten
                     una contribución original al estado del arte son bienvenidos a enviar trabajos

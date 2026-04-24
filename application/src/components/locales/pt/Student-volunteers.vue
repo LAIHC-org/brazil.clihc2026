@@ -73,7 +73,7 @@ export default {
                         </span>
                         <div>
                             <strong>Isenção de inscrição</strong>
-                            <p class="text-muted mb-0 small">Taxa de inscrição na conferência gratuitamente</p>
+                            <p class="text-dark mb-0 small">Taxa de inscrição na conferência gratuitamente</p>
                         </div>
                     </div>
                 </div>
@@ -84,7 +84,7 @@ export default {
                         </span>
                         <div>
                             <strong>Acesso às sessões</strong>
-                            <p class="text-muted mb-0 small">Sessões científicas e workshops quando não estiver em turno</p>
+                            <p class="text-dark mb-0 small">Sessões científicas e workshops quando não estiver em turno</p>
                         </div>
                     </div>
                 </div>
@@ -95,7 +95,7 @@ export default {
                         </span>
                         <div>
                             <strong>Certificado</strong>
-                            <p class="text-muted mb-0 small">Certificado de participação como voluntário</p>
+                            <p class="text-dark mb-0 small">Certificado de participação como voluntário</p>
                         </div>
                     </div>
                 </div>
@@ -106,7 +106,7 @@ export default {
                         </span>
                         <div>
                             <strong>Camiseta exclusiva</strong>
-                            <p class="text-muted mb-0 small">Camiseta exclusiva do evento CLIHC 2026</p>
+                            <p class="text-dark mb-0 small">Camiseta exclusiva do evento CLIHC 2026</p>
                         </div>
                     </div>
                 </div>
@@ -194,24 +194,24 @@ export default {
             </h2>
             <div class="row g-3">
                 <div class="col-md-4">
-                    <div class="text-center p-3 border rounded-3">
+                    <div class="text-center p-3 border rounded-3 h-100">
                         <i class="fa-solid fa-door-open text-success fa-2x mb-2" aria-hidden="true"></i>
                         <p class="mb-1"><strong>Abertura das inscrições</strong></p>
-                        <span class="badge bg-success rounded-pill">08/04/2026</span>
+                        <span class="badge rounded-pill text-white" style="background-color: #146c43 !important;">08/04/2026</span>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="text-center p-3 border rounded-3 border-danger">
+                    <div class="text-center p-3 border rounded-3 border-danger h-100">
                         <i class="fa-solid fa-hourglass-end text-danger fa-2x mb-2" aria-hidden="true"></i>
                         <p class="mb-1"><strong>Prazo final</strong></p>
                         <span class="badge bg-danger rounded-pill">17/04/2026</span>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="text-center p-3 border rounded-3">
+                    <div class="text-center p-3 border rounded-3 h-100">
                         <i class="fa-solid fa-envelope-open-text text-info fa-2x mb-2" aria-hidden="true"></i>
                         <p class="mb-1"><strong>Notificação de aceitação</strong></p>
-                        <span class="badge bg-info rounded-pill">21/04/2026</span>
+                        <span class="badge bg-info text-dark rounded-pill">21/04/2026</span>
                     </div>
                 </div>
             </div>
