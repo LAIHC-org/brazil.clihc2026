@@ -373,11 +373,11 @@ export default {
     <h3 class="my-4">{{ $t("organizers.full_papers_cahirs_title") }}</h3>
     <p>{{ $t("organizers.full_papers_cahirs_description") }}</p>
     <div class="table-responsive">
-        <table class="table table-hover align-middle cfp-table mb-0">
+        <table class="table table-hover align-middle cfp-table mb-0" aria-label="Comitê de Programa para Artigos Completos">
             <thead>
                 <tr>
-                    <th>Nome</th>
-                    <th>Afiliação</th>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Afiliação</th>
                 </tr>
             </thead>
             <tbody>
@@ -440,11 +440,11 @@ export default {
     <h3 class="my-4">{{ $t("organizers.short_papers_cahirs_title") }}</h3>
     <p>{{ $t("organizers.short_papers_cahirs_description") }}</p>
     <div class="table-responsive">
-        <table class="table table-hover align-middle cfp-table mb-0">
+        <table class="table table-hover align-middle cfp-table mb-0" aria-label="Comitê de Programa para Artigos Curtos">
             <thead>
                 <tr>
-                    <th>Nome</th>
-                    <th>Afiliação</th>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Afiliação</th>
                 </tr>
             </thead>
             <tbody>
