@@ -15,7 +15,7 @@
             <div class="row">
                 <div class="col-6 col-md-2 mb-4">
                     <div>
-                        <h3 class="text-gradient text-secondary text-sm">{{ $t("nav.calls") }}</h3>
+                        <h2 class="text-gradient text-secondary text-sm h3">{{ $t("nav.calls") }}</h2>
                         <ul class="flex-column ms-n3 nav">
                             <li class="nav-item">
                                 <a class="nav-link uline" :href="`https://clihc2026.laihc.org/${Tr.currentLocale}/call-for-participation`">
@@ -28,7 +28,7 @@
 
                 <div class="col-6 col-md-2 mb-4">
                     <div>
-                        <h3 class="text-gradient text-secondary text-sm">{{ $t("nav.for_participants") }}</h3>
+                        <h2 class="text-gradient text-secondary text-sm h3">{{ $t("nav.for_participants") }}</h2>
                         <ul class="flex-column ms-n3 nav">
                             <li class="nav-item">
                                 <RouterLink :to="Tr.i18nRoute({ name: 'getting-started' })"
@@ -50,7 +50,7 @@
 
                 <div class="col-6 col-md-2 mb-4">
                     <div>
-                        <h3 class="text-gradient text-secondary text-sm">{{ $t("nav.program") }}</h3>
+                        <h2 class="text-gradient text-secondary text-sm h3">{{ $t("nav.program") }}</h2>
                         <ul class="flex-column ms-n3 nav">
                             <li class="nav-item">
                                 <RouterLink :to="Tr.i18nRoute({ name: 'schedule' })"
@@ -70,7 +70,7 @@
 
                 <div class="col-6 col-md-2 mb-4">
                     <div>
-                        <h3 class="text-gradient text-secondary text-sm">{{ $t("nav.organization") }}</h3>
+                        <h2 class="text-gradient text-secondary text-sm h3">{{ $t("nav.organization") }}</h2>
                         <ul class="flex-column ms-n3 nav">
                             <li class="nav-item">
                                 <a class="nav-link uline" :href="`https://clihc2026.laihc.org/${Tr.currentLocale}/organizers`">

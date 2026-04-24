@@ -59,32 +59,31 @@ export default {
           <div class="col-lg-10">
 
             <div class="alert alert-gradient-keynote d-flex align-items-center shadow-sm rounded-4 mb-4 p-4 border-0">
-              <span class="me-3 flex-shrink-0">
-                <i class="fa-solid fa-microphone-lines fa-2x text-white"></i>
+              <span class="me-3 flex-shrink-0" aria-hidden="true">
+                <i class="fa-solid fa-microphone-lines fa-2x text-white" aria-hidden="true"></i>
               </span>
               <div>
-                <strong class="text-white fs-5">{{ $t("nav.keynotes") }}</strong>
-                <br />
+                <h2 class="text-white fs-5 mb-0 fw-bold">{{ $t("nav.keynotes") }}</h2>
                 <span class="text-white-50" style="font-size: 0.95rem;">
                   {{ $t("nav.banner_subtitle") }}
                 </span>
               </div>
             </div>
 
-            <div class="d-flex flex-wrap gap-2 mb-4">
-              <RouterLink :to="Tr.i18nRoute({ name: 'keynote-speakers', hash: '#luciana-zaina'})" class="text-decoration-none">
+            <div class="d-flex flex-wrap gap-2 mb-4" role="navigation" aria-label="Keynote Speakers Navigation">
+              <RouterLink :to="Tr.i18nRoute({ name: 'keynote-speakers', hash: '#luciana-zaina'})" class="text-decoration-none" aria-label="Go to Dr. Luciana Zaina">
                 <span class="badge bg-gradient-primary fs-6 px-3 py-2 rounded-pill shadow-sm">
-                  <i class="fa-solid fa-user me-1"></i> Dr. Luciana Zaina
+                  <i class="fa-solid fa-user me-1" aria-hidden="true"></i> Dr. Luciana Zaina
                 </span>
               </RouterLink>
-              <RouterLink :to="Tr.i18nRoute({ name: 'keynote-speakers', hash: '#pedro-reynolds'})" class="text-decoration-none">
+              <RouterLink :to="Tr.i18nRoute({ name: 'keynote-speakers', hash: '#pedro-reynolds'})" class="text-decoration-none" aria-label="Go to Dr. Pedro Reynolds-Cuéllar">
                 <span class="badge bg-gradient-primary fs-6 px-3 py-2 rounded-pill shadow-sm">
-                  <i class="fa-solid fa-user me-1"></i> Dr. Pedro Reynolds-Cuéllar
+                  <i class="fa-solid fa-user me-1" aria-hidden="true"></i> Dr. Pedro Reynolds-Cuéllar
                 </span>
               </RouterLink>
-              <RouterLink :to="Tr.i18nRoute({ name: 'keynote-speakers', hash: '#ann-blandford'})" class="text-decoration-none">
+              <RouterLink :to="Tr.i18nRoute({ name: 'keynote-speakers', hash: '#ann-blandford'})" class="text-decoration-none" aria-label="Go to Dr. Ann Blandford">
                 <span class="badge bg-gradient-primary fs-6 px-3 py-2 rounded-pill shadow-sm">
-                  <i class="fa-solid fa-user me-1"></i> Dr. Ann Blandford
+                  <i class="fa-solid fa-user me-1" aria-hidden="true"></i> Dr. Ann Blandford
                 </span>
               </RouterLink>
             </div>

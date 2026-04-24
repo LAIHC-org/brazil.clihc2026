@@ -3,7 +3,7 @@ export default {}
 </script>
 <template>
     <div class="col-lg-3 col-md-6 mb-4">
-        <h5 class="mb-1">{{ $t("home.organization") }}</h5>
+        <h2 class="h5 mb-1">{{ $t("home.organization") }}</h2>
         <p class="text-secondary small mb-3">{{ $t("home.organization_message") }}</p>
         <div class="d-flex flex-wrap gap-3 justify-content-center">
             <a href="https://www.uninassau.edu.br/" target="_blank" class="text-center text-decoration-none">

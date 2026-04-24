@@ -93,34 +93,34 @@ export default {
 </script>
 
 <template>
-  <div v-if="showBreadcrumbs" class="container">
-    <nav aria-label="breadcrumb" class="small text-secondary">
+  <div v-if="showBreadcrumbs" class="container mt-3">
+    <nav aria-label="breadcrumb" class="small text-dark">
       <ol class="breadcrumb mb-3">
         <li class="breadcrumb-item">
-          <a class="uline text-secondary" :href="centralHref">{{ t('breadcrumbs.central') }}</a>
+          <a class="uline text-dark" :href="centralHref">{{ t('breadcrumbs.central') }}</a>
         </li>
         <li class="breadcrumb-item">
-          <RouterLink class="uline text-secondary" :to="Tr.i18nRoute({ name: 'home' })">
+          <RouterLink class="uline text-dark" :to="Tr.i18nRoute({ name: 'home' })">
             {{ t(siteHomeLabelKey) }}
           </RouterLink>
         </li>
         <li v-if="parentConfig" class="breadcrumb-item">
           <RouterLink
             v-if="parentConfig.to"
-            class="uline text-secondary"
+            class="uline text-dark"
             :to="parentConfig.to"
           >
             {{ t(parentConfig.labelKey) }}
           </RouterLink>
           <a
             v-else
-            class="uline text-secondary"
+            class="uline text-dark"
             :href="parentConfig.href"
           >
             {{ t(parentConfig.labelKey) }}
           </a>
         </li>
-        <li class="breadcrumb-item active" aria-current="page">
+        <li class="breadcrumb-item active text-dark fw-semibold" aria-current="page">
           {{ currentLabel }}
         </li>
       </ol>
