@@ -78,7 +78,7 @@ export default {
         </li>
     </ol>
     <div class="alert alert-danger d-flex align-items-start rounded-3 p-3 mb-4 border-0 text-white" role="alert">
-        <i class="fas fa-exclamation-triangle me-3 mt-1 fs-5 flex-shrink-0"></i>
+        <i class="fas fa-exclamation-triangle me-3 mt-1 fs-5 flex-shrink-0" aria-hidden="true"></i>
         <div>
             <strong>Attention:</strong>
             SBC member registrations without a valid membership card sent within three days will be cancelled.
@@ -89,10 +89,10 @@ export default {
         <div v-for="(cat, index) in nonSbcCategories" :key="'non-sbc-' + index" class="col-md-6 col-lg-3">
             <div class="card border-0 shadow-sm h-100">
                 <div class="card-body text-center d-flex flex-column">
-                    <h6 class="card-title fw-bold text-dark">{{ cat.name }}</h6>
+                    <h4 class="card-title h6 fw-bold text-dark">{{ cat.name }}</h4>
                     <div class="mt-auto pt-3">
                         <p class="fs-3 fw-bold text-primary text-gradient mb-3">{{ cat.price }}</p>
-                        <a :href="cat.link" target="_blank" rel="noopener noreferrer" class="btn bg-gradient-yellow btn-round w-100">Register</a>
+                        <a :href="cat.link" target="_blank" rel="noopener noreferrer" class="btn bg-gradient-yellow btn-round w-100" :aria-label="'Register for category ' + cat.name">Register</a>
                     </div>
                 </div>
             </div>
@@ -103,10 +103,10 @@ export default {
         <div v-for="(cat, index) in sbcCategories" :key="'sbc-' + index" class="col-md-6 col-lg-3">
             <div class="card border-0 shadow-sm h-100">
                 <div class="card-body text-center d-flex flex-column">
-                    <h6 class="card-title fw-bold text-dark">{{ cat.name }}</h6>
+                    <h4 class="card-title h6 fw-bold text-dark">{{ cat.name }}</h4>
                     <div class="mt-auto pt-3">
                         <p class="fs-3 fw-bold text-primary text-gradient mb-3">{{ cat.price }}</p>
-                        <a :href="cat.link" target="_blank" rel="noopener noreferrer" class="btn bg-gradient-yellow btn-round w-100">Register</a>
+                        <a :href="cat.link" target="_blank" rel="noopener noreferrer" class="btn bg-gradient-yellow btn-round w-100" :aria-label="'Register for category ' + cat.name">Register</a>
                     </div>
                 </div>
             </div>

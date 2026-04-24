@@ -17,29 +17,29 @@ export default {
 
 <template>
     <div class="alert alert-gradient d-flex align-items-center shadow-sm rounded-4 mb-4 p-4 border-0">
-        <span class="me-3 flex-shrink-0">
-            <i class="fa-solid fa-calendar-check fa-2x text-white"></i>
+        <span class="me-3 flex-shrink-0" aria-hidden="true">
+            <i class="fa-solid fa-calendar-check fa-2x text-white" aria-hidden="true"></i>
         </span>
         <div>
-            <strong class="text-white fs-5">Prazo para submissão de resumos: 1º de março</strong>
+            <h2 class="text-white fs-5 mb-0 fw-bold">Prazo para submissão de resumos: 1º de março</h2>
             <br />
             <RouterLink
                 :to="Tr.i18nRoute({ name: 'call-for-papers', hash: '#cpf-dates' })"
                 class="uline text-white-50"
             >
-                Ver todas as datas importantes <i class="fa-solid fa-arrow-down ms-1"></i>
+                Ver todas as datas importantes <i class="fa-solid fa-arrow-down ms-1" aria-hidden="true"></i>
             </RouterLink>
         </div>
     </div>
 
     <div class="card border-0 shadow-sm rounded-4 mb-4">
         <div class="card-body p-4">
-            <h5 class="d-flex align-items-center mb-3">
-                <span class="icon icon-shape icon-sm bg-gradient-primary rounded-circle text-white me-2 shadow-sm d-inline-flex align-items-center justify-content-center">
-                    <i class="fa-solid fa-bullhorn"></i>
+            <h2 class="h5 d-flex align-items-center mb-3">
+                <span class="icon icon-shape icon-sm bg-gradient-primary rounded-circle text-white me-2 shadow-sm d-inline-flex align-items-center justify-content-center" aria-hidden="true">
+                    <i class="fa-solid fa-bullhorn" aria-hidden="true"></i>
                 </span>
                 Sobre a CLIHC 2026
-            </h5>
+            </h2>
             <p>
                 A
                 <a href="https://clihc2026.laihc.org/" class="uline">
@@ -77,12 +77,12 @@ export default {
 
     <div class="card border-0 shadow-sm rounded-4 mb-4">
         <div class="card-body p-4">
-            <h5 class="d-flex align-items-center mb-3">
-                <span class="icon icon-shape icon-sm bg-gradient-info rounded-circle text-white me-2 shadow-sm d-inline-flex align-items-center justify-content-center">
-                    <i class="fa-solid fa-lightbulb"></i>
+            <h2 class="h5 d-flex align-items-center mb-3">
+                <span class="icon icon-shape icon-sm bg-gradient-info rounded-circle text-white me-2 shadow-sm d-inline-flex align-items-center justify-content-center" aria-hidden="true">
+                    <i class="fa-solid fa-lightbulb" aria-hidden="true"></i>
                 </span>
                 Temas de Interesse
-            </h5>
+            </h2>
             <p>Os temas das submissões podem abranger todos os aspectos da IHC, incluindo, mas não se limitando a:</p>
             <div class="d-flex flex-wrap gap-2">
                 <span class="badge bg-light text-dark border rounded-pill px-3 py-2">Computação afetiva</span>
@@ -110,12 +110,12 @@ export default {
 
     <div class="card border-0 shadow-sm rounded-4 mb-4">
         <div class="card-body p-4">
-            <h5 class="d-flex align-items-center mb-3">
+            <h2 class="h5 d-flex align-items-center mb-3">
                 <span class="icon icon-shape icon-sm bg-gradient-success rounded-circle text-white me-2 shadow-sm d-inline-flex align-items-center justify-content-center">
-                    <i class="fa-solid fa-paper-plane"></i>
+                    <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
                 </span>
                 Submissão e Datas Importantes
-            </h5>
+            </h2>
             <p>
                 Todos os manuscritos devem ser submetidos completamente anonimizados. Por favor,
                 considere um público internacional: evite termos locais e utilize o sistema
@@ -130,7 +130,7 @@ export default {
                 >.
             </p>
 
-            <h5 id="cpf-dates" class="mt-4 mb-3">Datas importantes (Artigos completos)</h5>
+            <h3 id="cpf-dates" class="h5 mt-4 mb-3">Datas importantes (Artigos completos)</h3>
             <div class="cfp-timeline">
                 <div class="cfp-timeline-item">
                     <div class="cfp-timeline-dot bg-danger"></div>
@@ -168,7 +168,7 @@ export default {
                     </div>
                 </div>
             </div>
-            <p class="text-muted mt-3 mb-0"><small><i class="fa-solid fa-circle-info me-1"></i>Os prazos se encerram à meia-noite AoE (Anywhere on Earth).</small></p>
+            <p class="text-muted mt-3 mb-0"><small><i class="fa-solid fa-circle-info me-1" aria-hidden="true"></i>Os prazos se encerram à meia-noite AoE (Anywhere on Earth).</small></p>
         </div>
     </div>
 
@@ -176,12 +176,12 @@ export default {
         <div class="col-md-6">
             <div class="card border-0 shadow-sm rounded-4 h-100">
                 <div class="card-body p-4">
-                    <h5 class="d-flex align-items-center mb-3">
+                    <h2 class="h5 d-flex align-items-center mb-3">
                         <span class="icon icon-shape icon-sm bg-gradient-warning rounded-circle text-white me-2 shadow-sm d-inline-flex align-items-center justify-content-center">
-                            <i class="fa-solid fa-scale-balanced"></i>
+                            <i class="fa-solid fa-scale-balanced" aria-hidden="true"></i>
                         </span>
                         Código de Ética
-                    </h5>
+                    </h2>
                     <p class="mb-0">
                         Seguimos o
                         <a href="https://www.acm.org/code-of-ethics" class="uline">
@@ -196,13 +196,13 @@ export default {
         <div class="col-md-6">
             <div class="card border-0 shadow-sm rounded-4 h-100">
                 <div class="card-body p-4">
-                    <h5 class="d-flex align-items-center mb-3">
+                    <h2 class="h5 d-flex align-items-center mb-3">
                         <span class="icon icon-shape icon-sm bg-gradient-dark rounded-circle text-white me-2 shadow-sm d-inline-flex align-items-center justify-content-center">
-                            <i class="fa-solid fa-trophy"></i>
+                            <i class="fa-solid fa-trophy" aria-hidden="true"></i>
                         </span>
                         Best Papers
-                    </h5>
-                    <p>
+                    </h2>
+            <p>
                         As pessoas autoras de quatro artigos completos premiados como
                         <strong>Best Papers</strong> na CLIHC 2026 serão convidadas a submeter uma versão
                         estendida em inglês, com pelo menos <strong>30% de conteúdo original</strong>,
@@ -234,12 +234,12 @@ export default {
 
     <div class="card border-0 shadow-sm rounded-4 mb-4">
         <div class="card-body p-4">
-            <h5 class="d-flex align-items-center mb-3">
+            <h2 class="h5 d-flex align-items-center mb-3">
                 <span class="icon icon-shape icon-sm bg-gradient-primary rounded-circle text-white me-2 shadow-sm d-inline-flex align-items-center justify-content-center">
-                    <i class="fa-solid fa-upload"></i>
+                    <i class="fa-solid fa-upload" aria-hidden="true"></i>
                 </span>
                 Processo de Submissão
-            </h5>
+            </h2>
             <p>
                 As submissões de artigos completos devem ser realizadas por meio do
                 <a href="https://jems3.sbc.org.br/events/510" class="uline">Sistema JEMS3</a>
@@ -254,7 +254,7 @@ export default {
                 <div class="col-md-4">
                     <a href="https://jems3.sbc.org.br/events/510" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
                         <div class="card border-0 bg-gradient-primary text-white text-center p-3 rounded-4 action-card h-100">
-                            <i class="fa-solid fa-cloud-arrow-up fa-2x mb-2"></i>
+                            <i class="fa-solid fa-cloud-arrow-up fa-2x mb-2" aria-hidden="true"></i>
                             <strong>Sistema JEMS3</strong>
                             <small class="text-white-50">Submeter artigo</small>
                         </div>
@@ -263,7 +263,7 @@ export default {
                 <div class="col-md-4">
                     <a href="https://www.sbc.org.br/wp-content/uploads/2024/07/modelosparapublicaodeartigos.zip" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
                         <div class="card border-0 bg-dark text-white text-center p-3 rounded-4 action-card h-100">
-                            <i class="fa-solid fa-file-word fa-2x mb-2"></i>
+                            <i class="fa-solid fa-file-word fa-2x mb-2" aria-hidden="true"></i>
                             <strong>Word e LaTeX</strong>
                             <small class="text-white-50">Modelos (recomendado)</small>
                         </div>
@@ -272,7 +272,7 @@ export default {
                 <div class="col-md-4">
                     <a href="https://www.overleaf.com/latex/templates/sbc-conferences-template-updated-sbc-template-dot-sty-v2017/pyhttxftxjqn" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
                         <div class="card border-0 bg-success text-white text-center p-3 rounded-4 action-card h-100">
-                            <i class="fa-solid fa-leaf fa-2x mb-2"></i>
+                            <i class="fa-solid fa-leaf fa-2x mb-2" aria-hidden="true"></i>
                             <strong>Overleaf</strong>
                             <small class="text-white-50">Template online</small>
                         </div>
@@ -284,16 +284,15 @@ export default {
 
     <div class="card border-0 shadow-sm rounded-4 mb-4">
         <div class="card-body p-4">
-            <h5 class="d-flex align-items-center mb-3">
+            <h2 class="h5 d-flex align-items-center mb-3">
                 <span class="icon icon-shape icon-sm bg-gradient-info rounded-circle text-white me-2 shadow-sm d-inline-flex align-items-center justify-content-center">
-                    <i class="fa-solid fa-file-lines"></i>
+                    <i class="fa-solid fa-file-lines" aria-hidden="true"></i>
                 </span>
                 Categorias de Submissão
-            </h5>
-
+            </h2>
             <div class="card bg-light border-0 rounded-4 p-3 mb-0">
                 <h6 class="mb-2">
-                    <i class="fa-solid fa-file-alt text-primary me-2"></i>
+                    <i class="fa-solid fa-file-alt text-primary me-2" aria-hidden="true"></i>
                     Artigos completos (15 páginas)
                 </h6>
                 <p>

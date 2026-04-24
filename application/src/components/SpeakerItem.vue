@@ -8,9 +8,9 @@
                 <slot name="image-shadow"></slot>
             </div>
             <div class="card-body d-flex flex-column flex-grow-1">
-                <h4 class="mt-3">
+                <h3 class="mt-3 h4">
                     <slot name="name"></slot>
-                </h4>
+                </h3>
                 <p class="mb-0">
                     <slot></slot>
                 </p>

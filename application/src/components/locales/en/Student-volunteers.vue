@@ -18,7 +18,7 @@ export default {
 <template>
     <div class="alert alert-gradient d-flex align-items-center shadow-sm rounded-4 mb-4 p-4 border-0">
         <span class="me-3 flex-shrink-0">
-            <i class="fa-solid fa-hand-holding-heart fa-2x text-white"></i>
+            <i class="fa-solid fa-hand-holding-heart fa-2x text-white" aria-hidden="true"></i>
         </span>
         <div>
             <strong class="text-white fs-5">Student Volunteer Applications Open!</strong>
@@ -31,12 +31,12 @@ export default {
 
     <div class="card border-0 shadow-sm rounded-4 mb-4">
         <div class="card-body p-4">
-            <h5 class="d-flex align-items-center mb-3">
+            <h2 class="h5 d-flex align-items-center mb-3">
                 <span class="icon icon-shape icon-sm bg-gradient-primary rounded-circle text-white me-2 shadow-sm d-inline-flex align-items-center justify-content-center">
-                    <i class="fa-solid fa-circle-info"></i>
+                    <i class="fa-solid fa-circle-info" aria-hidden="true"></i>
                 </span>
                 About the Program
-            </h5>
+            </h2>
             <p>
                 The <strong>Student Volunteers (SV)</strong> program is an opportunity for undergraduate
                 and graduate students to actively participate in the organization of
@@ -45,13 +45,13 @@ export default {
             </p>
             <div class="d-flex flex-wrap gap-2 mt-3">
                 <span class="badge bg-gradient-primary fs-6 px-3 py-2 rounded-pill">
-                    <i class="fa-solid fa-location-dot me-1"></i> Aracaju, Brazil
+                    <i class="fa-solid fa-location-dot me-1" aria-hidden="true"></i> Aracaju, Brazil
                 </span>
                 <span class="badge bg-gradient-primary fs-6 px-3 py-2 rounded-pill">
-                    <i class="fa-regular fa-calendar me-1"></i> May 6–8, 2026
+                    <i class="fa-regular fa-calendar me-1" aria-hidden="true"></i> May 6–8, 2026
                 </span>
                 <span class="badge bg-gradient-primary fs-6 px-3 py-2 rounded-pill">
-                    <i class="fa-solid fa-clock me-1"></i> ~40 hours of service
+                    <i class="fa-solid fa-clock me-1" aria-hidden="true"></i> ~40 hours of service
                 </span>
             </div>
         </div>
@@ -59,17 +59,17 @@ export default {
 
     <div class="card border-0 shadow-sm rounded-4 mb-4">
         <div class="card-body p-4">
-            <h5 class="d-flex align-items-center mb-3">
+            <h2 class="h5 d-flex align-items-center mb-3">
                 <span class="icon icon-shape icon-sm bg-gradient-success rounded-circle text-white me-2 shadow-sm d-inline-flex align-items-center justify-content-center">
-                    <i class="fa-solid fa-gift"></i>
+                    <i class="fa-solid fa-gift" aria-hidden="true"></i>
                 </span>
                 Volunteer Benefits
-            </h5>
+            </h2>
             <div class="row g-3">
                 <div class="col-md-6">
                     <div class="d-flex align-items-start p-3 bg-light rounded-3 h-100">
                         <span class="icon icon-shape icon-sm bg-white shadow-sm rounded-circle text-success me-3 flex-shrink-0 d-inline-flex align-items-center justify-content-center">
-                            <i class="fa-solid fa-ticket"></i>
+                            <i class="fa-solid fa-ticket" aria-hidden="true"></i>
                         </span>
                         <div>
                             <strong>Registration Waiver</strong>
@@ -80,7 +80,7 @@ export default {
                 <div class="col-md-6">
                     <div class="d-flex align-items-start p-3 bg-light rounded-3 h-100">
                         <span class="icon icon-shape icon-sm bg-white shadow-sm rounded-circle text-success me-3 flex-shrink-0 d-inline-flex align-items-center justify-content-center">
-                            <i class="fa-solid fa-book-open"></i>
+                            <i class="fa-solid fa-book-open" aria-hidden="true"></i>
                         </span>
                         <div>
                             <strong>Session Access</strong>
@@ -91,7 +91,7 @@ export default {
                 <div class="col-md-6">
                     <div class="d-flex align-items-start p-3 bg-light rounded-3 h-100">
                         <span class="icon icon-shape icon-sm bg-white shadow-sm rounded-circle text-success me-3 flex-shrink-0 d-inline-flex align-items-center justify-content-center">
-                            <i class="fa-solid fa-certificate"></i>
+                            <i class="fa-solid fa-certificate" aria-hidden="true"></i>
                         </span>
                         <div>
                             <strong>Certificate</strong>
@@ -102,7 +102,7 @@ export default {
                 <div class="col-md-6">
                     <div class="d-flex align-items-start p-3 bg-light rounded-3 h-100">
                         <span class="icon icon-shape icon-sm bg-white shadow-sm rounded-circle text-success me-3 flex-shrink-0 d-inline-flex align-items-center justify-content-center">
-                            <i class="fa-solid fa-shirt"></i>
+                            <i class="fa-solid fa-shirt" aria-hidden="true"></i>
                         </span>
                         <div>
                             <strong>Exclusive T-Shirt</strong>
@@ -112,7 +112,7 @@ export default {
                 </div>
             </div>
             <div class="alert alert-warning rounded-3 mt-3 mb-0 d-flex align-items-center">
-                <i class="fa-solid fa-triangle-exclamation me-2"></i>
+                <i class="fa-solid fa-triangle-exclamation me-2" aria-hidden="true"></i>
                 <small><strong>Note:</strong> Travel, accommodation, lunch, and dinner expenses are the responsibility of the student.</small>
             </div>
         </div>
@@ -120,34 +120,34 @@ export default {
 
     <div class="card border-0 shadow-sm rounded-4 mb-4">
         <div class="card-body p-4">
-            <h5 class="d-flex align-items-center mb-3">
+            <h2 class="h5 d-flex align-items-center mb-3">
                 <span class="icon icon-shape icon-sm bg-gradient-info rounded-circle text-white me-2 shadow-sm d-inline-flex align-items-center justify-content-center">
-                    <i class="fa-solid fa-list-check"></i>
+                    <i class="fa-solid fa-list-check" aria-hidden="true"></i>
                 </span>
                 Responsibilities
-            </h5>
+            </h2>
             <div class="row g-3">
                 <div class="col-md-6">
                     <div class="d-flex align-items-center p-3 border rounded-3">
-                        <span class="text-primary me-3"><i class="fa-solid fa-clipboard-check fa-lg"></i></span>
+                        <span class="text-primary me-3"><i class="fa-solid fa-clipboard-check fa-lg" aria-hidden="true"></i></span>
                         <span>Registration support and kit distribution</span>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="d-flex align-items-center p-3 border rounded-3">
-                        <span class="text-primary me-3"><i class="fa-solid fa-headset fa-lg"></i></span>
+                        <span class="text-primary me-3"><i class="fa-solid fa-headset fa-lg" aria-hidden="true"></i></span>
                         <span>Technical assistance in remote or in-person sessions</span>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="d-flex align-items-center p-3 border rounded-3">
-                        <span class="text-primary me-3"><i class="fa-solid fa-people-arrows fa-lg"></i></span>
+                        <span class="text-primary me-3"><i class="fa-solid fa-people-arrows fa-lg" aria-hidden="true"></i></span>
                         <span>Participant flow and direction guidance</span>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="d-flex align-items-center p-3 border rounded-3">
-                        <span class="text-primary me-3"><i class="fa-solid fa-microphone fa-lg"></i></span>
+                        <span class="text-primary me-3"><i class="fa-solid fa-microphone fa-lg" aria-hidden="true"></i></span>
                         <span>Support for speakers and organizing committee</span>
                     </div>
                 </div>
@@ -157,12 +157,12 @@ export default {
 
     <div class="card border-0 shadow-sm rounded-4 mb-4">
         <div class="card-body p-4">
-            <h5 class="d-flex align-items-center mb-3">
+            <h2 class="h5 d-flex align-items-center mb-3">
                 <span class="icon icon-shape icon-sm bg-gradient-warning rounded-circle text-white me-2 shadow-sm d-inline-flex align-items-center justify-content-center">
-                    <i class="fa-solid fa-user-check"></i>
+                    <i class="fa-solid fa-user-check" aria-hidden="true"></i>
                 </span>
                 Application Requirements
-            </h5>
+            </h2>
             <ul class="list-group list-group-flush">
                 <li class="list-group-item d-flex align-items-start border-0 px-0">
                     <span class="badge bg-primary rounded-pill me-2 mt-1 flex-shrink-0">1</span>
@@ -186,30 +186,30 @@ export default {
 
     <div class="card border-0 shadow-sm rounded-4 mb-4">
         <div class="card-body p-4">
-            <h5 class="d-flex align-items-center mb-3">
+            <h2 class="h5 d-flex align-items-center mb-3">
                 <span class="icon icon-shape icon-sm bg-gradient-danger rounded-circle text-white me-2 shadow-sm d-inline-flex align-items-center justify-content-center">
-                    <i class="fa-solid fa-calendar-days"></i>
+                    <i class="fa-solid fa-calendar-days" aria-hidden="true"></i>
                 </span>
                 Important Dates
-            </h5>
+            </h2>
             <div class="row g-3">
                 <div class="col-md-4">
                     <div class="text-center p-3 border rounded-3">
-                        <i class="fa-solid fa-door-open text-success fa-2x mb-2"></i>
+                        <i class="fa-solid fa-door-open text-success fa-2x mb-2" aria-hidden="true"></i>
                         <p class="mb-1"><strong>Applications Open</strong></p>
                         <span class="badge bg-success rounded-pill">April 8, 2026</span>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="text-center p-3 border rounded-3 border-danger">
-                        <i class="fa-solid fa-hourglass-end text-danger fa-2x mb-2"></i>
+                        <i class="fa-solid fa-hourglass-end text-danger fa-2x mb-2" aria-hidden="true"></i>
                         <p class="mb-1"><strong>Submission Deadline</strong></p>
                         <span class="badge bg-danger rounded-pill">April 17, 2026</span>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="text-center p-3 border rounded-3">
-                        <i class="fa-solid fa-envelope-open-text text-info fa-2x mb-2"></i>
+                        <i class="fa-solid fa-envelope-open-text text-info fa-2x mb-2" aria-hidden="true"></i>
                         <p class="mb-1"><strong>Acceptance Notification</strong></p>
                         <span class="badge bg-info rounded-pill">April 21, 2026</span>
                     </div>
@@ -220,12 +220,12 @@ export default {
 
     <div class="card border-0 shadow-sm rounded-4 mb-4">
         <div class="card-body p-4">
-            <h5 class="d-flex align-items-center mb-3">
+            <h2 class="h5 d-flex align-items-center mb-3">
                 <span class="icon icon-shape icon-sm bg-gradient-primary rounded-circle text-white me-2 shadow-sm d-inline-flex align-items-center justify-content-center">
-                    <i class="fa-solid fa-pen-to-square"></i>
+                    <i class="fa-solid fa-pen-to-square" aria-hidden="true"></i>
                 </span>
                 How to Apply
-            </h5>
+            </h2>
             <p>
                 Interested students should fill out the official application form. The process is simple and
                 takes only a few minutes.
@@ -237,7 +237,7 @@ export default {
                     rel="noopener noreferrer"
                     class="btn btn-primary btn-lg bg-gradient-primary border-0 rounded-pill px-5 shadow-sm"
                 >
-                    <i class="fa-solid fa-arrow-up-right-from-square me-2"></i>
+                    <i class="fa-solid fa-arrow-up-right-from-square me-2" aria-hidden="true"></i>
                     Application Form
                 </a>
             </div>
@@ -246,29 +246,29 @@ export default {
 
     <div class="card border-0 shadow-sm rounded-4 mb-4">
         <div class="card-body p-4">
-            <h5 class="d-flex align-items-center mb-3">
+            <h2 class="h5 d-flex align-items-center mb-3">
                 <span class="icon icon-shape icon-sm bg-gradient-info rounded-circle text-white me-2 shadow-sm d-inline-flex align-items-center justify-content-center">
-                    <i class="fa-solid fa-users-gear"></i>
+                    <i class="fa-solid fa-users-gear" aria-hidden="true"></i>
                 </span>
                 Selection Process
-            </h5>
+            </h2>
             <p>SVs will be selected based on:</p>
             <div class="row g-3">
                 <div class="col-md-4">
                     <div class="text-center p-3 bg-light rounded-3">
-                        <i class="fa-solid fa-briefcase text-primary fa-lg mb-2"></i>
+                        <i class="fa-solid fa-briefcase text-primary fa-lg mb-2" aria-hidden="true"></i>
                         <p class="mb-0 small"><strong>Previous experience</strong> in volunteer work</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="text-center p-3 bg-light rounded-3">
-                        <i class="fa-solid fa-star text-primary fa-lg mb-2"></i>
+                        <i class="fa-solid fa-star text-primary fa-lg mb-2" aria-hidden="true"></i>
                         <p class="mb-0 small"><strong>Relevant skills</strong> and experience</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="text-center p-3 bg-light rounded-3">
-                        <i class="fa-solid fa-earth-americas text-primary fa-lg mb-2"></i>
+                        <i class="fa-solid fa-earth-americas text-primary fa-lg mb-2" aria-hidden="true"></i>
                         <p class="mb-0 small"><strong>Diversity</strong> of gender, nationality, and background</p>
                     </div>
                 </div>
@@ -278,12 +278,12 @@ export default {
 
     <div class="card border-0 shadow-sm rounded-4 mb-4">
         <div class="card-body p-4">
-            <h5 class="d-flex align-items-center mb-3">
+            <h2 class="h5 d-flex align-items-center mb-3">
                 <span class="icon icon-shape icon-sm bg-gradient-success rounded-circle text-white me-2 shadow-sm d-inline-flex align-items-center justify-content-center">
-                    <i class="fa-solid fa-people-group"></i>
+                    <i class="fa-solid fa-people-group" aria-hidden="true"></i>
                 </span>
                 Number of Selected Volunteers per Day
-            </h5>
+            </h2>
             <div class="table-responsive">
                 <table class="table table-hover align-middle text-center mb-0">
                     <thead>
@@ -319,13 +319,13 @@ export default {
         </div>
     </div>
 
-    <h5 class="d-flex align-items-center mb-3">
+    <h2 class="h5 d-flex align-items-center mb-3">
         <span class="icon icon-shape icon-sm bg-gradient-primary rounded-circle text-white me-2 shadow-sm d-inline-flex align-items-center justify-content-center">
-            <i class="fa-solid fa-user-tie"></i>
+            <i class="fa-solid fa-user-tie" aria-hidden="true"></i>
         </span>
         Coordination
-    </h5>
-    <div class="row g-3">
+    </h2>
+            <div class="row g-3">
         <div class="col-md-4 d-flex">
             <OrganizerItem class="w-100">
                 <template #image>

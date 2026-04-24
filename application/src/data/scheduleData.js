@@ -47,21 +47,49 @@ export const scheduleData = {
                         {
                             location: 'Room 1 (Rio Poxim)',
                             type: SessionType.WORKSHOP,
-                            tag: 'Workshop',
-                            title: 'Cultures, Otherness, and Participation in HCI (CAPA\'2026)'
+                            tag: {
+                                en: 'Workshop',
+                                pt: 'Workshop',
+                                es: 'Workshop'
+                            },
+                            title: {
+                                en: "Cultures, Otherness, and Participation in HCI (CAPA'2026)",
+                                pt: "Culturas, Alteridade e Participação em IHC (CAPA'2026)",
+                                es: "Culturas, Otredad y Participación en IHC (CAPA'2026)"
+                            }
                         },
                         {
                             location: 'Room 2 (Rio Fundo)',
                             type: SessionType.TUTORIAL,
-                            tag: 'Tutorial',
-                            title: 'Participatory Design Thinking Involving People with Visual Impairments: Developing Inclusive VR Games'
+                            tag: {
+                                en: 'Tutorial',
+                                pt: 'Tutorial',
+                                es: 'Tutorial'
+                            },
+                            title: {
+                                en: 'Participatory Design Thinking Involving People with Visual Impairments: Developing Inclusive VR Games',
+                                pt: 'Design Thinking Participativo Envolvendo Pessoas com Deficiência Visual: Desenvolvendo Jogos em VR Inclusivos',
+                                es: 'Design Thinking Participativo Involucrando Personas con Discapacidad Visual: Desarrollo de Juegos en VR Inclusivos'
+                            }
                         },
                         {
                             location: 'Online',
                             type: SessionType.TUTORIAL,
-                            tag: 'BR-CHI Tutorial',
-                            title: 'Research on HCI',
-                            subtitle: 'Brazilian SIGCHI Chapter - BR-CHI'
+                            tag: {
+                                en: 'BR-CHI Tutorial',
+                                pt: 'Tutorial BR-CHI',
+                                es: 'Tutorial BR-CHI'
+                            },
+                            title: {
+                                en: 'Research on HCI',
+                                pt: 'Pesquisa em IHC',
+                                es: 'Investigación en IHC'
+                            },
+                            subtitle: {
+                                en: 'Brazilian SIGCHI Chapter - BR-CHI',
+                                pt: 'Capítulo Brasileiro da SIGCHI - BR-CHI',
+                                es: 'Capítulo Brasileño de SIGCHI - BR-CHI'
+                            }
                         }
                     ]
                 },
@@ -85,23 +113,51 @@ export const scheduleData = {
                         {
                             location: 'Room 1 (Rio Poxim)',
                             type: SessionType.WORKSHOP,
-                            tag: 'Workshop',
-                            title: 'Cultures, Otherness, and Participation in HCI (CAPA\'2026)',
+                            tag: {
+                                en: 'Workshop',
+                                pt: 'Workshop',
+                                es: 'Workshop'
+                            },
+                            title: {
+                                en: "Cultures, Otherness, and Participation in HCI (CAPA'2026)",
+                                pt: "Culturas, Alteridade e Participação em IHC (CAPA'2026)",
+                                es: "Culturas, Otredad y Participación en IHC (CAPA'2026)"
+                            },
                             continuation: true
                         },
                         {
                             location: 'Room 2 (Rio Fundo)',
                             type: SessionType.TUTORIAL,
-                            tag: 'Tutorial',
-                            title: 'Participatory Design Thinking Involving People with Visual Impairments: Developing Inclusive VR Games',
+                            tag: {
+                                en: 'Tutorial',
+                                pt: 'Tutorial',
+                                es: 'Tutorial'
+                            },
+                            title: {
+                                en: 'Participatory Design Thinking Involving People with Visual Impairments: Developing Inclusive VR Games',
+                                pt: 'Design Thinking Participativo Envolvendo Pessoas com Deficiência Visual: Desenvolvendo Jogos em VR Inclusivos',
+                                es: 'Design Thinking Participativo Involucrando Personas con Discapacidad Visual: Desarrollo de Juegos en VR Inclusivos'
+                            },
                             continuation: true
                         },
                         {
                             location: 'Online',
                             type: SessionType.TUTORIAL,
-                            tag: 'BR-CHI Tutorial',
-                            title: 'Research on HCI',
-                            subtitle: 'Brazilian SIGCHI Chapter - BR-CHI',
+                            tag: {
+                                en: 'BR-CHI Tutorial',
+                                pt: 'Tutorial BR-CHI',
+                                es: 'Tutorial BR-CHI'
+                            },
+                            title: {
+                                en: 'Research on HCI',
+                                pt: 'Pesquisa em IHC',
+                                es: 'Investigación en IHC'
+                            },
+                            subtitle: {
+                                en: 'Brazilian SIGCHI Chapter - BR-CHI',
+                                pt: 'Capítulo Brasileiro da SIGCHI - BR-CHI',
+                                es: 'Capítulo Brasileño de SIGCHI - BR-CHI'
+                            },
                             continuation: true
                         }
                     ]
@@ -126,23 +182,51 @@ export const scheduleData = {
                         {
                             location: 'Room 1 (Rio Poxim)',
                             type: SessionType.WORKSHOP,
-                            tag: 'Workshop',
-                            title: 'Cultures, Otherness, and Participation in HCI (CAPA\'2026)',
+                            tag: {
+                                en: 'Workshop',
+                                pt: 'Workshop',
+                                es: 'Workshop'
+                            },
+                            title: {
+                                en: "Cultures, Otherness, and Participation in HCI (CAPA'2026)",
+                                pt: "Culturas, Alteridade e Participação em IHC (CAPA'2026)",
+                                es: "Culturas, Otredad y Participación en IHC (CAPA'2026)"
+                            },
                             continuation: true
                         },
                         {
                             location: 'Room 2 (Rio Fundo)',
                             type: SessionType.TUTORIAL,
-                            tag: 'Tutorial',
-                            title: 'Participatory Design Thinking Involving People with Visual Impairments: Developing Inclusive VR Games',
+                            tag: {
+                                en: 'Tutorial',
+                                pt: 'Tutorial',
+                                es: 'Tutorial'
+                            },
+                            title: {
+                                en: 'Participatory Design Thinking Involving People with Visual Impairments: Developing Inclusive VR Games',
+                                pt: 'Design Thinking Participativo Envolvendo Pessoas com Deficiência Visual: Desenvolvendo Jogos em VR Inclusivos',
+                                es: 'Design Thinking Participativo Involucrando Personas con Discapacidad Visual: Desarrollo de Juegos en VR Inclusivos'
+                            },
                             continuation: true
                         },
                         {
                             location: 'Online',
                             type: SessionType.TUTORIAL,
-                            tag: 'BR-CHI Tutorial',
-                            title: 'Research on HCI',
-                            subtitle: 'Brazilian SIGCHI Chapter - BR-CHI',
+                            tag: {
+                                en: 'BR-CHI Tutorial',
+                                pt: 'Tutorial BR-CHI',
+                                es: 'Tutorial BR-CHI'
+                            },
+                            title: {
+                                en: 'Research on HCI',
+                                pt: 'Pesquisa em IHC',
+                                es: 'Investigación em IHC'
+                            },
+                            subtitle: {
+                                en: 'Brazilian SIGCHI Chapter - BR-CHI',
+                                pt: 'Capítulo Brasileiro da SIGCHI - BR-CHI',
+                                es: 'Capítulo Brasileño de SIGCHI - BR-CHI'
+                            },
                             continuation: true
                         }
                     ]
@@ -167,7 +251,11 @@ export const scheduleData = {
                         {
                             location: 'Auditorium',
                             type: SessionType.KEYNOTE,
-                            tag: 'Keynote',
+                            tag: {
+                                en: 'Keynote',
+                                pt: 'Palestra Principal',
+                                es: 'Ponencia Principal'
+                            },
                             title: {
                                 en: 'Opening & Invited Keynote Speaker',
                                 pt: 'Abertura & Palestrante Principal Convidado',
@@ -210,7 +298,11 @@ export const scheduleData = {
                             location: 'Room 1 (Rio Poxim)',
                             type: SessionType.PAPER_SESSION,
                             tag: 'TS1',
-                            title: 'Technical Session 1',
+                            title: {
+                                en: 'Technical Session 1',
+                                pt: 'Sessão Técnica 1',
+                                es: 'Sesión Técnica 1'
+                            },
                             chair: 'Dr. Gilton Ferreira',
                             papers: [
                                 {
@@ -238,8 +330,16 @@ export const scheduleData = {
                         {
                             location: 'Room 2 (Rio Fundo)',
                             type: SessionType.COMPETITION,
-                            tag: 'SDC',
-                            title: 'Student Design Competition'
+                            tag: {
+                                en: 'SDC',
+                                pt: 'CDE',
+                                es: 'CDE'
+                            },
+                            title: {
+                                en: 'Student Design Competition',
+                                pt: 'Competição de Design Estudantil',
+                                es: 'Competición de Diseño Estudiantil'
+                            }
                         }
                     ]
                 },
@@ -263,7 +363,11 @@ export const scheduleData = {
                         {
                             location: 'Auditorium',
                             type: SessionType.KEYNOTE,
-                            tag: 'Keynote',
+                            tag: {
+                                en: 'Keynote',
+                                pt: 'Palestra Principal',
+                                es: 'Ponencia Principal'
+                            },
                             title: {
                                 en: 'Invited Keynote Speaker',
                                 pt: 'Palestrante Principal Convidada',
@@ -294,8 +398,16 @@ export const scheduleData = {
                         {
                             location: 'Auditorium',
                             type: SessionType.PANEL,
-                            tag: 'Painel',
-                            title: 'Relação da Associação de Desenvolvedores de Jogos de Sergipe com Indústria e Academia',
+                            tag: {
+                                en: 'Panel',
+                                pt: 'Painel',
+                                es: 'Panel'
+                            },
+                            title: {
+                                en: 'Relationship of the Sergipe Game Developers Association with Industry and Academia',
+                                pt: 'Relação da Associação de Desenvolvedores de Jogos de Sergipe com Indústria e Academia',
+                                es: 'Relación de la Asociación de Desarrolladores de Juegos de Sergipe con la Industria y la Academia'
+                            },
                             panelists: [
                                 'Gilvanda Moura',
                                 'Daniel Caldas',
@@ -307,8 +419,16 @@ export const scheduleData = {
                         {
                             location: 'Room 1 (Rio Poxim)',
                             type: SessionType.COLLOQUIUM,
-                            tag: 'GC',
-                            title: 'Graduate Colloquium'
+                            tag: {
+                                en: 'GC',
+                                pt: 'CG',
+                                es: 'CG'
+                            },
+                            title: {
+                                en: 'Graduate Colloquium',
+                                pt: 'Colóquio de Pós-Graduação',
+                                es: 'Coloquio de Posgrado'
+                            }
                         }
                     ]
                 },
@@ -332,8 +452,16 @@ export const scheduleData = {
                         {
                             location: 'Auditorium',
                             type: SessionType.PANEL,
-                            tag: 'Painel',
-                            title: 'Relação de Empresas com Academia (Neuroverse, LookInside e Ada)',
+                            tag: {
+                                en: 'Panel',
+                                pt: 'Painel',
+                                es: 'Panel'
+                            },
+                            title: {
+                                en: 'Relationship between Companies and Academia (Neuroverse, LookInside and Ada)',
+                                pt: 'Relação de Empresas com Academia (Neuroverse, LookInside e Ada)',
+                                es: 'Relación de Empresas con la Academia (Neuroverse, LookInside y Ada)'
+                            },
                             panelists: [
                                 'Alana Vasconcelos',
                                 'Hermilio Carvalho Junior',
@@ -347,7 +475,11 @@ export const scheduleData = {
                             location: 'Room 1 (Rio Poxim)',
                             type: SessionType.PAPER_SESSION,
                             tag: 'TS2',
-                            title: 'Technical Session 2',
+                            title: {
+                                en: 'Technical Session 2',
+                                pt: 'Sessão Técnica 2',
+                                es: 'Sesión Técnica 2'
+                            },
                             chair: 'Valéria Queiroz',
                             papers: [
                                 {
@@ -405,7 +537,11 @@ export const scheduleData = {
                         {
                             location: 'Auditorium',
                             type: SessionType.KEYNOTE,
-                            tag: 'Keynote',
+                            tag: {
+                                en: 'Keynote',
+                                pt: 'Palestra Principal',
+                                es: 'Ponencia Principal'
+                            },
                             title: {
                                 en: 'Invited Keynote Speaker',
                                 pt: 'Palestrante Principal Convidada',
@@ -436,7 +572,11 @@ export const scheduleData = {
                         {
                             location: 'Auditorium',
                             type: SessionType.PANEL,
-                            tag: 'BR-CHI Painel',
+                            tag: {
+                                en: 'BR-CHI Panel',
+                                pt: 'Painel BR-CHI',
+                                es: 'Panel BR-CHI'
+                            },
                             title: {
                                 en: 'Latin American Collaboration for HCI',
                                 pt: 'Colaboração Latino-Americana para IHC',
@@ -466,8 +606,16 @@ export const scheduleData = {
                         {
                             location: 'Auditorium',
                             type: SessionType.PAPER_SESSION,
-                            tag: 'TS3 - Best Papers',
-                            title: 'Technical Session 3 - Best Papers',
+                            tag: {
+                                en: 'TS3 - Best Papers',
+                                pt: 'ST3 - Melhores Artigos',
+                                es: 'ST3 - Mejores Artículos'
+                            },
+                            title: {
+                                en: 'Technical Session 3 - Best Papers',
+                                pt: 'Sessão Técnica 3 - Melhores Artigos',
+                                es: 'Sesión Técnica 3 - Mejores Artículos'
+                            },
                             chair: 'Dr. Jean Rosa',
                             papers: [
                                 {
@@ -510,8 +658,16 @@ export const scheduleData = {
                         {
                             location: 'Auditorium',
                             type: SessionType.PANEL,
-                            tag: 'Keynote Panel',
-                            title: 'HCI for a Responsible Dialogue between the Human, the Natural, and the Digital',
+                            tag: {
+                                en: 'Keynote Panel',
+                                pt: 'Painel Keynote',
+                                es: 'Panel Keynote'
+                            },
+                            title: {
+                                en: 'HCI for a Responsible Dialogue between the Human, the Natural, and the Digital',
+                                pt: 'IHC para um Diálogo Responsável entre o Humano, o Natural e o Digital',
+                                es: 'IHC para un Diálogo Responsable entre lo Humano, lo Natural y lo Digital'
+                            },
                             description: {
                                 en: 'Panel with the Invited Keynote Speakers',
                                 pt: 'Painel com os Palestrantes Principais Convidados',

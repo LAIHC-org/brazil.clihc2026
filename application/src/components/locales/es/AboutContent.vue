@@ -16,12 +16,12 @@ import Tr from '@/i18n/translation'
 		<div class="col-md-4">
 			<div class="card card-plain text-center h-100">
 				<div class="card-body px-3">
-					<h5 class="d-flex align-items-center justify-content-center mb-3">
+					<h2 class="h5 d-flex align-items-center justify-content-center mb-3">
 						<span class="icon icon-shape icon-sm bg-gradient-primary rounded-circle text-white me-2 shadow-sm d-inline-flex align-items-center justify-content-center">
-							<i class="fa-solid fa-globe"></i>
+							<i class="fa-solid fa-globe" aria-hidden="true"></i>
 						</span>
 						Formato Distribuido
-					</h5>
+					</h2>
 					<p class="text-sm">
 						CLIHC 2026 se realiza en formato distribuido, con dos sedes presenciales en América Latina, promoviendo una experiencia integrada y plural.
 					</p>
@@ -31,12 +31,12 @@ import Tr from '@/i18n/translation'
 		<div class="col-md-4">
 			<div class="card card-plain text-center h-100">
 				<div class="card-body px-3">
-					<h5 class="d-flex align-items-center justify-content-center mb-3">
+					<h2 class="h5 d-flex align-items-center justify-content-center mb-3">
 						<span class="icon icon-shape icon-sm bg-gradient-warning rounded-circle text-white me-2 shadow-sm d-inline-flex align-items-center justify-content-center">
-							<i class="fa-solid fa-location-dot"></i>
+							<i class="fa-solid fa-location-dot" aria-hidden="true"></i>
 						</span>
 						Aracaju, Brasil
-					</h5>
+					</h2>
 					<p class="text-sm">
 						En Brasil, la conferencia se realizará en el Centro Universitario Maurício de Nassau de Aracaju, en Av. Augusto Franco, 2340 - Siqueira Campos, Aracaju - SE.
 					</p>
@@ -46,12 +46,12 @@ import Tr from '@/i18n/translation'
 		<div class="col-md-4">
 			<div class="card card-plain text-center h-100">
 				<div class="card-body px-3">
-					<h5 class="d-flex align-items-center justify-content-center mb-3">
+					<h2 class="h5 d-flex align-items-center justify-content-center mb-3">
 						<span class="icon icon-shape icon-sm bg-gradient-success rounded-circle text-white me-2 shadow-sm d-inline-flex align-items-center justify-content-center">
-							<i class="fa-solid fa-calendar-days"></i>
+							<i class="fa-solid fa-calendar-days" aria-hidden="true"></i>
 						</span>
 						6 al 8 de Mayo de 2026
-					</h5>
+					</h2>
 					<p class="text-sm">
 						Tres días de actividades académicas, científicas y profesionales, con programación y organización local propias, integradas al conjunto de la conferencia.
 					</p>
