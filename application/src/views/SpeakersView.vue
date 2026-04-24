@@ -70,18 +70,18 @@ export default {
               </div>
             </div>
 
-            <div class="d-flex flex-wrap gap-2 mb-4" aria-label="Keynote Speakers Navigation">
-              <RouterLink :to="Tr.i18nRoute({ name: 'keynote-speakers', hash: '#luciana-zaina'})" class="text-decoration-none">
+            <div class="d-flex flex-wrap gap-2 mb-4" role="navigation" aria-label="Keynote Speakers Navigation">
+              <RouterLink :to="Tr.i18nRoute({ name: 'keynote-speakers', hash: '#luciana-zaina'})" class="text-decoration-none" aria-label="Go to Dr. Luciana Zaina">
                 <span class="badge bg-gradient-primary fs-6 px-3 py-2 rounded-pill shadow-sm">
                   <i class="fa-solid fa-user me-1" aria-hidden="true"></i> Dr. Luciana Zaina
                 </span>
               </RouterLink>
-              <RouterLink :to="Tr.i18nRoute({ name: 'keynote-speakers', hash: '#pedro-reynolds'})" class="text-decoration-none">
+              <RouterLink :to="Tr.i18nRoute({ name: 'keynote-speakers', hash: '#pedro-reynolds'})" class="text-decoration-none" aria-label="Go to Dr. Pedro Reynolds-Cuéllar">
                 <span class="badge bg-gradient-primary fs-6 px-3 py-2 rounded-pill shadow-sm">
                   <i class="fa-solid fa-user me-1" aria-hidden="true"></i> Dr. Pedro Reynolds-Cuéllar
                 </span>
               </RouterLink>
-              <RouterLink :to="Tr.i18nRoute({ name: 'keynote-speakers', hash: '#ann-blandford'})" class="text-decoration-none">
+              <RouterLink :to="Tr.i18nRoute({ name: 'keynote-speakers', hash: '#ann-blandford'})" class="text-decoration-none" aria-label="Go to Dr. Ann Blandford">
                 <span class="badge bg-gradient-primary fs-6 px-3 py-2 rounded-pill shadow-sm">
                   <i class="fa-solid fa-user me-1" aria-hidden="true"></i> Dr. Ann Blandford
                 </span>

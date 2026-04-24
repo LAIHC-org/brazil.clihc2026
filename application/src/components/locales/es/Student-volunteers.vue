@@ -285,14 +285,14 @@ export default {
                 Cantidad de Seleccionados por Día
             </h2>
             <div class="table-responsive">
-                <table class="table table-hover align-middle text-center mb-0">
+                <table class="table table-hover align-middle text-center mb-0" aria-label="Cantidad de Estudiantes Voluntarios seleccionados por día">
                     <thead>
                         <tr class="bg-gradient-primary text-white">
-                            <th class="text-white py-3">05/05</th>
-                            <th class="text-white py-3">06/05</th>
-                            <th class="text-white py-3">07/05</th>
-                            <th class="text-white py-3">08/05</th>
-                            <th class="text-white py-3">09/05</th>
+                            <th scope="col" class="text-white py-3">05/05</th>
+                            <th scope="col" class="text-white py-3">06/05</th>
+                            <th scope="col" class="text-white py-3">07/05</th>
+                            <th scope="col" class="text-white py-3">08/05</th>
+                            <th scope="col" class="text-white py-3">09/05</th>
                         </tr>
                     </thead>
                     <tbody>

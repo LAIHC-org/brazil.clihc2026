@@ -69,17 +69,18 @@ export default {
                     >
                         <div class="row">
                             <div class="col-md-4 text-center">
-                                <h1 class="pt-3">
+                                <div class="pt-3">
                                     <img
                                         :src="logoSrc"
                                         height="250"
                                         alt="CLIHC 2026 logo"
                                         style="position: relative; top: -2px"
                                     /><br />
-                                </h1>
+                                </div>
                             </div>
                             <div class="col-md-8 text-center">
-                                <p class="lead mt-3 mx-0 my-0"><strong>CLIHC 2026 — Brazil Event</strong></p>
+                                <h1 class="visually-hidden">CLIHC 2026 — Brazil Event</h1>
+                                <p class="lead mt-3 mx-0 my-0" aria-hidden="true"><strong>CLIHC 2026 — Brazil Event</strong></p>
                                 <p class="lead mt-0">
                                     {{ $t("jumbotron.conference") }}
                                 </p>

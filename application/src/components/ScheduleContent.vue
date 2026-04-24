@@ -82,6 +82,7 @@ const typeLabels = {
             :aria-selected="activeDay === day.id"
             :aria-controls="'panel-' + day.id"
             :id="'tab-' + day.id"
+            :tabindex="activeDay === day.id ? '0' : '-1'"
             class="btn rounded-pill px-3 py-2 shadow-sm"
             :class="activeDay === day.id ? 'bg-gradient-primary text-white' : 'btn-outline-secondary'"
         >
