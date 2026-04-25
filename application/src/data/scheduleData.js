@@ -22,9 +22,9 @@ export const scheduleData = {
             id: 'day1',
             date: '2026-05-06',
             label: {
-                en: 'May 6, 2026 (Tuesday)',
-                pt: '6 de maio de 2026 (terça-feira)',
-                es: '6 de mayo de 2026 (martes)'
+                en: 'May 6, 2026 (Wednesday)',
+                pt: '6 de maio de 2026 (quarta-feira)',
+                es: '6 de mayo de 2026 (miércoles)'
             },
             timeSlots: [
                 {
@@ -272,9 +272,9 @@ export const scheduleData = {
             id: 'day2',
             date: '2026-05-07',
             label: {
-                en: 'May 7, 2026 (Wednesday)',
-                pt: '7 de maio de 2026 (quarta-feira)',
-                es: '7 de mayo de 2026 (miércoles)'
+                en: 'May 7, 2026 (Thursday)',
+                pt: '7 de maio de 2026 (quinta-feira)',
+                es: '7 de mayo de 2026 (jueves)'
             },
             timeSlots: [
                 {
@@ -485,7 +485,7 @@ export const scheduleData = {
                                 pt: 'Sessão Técnica 2',
                                 es: 'Sesión Técnica 2'
                             },
-                            chair: 'Valéria Queiroz',
+                            chair: 'Dra. Valéria Queiroz',
                             papers: [
                                 {
                                     time: '16:00 - 16:20',
@@ -522,9 +522,9 @@ export const scheduleData = {
             id: 'day3',
             date: '2026-05-08',
             label: {
-                en: 'May 8, 2026 (Thursday)',
-                pt: '8 de maio de 2026 (quinta-feira)',
-                es: '8 de mayo de 2026 (jueves)'
+                en: 'May 8, 2026 (Friday)',
+                pt: '8 de maio de 2026 (sexta-feira)',
+                es: '8 de mayo de 2026 (viernes)'
             },
             timeSlots: [
                 {
