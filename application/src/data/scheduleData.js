@@ -306,24 +306,29 @@ export const scheduleData = {
                             chair: 'Dr. Gilton Ferreira',
                             papers: [
                                 {
-                                    title: 'Microinterações Emocionais no Design de Interfaces...',
-                                    authors: 'Stheffany Santos et al.'
+                                    time: '08:30 - 08:50',
+                                    title: 'Microinterações Emocionais no Design de Interfaces para Formação de Hábitos de Bem-Estar: Contribuições da IHC à Transformação Digital',
+                                    authors: 'Stheffany Santos (Tiradentes), Ana Carla do Nascimento Santos (Unit), Joao Vitor Rezende Moura (Unit), Layse Santos Souza (UFS)'
                                 },
                                 {
-                                    title: 'The Instrumental Sense...',
-                                    authors: 'Gustavo Souto, Carlos H. Morimoto'
+                                    time: '08:50 - 09:10',
+                                    title: 'The Instrumental Sense: A Netnographic Framework for Understanding Digital Companionship',
+                                    authors: 'Gustavo Souto (USP), Carlos H. Morimoto (University of São Paulo)'
                                 },
                                 {
-                                    title: 'Ethical Principles Application in the Development of AI...',
-                                    authors: 'Helena Martins et al.'
+                                    time: '09:10 - 09:30',
+                                    title: 'Ethical Principles Application in the Development of AI Systems: a Systematic Mapping Study',
+                                    authors: 'Helena Martins (UFV), Cristiane Aparecida Lana (UFLA), Maria Lucia Bento Villela (UFV)'
                                 },
                                 {
-                                    title: 'Aplicação de Diretrizes de Acessibilidade em Apps para Pessoas com TEA...',
-                                    authors: 'Marina Carvalho et al.'
+                                    time: '09:30 - 09:45',
+                                    title: 'Aplicação de Diretrizes de Acessibilidade em Apps para Pessoas com TEA: Desafios e Lições Aprendidas',
+                                    authors: 'Marina Carvalho (UFPB), Helena Souto (UFPB), Thais Brito (Universidade Federal da Paraiba and Centro Universitário de João Pessoa), Augusto Henrique (UFPB), Yuska Paola Costa Aguiar (UFPB), Danielle Rousy Dias Ricarte (UFPB)'
                                 },
                                 {
-                                    title: 'Sistema de Imitação via Visão Computacional...',
-                                    authors: 'Breno Fontes et al.'
+                                    time: '09:45 - 10:00',
+                                    title: 'Sistema de Imitação via Visão Computacional aplicado a um Braço Robótico de baixo custo para fins educacionais',
+                                    authors: 'Breno Fontes (IFS), Phillipe Santos (IFS), Samyr Cunha (IFS), Laís Santos (IFS), Diego Gama (IFS), Thiago Dos Santos (IFS), willian santos mota (Instituto Federal de Sergipe/Campus Lagarto), João Pedro Santana Silva Santos (IFS)'
                                 }
                             ]
                         },
@@ -483,24 +488,29 @@ export const scheduleData = {
                             chair: 'Valéria Queiroz',
                             papers: [
                                 {
-                                    title: 'Computação Criativa e Inclusão na Educação...',
-                                    authors: 'Alisson Lima, Leandro Soares Guedes'
+                                    time: '16:00 - 16:20',
+                                    title: 'Computação Criativa e Inclusão na Educação: Aprendizagem Interativa com Interfaces Tangíveis',
+                                    authors: 'Alisson Lima (IFMS), Leandro Soares Guedes (IFMS)'
                                 },
                                 {
-                                    title: 'Using participatory design to develop communication-supporting technology...',
-                                    authors: 'Rafiah Ansari et al.'
+                                    time: '16:20 - 16:40',
+                                    title: 'Using participatory design to develop communication-supporting technology: A scoping review',
+                                    authors: 'Rafiah Ansari (Federation University), Soraya Anvari (Dalhousie University), Lizbeth Escobedo (Dalhousie University, Faculty of Computer Science), Rina Wehbe'
                                 },
                                 {
-                                    title: 'Digital Mediation of Spiritual Experiences...',
-                                    authors: 'Jean Rosa et al.'
+                                    time: '16:40 - 17:00',
+                                    title: 'Digital Mediation of Spiritual Experiences: Sense-Making Through Story Completion',
+                                    authors: 'Jean Rosa (UNINASSAU-AJU), Whendell Matheus Chagas Lopes (UNINASSAU-AJU), Isabela Arruda (UFG), Sara Wolf (PsyErgo)'
                                 },
                                 {
-                                    title: 'Deepfakes pornográficos, soberania digital e violência contra mulheres...',
-                                    authors: 'Cléo Cunha Peixoto et al.'
+                                    time: '17:00 - 17:15',
+                                    title: 'Deepfakes pornográficos, soberania digital e violência contra mulheres: desafios para a América Latina',
+                                    authors: 'Cléo Cunha Peixoto (UFRJ), Claudia Motta (UFRJ), Pedro Nuno Moura (UNIRIO)'
                                 },
                                 {
-                                    title: 'Codesign da Plataforma Livre Nação Yuxibu com o Povo indígena Huni Kuĩ...',
-                                    authors: 'Tulio Augustus Santos Viana et al.'
+                                    time: '17:15 - 17:30',
+                                    title: 'Codesign da Plataforma Livre Nação Yuxibu com o Povo indigena Huni Kuĩ: desafios e reflexões iniciais',
+                                    authors: 'Tulio Augustus Santos Viana (UFBA), Diego Zabot (UFBA), Valéria Argolo Rosa (UESB), Solon Dutra (UFBA), Débora Abdalla (UFBA)'
                                 }
                             ]
                         }
@@ -619,20 +629,24 @@ export const scheduleData = {
                             chair: 'Dr. Jean Rosa',
                             papers: [
                                 {
+                                    time: '14:00 - 14:20',
                                     title: 'What literature debate is not what professionals say about Measuring the ROI of UX Design',
-                                    authors: 'Gessé Pereira, Luciana Zaina'
+                                    authors: 'Gessé Pereira (UFSCAR), Luciana Zaina (UFSCAR)'
                                 },
                                 {
-                                    title: 'Co-criação, Expressão Criativa e Inteligência Artificial na Inclusão de Pessoas com Deficiência',
-                                    authors: 'Nureen Centurión et al.'
+                                    time: '14:20 - 14:40',
+                                    title: 'Co-criação, Expressão Criativa e Inteligência Artificial na Inclusão de Pessoas com Deficiência - Intelectual',
+                                    authors: 'Nureen Centurión, Valeria Rogoski, Rafael Roa, Leandro Soares Guedes (IFMS)'
                                 },
                                 {
-                                    title: 'Pseudo-haptic interaction on touchscreen devices using pens...',
-                                    authors: 'Amanda Carolyne de Lima et al.'
+                                    time: '14:40 - 15:00',
+                                    title: 'Pseudo-haptic interaction on touchscreen devices using pens: a systematic literature mapping',
+                                    authors: 'Amanda Carolyne de Lima (UTFPR), Cleber Gimenez Correa (UTFPR), Diego Marczal (UTFPR)'
                                 },
                                 {
-                                    title: 'Plataformas Big Data e Design Centrado no Usuário...',
-                                    authors: 'Georgia da Cruz Pereira et al.'
+                                    time: '15:00 - 15:20',
+                                    title: 'Plataformas Big Data e Design Centrado no Usuário: Um Estudo sobre a (omitido para submissão)',
+                                    authors: 'Georgia da Cruz Pereira (UFC), Leonara Braz (Universidade Federal do Ceará UFC), Maria Letícia Barros Nepomuceno (UFC), Israel Filho, Felipe Sampaio do Nascimento Melquíades (UFC), Rossana Maria de Castro Andrade (UFC), Jose Antonio Macêdo (Federal University of Ceará)'
                                 }
                             ]
                         }

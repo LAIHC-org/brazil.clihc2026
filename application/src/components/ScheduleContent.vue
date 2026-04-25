@@ -73,7 +73,7 @@ const typeLabels = {
         </div>
     </div>
 
-    <div class="d-flex flex-wrap gap-2 mb-4" role="tablist" :aria-label="getLocalizedText({ en: 'Schedule Days', pt: 'Dias da Agenda', es: 'Días de la Agenda' })">
+    <div class="d-flex flex-column flex-md-row justify-content-md-center gap-2 mb-4" role="tablist" :aria-label="getLocalizedText({ en: 'Schedule Days', pt: 'Dias da Agenda', es: 'Días de la Agenda' })">
         <button
             v-for="day in scheduleData.days"
             :key="day.id"
@@ -83,7 +83,7 @@ const typeLabels = {
             :aria-controls="'panel-' + day.id"
             :id="'tab-' + day.id"
             :tabindex="activeDay === day.id ? '0' : '-1'"
-            class="btn rounded-pill px-3 py-2 shadow-sm"
+            class="btn rounded-pill px-3 py-2 shadow-sm w-100 w-md-auto"
             :class="activeDay === day.id ? 'bg-gradient-primary text-white' : 'btn-outline-secondary'"
         >
             <i class="fa-regular fa-calendar me-1" aria-hidden="true"></i> {{ getLocalizedText(day.label) }}
@@ -116,7 +116,7 @@ const typeLabels = {
                                     :class="getConfig(slot.sessions[0].type).bgClass"
                                     aria-hidden="true"
                                 >
-                                    <i :class="getConfig(slot.sessions[0].type).icon"></i>
+                                    <i :class="getConfig(slot.sessions[0].type).icon" style="display: flex; align-items: center; justify-content: center; width: 100%; height: 100%;"></i>
                                 </span>
                                 <span class="fw-semibold text-dark">
                                     {{ getLocalizedText(slot.sessions[0].title) }}
@@ -142,7 +142,7 @@ const typeLabels = {
                                             :class="getConfig(session.type).bgClass"
                                             aria-hidden="true"
                                         >
-                                            <i :class="getConfig(session.type).icon" style="font-size: 0.7rem;"></i>
+                                            <i :class="getConfig(session.type).icon" style="font-size: 0.7rem; display: flex; align-items: center; justify-content: center; width: 100%; height: 100%;"></i>
                                         </span>
                                         <span v-if="session.tag" class="badge rounded-pill text-white px-2 py-1" :class="getConfig(session.type).bgClass" style="font-size: 0.7rem;">
                                             {{ getLocalizedText(session.tag) }}
@@ -193,7 +193,8 @@ const typeLabels = {
 
                                     <div v-if="session.papers && session.papers.length" class="mt-2">
                                         <div v-for="(paper, pIdx) in session.papers" :key="pIdx" class="d-flex mb-1" style="font-size: 0.78rem;">
-                                            <span class="text-muted me-1 flex-shrink-0">{{ pIdx + 1 }})</span>
+                                            <span v-if="paper.time" class="text-dark fw-bold me-2 flex-shrink-0">{{ paper.time }} -</span>
+                                            <span v-else class="text-muted me-1 flex-shrink-0">{{ pIdx + 1 }})</span>
                                             <div>
                                                 <span class="fw-semibold">{{ paper.title }}</span>
                                                 <br /><span class="text-muted fst-italic">{{ paper.authors }}</span>
