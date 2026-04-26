@@ -1,6 +1,17 @@
 body {
     background-color: #F6F5F2;
 }
+
+/* High Contrast Mode */
+body.high-contrast-mode {
+  filter: invert(100%) hue-rotate(180deg);
+  background-color: #111;
+}
+body.high-contrast-mode img,
+body.high-contrast-mode video {
+  filter: invert(100%) hue-rotate(180deg);
+}
+
 .scrolled{
     background-color: rgba(92, 132, 101, 0.6) !important;
     background-image: linear-gradient(10deg, rgba(92, 132, 101, 0.8) 30%, rgb(54, 109, 141, 0.5) 100%);

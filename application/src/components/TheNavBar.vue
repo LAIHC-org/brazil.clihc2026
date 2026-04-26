@@ -61,9 +61,9 @@
 							</span>
 						</button>
 						<div class="collapse navbar-collapse pt-3 pb-2 py-lg-0" id="navigation">
-							<ul class="navbar-nav navbar-nav-hover w-100">
+							<ul class="navbar-nav navbar-nav-hover w-100 gap-2">
 								<li class="nav-item dropdown dropdown-hover mx-2">
-									<a class="nav-link ps-2 d-flex cursor-pointer align-items-center"
+									<a class="nav-link ps-2 pe-2 py-2 py-lg-3 d-flex cursor-pointer align-items-center"
 										id="navbarDropdown1" role="button" data-bs-toggle="dropdown"
 										aria-expanded="false" aria-haspopup="true"
 										href="#"
@@ -107,7 +107,7 @@
 									</ul>
 								</li>
 								<li class="nav-item dropdown dropdown-hover mx-2">
-									<a class="nav-link ps-2 d-flex cursor-pointer align-items-center"
+									<a class="nav-link ps-2 pe-2 py-2 py-lg-3 d-flex cursor-pointer align-items-center"
 										id="navbarDropdown2" role="button" data-bs-toggle="dropdown"
 										aria-expanded="false" aria-haspopup="true" href="#"
 									>
@@ -161,7 +161,7 @@
 									</ul>
 								</li>
 								<li class="nav-item dropdown dropdown-hover mx-2">
-									<a class="nav-link ps-2 d-flex cursor-pointer align-items-center"
+									<a class="nav-link ps-2 pe-2 py-2 py-lg-3 d-flex cursor-pointer align-items-center"
 										id="navbarDropdown3"
 										role="button"
 										data-bs-toggle="dropdown"
@@ -202,7 +202,7 @@
 									</ul>
 								</li>
 								<li class="nav-item dropdown dropdown-hover mx-2">
-									<a class="nav-link ps-2 d-flex cursor-pointer align-items-center"
+									<a class="nav-link ps-2 pe-2 py-2 py-lg-3 d-flex cursor-pointer align-items-center"
 										id="navbarDropdown4"
 										role="button"
 										data-bs-toggle="dropdown"
@@ -246,7 +246,7 @@
 								</li>
 	
 								<li class="nav-item mx-2">
-									<a class="nav-link ps-2 d-flex cursor-pointer align-items-center"
+									<a class="nav-link ps-2 pe-2 py-2 py-lg-3 d-flex cursor-pointer align-items-center"
 										:href="`https://clihc2026.laihc.org/${Tr.currentLocale}`"
 									>
 										{{ $t("nav.central_site") }}

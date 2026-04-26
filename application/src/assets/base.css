@@ -14772,6 +14772,15 @@ a.uline{
   text-decoration:underline !important;
 }
 
+.nav-link.uline {
+  min-height: 44px;
+  min-width: 44px;
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 1rem !important;
+  margin: 0.25rem;
+}
+
 a.uline:hover{
   text-decoration:none !important;
   background-image: linear-gradient(310deg, #F9B204 0%, #d57500 100%);
