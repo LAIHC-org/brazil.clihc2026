@@ -57,39 +57,6 @@ export const scheduleData = {
                                 pt: "Culturas, Alteridade e Participação em IHC (CAPA'2026)",
                                 es: "Culturas, Otredad y Participación en IHC (CAPA'2026)"
                             }
-                        },
-                        {
-                            location: 'Room 2 (Rio Fundo)',
-                            type: SessionType.TUTORIAL,
-                            tag: {
-                                en: 'Tutorial',
-                                pt: 'Tutorial',
-                                es: 'Tutorial'
-                            },
-                            title: {
-                                en: 'Participatory Design Thinking Involving People with Visual Impairments: Developing Inclusive VR Games',
-                                pt: 'Design Thinking Participativo Envolvendo Pessoas com Deficiência Visual: Desenvolvendo Jogos em VR Inclusivos',
-                                es: 'Design Thinking Participativo Involucrando Personas con Discapacidad Visual: Desarrollo de Juegos en VR Inclusivos'
-                            }
-                        },
-                        {
-                            location: 'Online',
-                            type: SessionType.TUTORIAL,
-                            tag: {
-                                en: 'BR-CHI Tutorial',
-                                pt: 'Tutorial BR-CHI',
-                                es: 'Tutorial BR-CHI'
-                            },
-                            title: {
-                                en: 'Research on HCI',
-                                pt: 'Pesquisa em IHC',
-                                es: 'Investigación en IHC'
-                            },
-                            subtitle: {
-                                en: 'Brazilian SIGCHI Chapter - BR-CHI',
-                                pt: 'Capítulo Brasileiro da SIGCHI - BR-CHI',
-                                es: 'Capítulo Brasileño de SIGCHI - BR-CHI'
-                            }
                         }
                     ]
                 },
@@ -124,19 +91,62 @@ export const scheduleData = {
                                 es: "Culturas, Otredad y Participación en IHC (CAPA'2026)"
                             },
                             continuation: true
-                        },
+                        }
+                    ]
+                },
+                {
+                    time: '12:00 - 14:00',
+                    sessions: [
                         {
-                            location: 'Room 2 (Rio Fundo)',
+                            location: 'Hall',
+                            type: SessionType.LUNCH,
+                            title: {
+                                en: 'Lunch',
+                                pt: 'Almoço',
+                                es: 'Almuerzo'
+                            }
+                        }
+                    ]
+                },
+                {
+                    time: '13:00 - 14:00',
+                    sessions: [
+                        {
+                            location: 'Online',
                             type: SessionType.TUTORIAL,
                             tag: {
-                                en: 'Tutorial',
-                                pt: 'Tutorial',
-                                es: 'Tutorial'
+                                en: 'BR-CHI Tutorial',
+                                pt: 'Tutorial BR-CHI',
+                                es: 'Tutorial BR-CHI'
                             },
                             title: {
-                                en: 'Participatory Design Thinking Involving People with Visual Impairments: Developing Inclusive VR Games',
-                                pt: 'Design Thinking Participativo Envolvendo Pessoas com Deficiência Visual: Desenvolvendo Jogos em VR Inclusivos',
-                                es: 'Design Thinking Participativo Involucrando Personas con Discapacidad Visual: Desarrollo de Juegos en VR Inclusivos'
+                                en: 'Research on HCI',
+                                pt: 'Pesquisa em IHC',
+                                es: 'Investigación en IHC'
+                            },
+                            subtitle: {
+                                en: 'Brazilian SIGCHI Chapter - BR-CHI',
+                                pt: 'Capítulo Brasileiro da SIGCHI - BR-CHI',
+                                es: 'Capítulo Brasileño de SIGCHI - BR-CHI'
+                            }
+                        }
+                    ]
+                },
+                {
+                    time: '14:00 - 15:30',
+                    sessions: [
+                        {
+                            location: 'Room 1 (Rio Poxim)',
+                            type: SessionType.WORKSHOP,
+                            tag: {
+                                en: 'Workshop',
+                                pt: 'Workshop',
+                                es: 'Workshop'
+                            },
+                            title: {
+                                en: "Cultures, Otherness, and Participation in HCI (CAPA'2026)",
+                                pt: "Culturas, Alteridade e Participação em IHC (CAPA'2026)",
+                                es: "Culturas, Otredad y Participación en IHC (CAPA'2026)"
                             },
                             continuation: true
                         },
@@ -163,52 +173,8 @@ export const scheduleData = {
                     ]
                 },
                 {
-                    time: '12:00 - 14:00',
+                    time: '15:30 - 16:00',
                     sessions: [
-                        {
-                            location: 'Hall',
-                            type: SessionType.LUNCH,
-                            title: {
-                                en: 'Lunch',
-                                pt: 'Almoço',
-                                es: 'Almuerzo'
-                            }
-                        }
-                    ]
-                },
-                {
-                    time: '14:00 - 15:30',
-                    sessions: [
-                        {
-                            location: 'Room 1 (Rio Poxim)',
-                            type: SessionType.WORKSHOP,
-                            tag: {
-                                en: 'Workshop',
-                                pt: 'Workshop',
-                                es: 'Workshop'
-                            },
-                            title: {
-                                en: "Cultures, Otherness, and Participation in HCI (CAPA'2026)",
-                                pt: "Culturas, Alteridade e Participação em IHC (CAPA'2026)",
-                                es: "Culturas, Otredad y Participación en IHC (CAPA'2026)"
-                            },
-                            continuation: true
-                        },
-                        {
-                            location: 'Room 2 (Rio Fundo)',
-                            type: SessionType.TUTORIAL,
-                            tag: {
-                                en: 'Tutorial',
-                                pt: 'Tutorial',
-                                es: 'Tutorial'
-                            },
-                            title: {
-                                en: 'Participatory Design Thinking Involving People with Visual Impairments: Developing Inclusive VR Games',
-                                pt: 'Design Thinking Participativo Envolvendo Pessoas com Deficiência Visual: Desenvolvendo Jogos em VR Inclusivos',
-                                es: 'Design Thinking Participativo Involucrando Personas con Discapacidad Visual: Desarrollo de Juegos en VR Inclusivos'
-                            },
-                            continuation: true
-                        },
                         {
                             location: 'Online',
                             type: SessionType.TUTORIAL,
@@ -220,7 +186,7 @@ export const scheduleData = {
                             title: {
                                 en: 'Research on HCI',
                                 pt: 'Pesquisa em IHC',
-                                es: 'Investigación em IHC'
+                                es: 'Investigación en IHC'
                             },
                             subtitle: {
                                 en: 'Brazilian SIGCHI Chapter - BR-CHI',
@@ -228,12 +194,7 @@ export const scheduleData = {
                                 es: 'Capítulo Brasileño de SIGCHI - BR-CHI'
                             },
                             continuation: true
-                        }
-                    ]
-                },
-                {
-                    time: '15:30 - 16:00',
-                    sessions: [
+                        },
                         {
                             location: 'Hall',
                             type: SessionType.BREAK,
