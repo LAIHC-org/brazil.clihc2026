@@ -10,9 +10,9 @@ export default {}
                 <img src="/assets/img/sponsors/fapitec_se.png" alt="FAPITEC/SE" class="img-fluid rounded-3" style="max-height: 80px;">
                 <div class="small text-dark mt-1">FAPITEC/SE</div>
             </a>
-            <a href="https://cgi.br/" target="_blank" class="text-center text-decoration-none">
-                <img src="/assets/img/sponsors/cgibr.PNG" alt="CGI.br / NIC.br" class="img-fluid rounded-3" style="max-height: 80px; max-width: 140px;">
-                <div class="small text-dark mt-1">CGI.br / NIC.br</div>
+            <a href="https://www.cgi.br/" target="_blank" class="text-center text-decoration-none">
+                <img src="/assets/img/sponsors/nic_cgi_vetor_cor_sem texto.png" alt="NIC.br / CGI.br" class="img-fluid rounded-3" style="max-height: 80px;">
+                <div class="small text-dark mt-1">NIC.br / CGI.br</div>
             </a>
         </div>
     </div>

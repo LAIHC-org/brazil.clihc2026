@@ -295,16 +295,16 @@ export const scheduleData = {
                         },
                         {
                             location: 'Room 2 (Rio Fundo)',
-                            type: SessionType.COMPETITION,
+                            type: SessionType.PANEL,
                             tag: {
-                                en: 'SDC',
-                                pt: 'CDE',
-                                es: 'CDE'
+                                en: 'Panel',
+                                pt: 'Painel',
+                                es: 'Panel'
                             },
                             title: {
-                                en: 'Student Design Competition',
-                                pt: 'Competição de Design Estudantil',
-                                es: 'Competición de Diseño Estudiantil'
+                                en: 'TBD',
+                                pt: 'A definir',
+                                es: 'A definir'
                             }
                         }
                     ]
@@ -542,18 +542,17 @@ export const scheduleData = {
                     sessions: [
                         {
                             location: 'Auditorium',
-                            type: SessionType.PANEL,
+                            type: SessionType.COMPETITION,
                             tag: {
-                                en: 'BR-CHI Panel',
-                                pt: 'Painel BR-CHI',
-                                es: 'Panel BR-CHI'
+                                en: 'SDC',
+                                pt: 'CDE',
+                                es: 'CDE'
                             },
                             title: {
-                                en: 'Latin American Collaboration for HCI',
-                                pt: 'Colaboração Latino-Americana para IHC',
-                                es: 'Colaboración Latinoamericana para IHC'
-                            },
-                            subtitle: 'BR-CHI'
+                                en: 'Student Design Competition',
+                                pt: 'Competição de Design Estudantil',
+                                es: 'Competición de Diseño Estudiantil'
+                            }
                         }
                     ]
                 },
