@@ -11,7 +11,7 @@ export default {}
                 <div class="small text-dark mt-1">FAPITEC/SE</div>
             </a>
             <a href="https://www.cgi.br/" target="_blank" class="text-center text-decoration-none">
-                <img src="/assets/img/sponsors/nic_cgi_vetor_cor_sem texto.png" alt="NIC.br / CGI.br" class="img-fluid rounded-3" style="max-height: 80px;">
+                <img src="/assets/img/sponsors/nic_cgi_vetor_cor_sem_texto.png" alt="NIC.br / CGI.br" class="img-fluid rounded-3" style="max-height: 80px;">
                 <div class="small text-dark mt-1">NIC.br / CGI.br</div>
             </a>
         </div>
